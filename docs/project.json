@@ -1,0 +1,450 @@
+{
+  "schemaVersion": "1.0",
+  "id": "roguelike-card-battle",
+  "slug": "roguelike-card-battle",
+  "title": "遗迹吞忆",
+  "subtitle": "Roguelike Card Battle — AI 辅助内容管线 + 确定性战斗引擎",
+  "category": "AI-Assisted Game / Roguelike",
+  "status": "Completed",
+  "featured": true,
+  "priority": 9,
+
+  "summary": {
+    "oneLine": "轻量卡牌肉鸽 Demo：共享包驱动确定性战斗与 Seed 地图，后端 LLM/图像 API 生成内容经 Zod + Power Budget 校验后入库。",
+    "short": "《遗迹吞忆》是一款参考《杀戮尖塔》《月圆之夜》结构的原创回合制卡牌 Roguelike。核心逻辑集中在 `@rcb/shared`（战斗引擎、地图生成、遗物引擎），React 前端纯展示状态；Express 负责存档、校验与 AI 接口。项目包含三职业完整卡池、地下城地图、商店/休息/事件/Boss、多存档与灵魂元进度，以及三套创作工具：美术工坊（图像生成）、内容工坊（LLM 职业包）、平衡实验室（多策略自动对战审计）。无 API Key 时图像与 LLM 均有 fallback，保证本地可完整演示。",
+    "problem": "AI 直接改游戏数值易导致崩坏平衡与不可复现对局；卡牌肉鸽又需要可测试的战斗逻辑、稳定存档与可展示的完整玩法闭环。",
+    "solution": "将「可玩真相」交给 TypeScript 战斗引擎与 Seed RNG；AI 仅在后端生成草稿，经 Schema、Power Budget 与（可选）战斗模拟 gate 后才写入 JSON 数据。图片持久化到 assets，UI 只读 imagePath，失败回退占位图。"
+  },
+
+  "role": {
+    "title": "Creator & Full-Stack Developer",
+    "responsibilities": [
+      "设计 Monorepo 分层：shared 游戏逻辑 / client 展示 / server 校验与 AI 管线",
+      "实现回合制战斗引擎、地图节点、遗物与元进度存档体系",
+      "构建 LLM 职业生成、图像生成、平衡审计三套工具链与对应 UI"
+    ],
+    "contributions": [
+      "落地 8 个 Phase 完整 Demo 闭环（探索 → 战斗 → 奖励 → Boss → 元进度）",
+      "实现 Zod + Power Budget + 多场景战斗模拟的内容准入管道",
+      "完成 imageAssets 注册表、多风格变体切换与批量生成工作流"
+    ]
+  },
+
+  "techStack": {
+    "frontend": ["React 19", "TypeScript", "Vite", "React Router", "Framer Motion"],
+    "backend": ["Node.js", "Express", "TypeScript"],
+    "ai": ["LLM API（职业/卡池 JSON 生成）", "DALL·E 兼容 Image API", "规则模板 Fallback"],
+    "database": ["JSON 文件存储（data/saves、meta、balance 报告）"],
+    "infra": ["npm Workspaces Monorepo", "concurrently 双端 dev"],
+    "tools": ["Zod", "seedrandom", "GitHub"]
+  },
+
+  "highlights": [
+    "逻辑与 UI 分离（@rcb/shared）",
+    "Seed 可复现地图",
+    "AI 输出 Zod + Power Budget 校验",
+    "LLM 职业包草稿 → 批准入库",
+    "AI 美术多风格变体",
+    "多策略平衡实验室",
+    "多存档 + 灵魂元进度"
+  ],
+
+  "features": [
+    "三职业 × 25 张卡、15 件遗物、8 种敌人 + 记忆吞噬者 Boss 两阶段",
+    "回合制战斗：能量、抽弃牌、意图显示、状态（流血/虚弱/易伤/中毒/力量等）",
+    "Seed 地下城地图：战斗/精英/商店/休息/宝箱/事件/Boss 节点",
+    "战斗胜利三选一卡牌奖励；休息点卡牌升级（upgradedEffects）",
+    "服务端自动存档 data/saves/{runId}.json；继续存档 / 放弃本局",
+    "灵魂祭坛永久升级（体魄/金袋/抉择/遗物库）",
+    "美术工坊：5 种风格预设、单张/批量生成、变体切换",
+    "内容工坊：LLM 生成职业包 → 校验报告 → 批准写入 classes + cards",
+    "平衡实验室 + CLI（npm run balance）：胜率矩阵、Power Budget 审计、调优建议",
+    "无 API Key：SVG 占位图 + 规则模板职业生成，仍走完整校验管道"
+  ],
+
+  "sections": [
+    {
+      "id": "background",
+      "title": "项目背景",
+      "type": "text",
+      "content": "项目以「可玩的卡牌肉鸽 + 可验证的 AI 内容管线」为目标：玩家侧体验接近商业 Roguelike 的结构（地图选路、构筑、遭遇、Meta），开发者侧则把 LLM/图像 API 限制在服务端工具链中，所有入库内容必须通过 Schema 与数值预算。\n\n设计铁律：战斗结果只由 combatEngine 与 Seed 决定；前端不持有权威状态；AI 生成物默认为草稿，批准后才进入 data/ 并被游戏读取。Phase 1–8 已形成从主菜单到通关/死亡结算、再到灵魂消费的完整循环。"
+    },
+    {
+      "id": "architecture",
+      "title": "系统架构",
+      "type": "architecture",
+      "content": {
+        "overview": "玩家操作 → Express API → @rcb/shared 更新 RunState → 持久化 JSON；并行工具链：imagePrompt → Image API → assets + imageAssets.json；theme → LLM → Zod/Budget/Sim → draft → approve → data/cards；职业数据 → balance simulate → lastReport.json。",
+        "image": "architecture.png",
+        "modules": [
+          {
+            "name": "@rcb/shared",
+            "description": "战斗引擎、地图生成、遗物引擎、RNG、Zod Schema、Power Budget、平衡模拟"
+          },
+          {
+            "name": "Express Game API",
+            "description": "runs/combat/reward/shop/rest 等游戏循环端点；自动写入存档"
+          },
+          {
+            "name": "React Client",
+            "description": "主菜单、地图、战斗场景、遭遇页；GameProvider/MetaProvider 拉取状态"
+          },
+          {
+            "name": "Image Pipeline",
+            "description": "buildImagePrompt + 风格预设 → 生成/占位 → imageAssets 注册表"
+          },
+          {
+            "name": "LLM Content Forge",
+            "description": "generate-class → 草稿校验（含战斗模拟 gate）→ approve 写入 JSON"
+          },
+          {
+            "name": "Balance Lab",
+            "description": "greedy/defensive/aggressive × 普通/精英/Boss 场景 → 胜率评级与审计报告"
+          }
+        ]
+      }
+    },
+    {
+      "id": "technical-highlights",
+      "title": "技术亮点",
+      "type": "features",
+      "content": [
+        "Monorepo 三 workspace：shared 纯逻辑可单测，client 零战斗权威状态",
+        "seedrandom 驱动地图与掉落，相同 Seed 可复现整条 Run",
+        "GeneratedClassPackSchema + normalizePack + Power Budget 逐卡审计",
+        "LLM 生成强制战斗模拟（模板 fallback 可跳过），防止「能入库但不能玩」",
+        "imageAssets 变体注册表：同实体多风格，游戏内切换 active 变体",
+        "JSON 存档 + meta 灵魂经济：通关/失败结算仅影响新局起始条件"
+      ]
+    },
+    {
+      "id": "challenges",
+      "title": "技术挑战与解决方案",
+      "type": "challenges",
+      "content": [
+        {
+          "title": "LLM 生成卡牌数值失控",
+          "problem": "模型常输出过高伤害/过低成本，破坏 Roguelike 节奏。",
+          "solution": "Power Budget 按稀有度与效果类型预算；审计报告列出超标卡；批准前可跑多场景战斗模拟。"
+        },
+        {
+          "title": "AI 图片不稳定与重复调用成本",
+          "problem": "每次进战斗重新请求图像 API 会慢、贵且不可控。",
+          "solution": "仅后端生成一次，写入 assets/generated/ 并登记 imagePath；无 Key 时 SVG fallback；UI 只读注册表。"
+        },
+        {
+          "title": "前后端状态分叉",
+          "problem": "若在前端推算战斗，易出现作弊与刷新丢失。",
+          "solution": "所有 play-card/end-turn 走 API，服务端 combatEngine 为唯一真相；每次变更写 saves。"
+        },
+        {
+          "title": "作品集演示依赖 API Key",
+          "problem": "审稿人环境未必配置 LLM/图像 Key。",
+          "solution": "双 Key 独立配置；缺 Key 时模板职业 + 占位图仍可跑通主流程与工具页（校验/审计可见）。"
+        }
+      ]
+    }
+  ],
+
+  "metrics": [
+    {
+      "label": "开发 Phase",
+      "value": "8",
+      "description": "从 Monorepo 到元进度与平衡实验室",
+      "trend": "optimal"
+    },
+    {
+      "label": "职业 / 卡牌",
+      "value": "3 / 75",
+      "description": "每职业 25 张，含升级效果",
+      "trend": "optimal"
+    },
+    {
+      "label": "遗物",
+      "value": "15",
+      "description": "统一 relicEngine 触发",
+      "trend": "optimal"
+    },
+    {
+      "label": "敌人",
+      "value": "8 + Boss",
+      "description": "含意图系统与 Boss 两阶段",
+      "trend": "optimal"
+    },
+    {
+      "label": "平衡 AI 策略",
+      "value": "3",
+      "description": "greedy / defensive / aggressive",
+      "trend": "optimal"
+    }
+  ],
+
+  "media": {
+    "cover": "cover.png",
+    "hero": "hero.png",
+    "demo": "demo.gif",
+    "video": "demo.mp4",
+    "screenshots": [
+      {
+        "title": "主菜单与元进度入口",
+        "description": "标题「遗迹吞忆」、灵魂数、开始探索/继续存档/灵魂祭坛及三套工坊入口",
+        "file": "screenshots/01-main-menu.png",
+        "captureGuide": "http://localhost:5173/ 首页；窗口 1920×1080 或 1440×900；确保可见 menu-title、灵魂条（✦ N 灵魂）、三个主按钮与底部「平衡实验室/内容工坊/美术工坊」；不要截浏览器书签栏"
+      },
+      {
+        "title": "职业选择与起始遗物",
+        "description": "三职业卡片、描述、推荐遗物二选一",
+        "file": "screenshots/02-class-select.png",
+        "captureGuide": "点击「开始探索」→ /class-select；选中一个职业（建议血刃猎人）；露出职业立绘/名称、starter 说明、两件推荐遗物二选一 UI；可选填 Seed 输入框（填 TEST123 便于复现）"
+      },
+      {
+        "title": "地下城地图",
+        "description": "分层节点、当前层高亮、右侧 Run 状态（生命/金币/卡组数）",
+        "file": "screenshots/03-dungeon-map.png",
+        "captureGuide": "选职业并「进入地下城」后；截完整地图画布 + 右侧 RunStatusPanel；确保第一层有可点击节点（高亮/可交互状态）；若地图偏宽，以地图+状态栏为构图中心"
+      },
+      {
+        "title": "回合制战斗",
+        "description": "敌人立绘与意图、玩家状态、手牌、能量、战斗日志",
+        "file": "screenshots/04-combat.png",
+        "captureGuide": "地图点击战斗节点进入；手牌至少 3–5 张、能量数字可见；EnemyIntentPanel 显示下回合意图；CombatLogPanel 有 2+ 条日志；尽量在玩家回合（未点「结束回合」）截图；推荐 16:9 全屏"
+      },
+      {
+        "title": "战斗奖励三选一",
+        "description": "胜利后卡牌奖励选择与跳过",
+        "file": "screenshots/05-reward.png",
+        "captureGuide": "打赢一场普通或精英战；RewardView 三张卡并排；截到「选择」「跳过」按钮；卡牌稀有度边框/费用清晰"
+      },
+      {
+        "title": "灵魂祭坛 · 元进度",
+        "description": "永久升级四项、灵魂消耗与已购状态",
+        "file": "screenshots/06-meta-shrine.png",
+        "captureGuide": "主菜单 →「元进度 · 灵魂祭坛」/meta；灵魂余额 > 0 时更佳；展示至少 2 个升级项（一个已解锁一个未解锁对比）；不要截战斗页"
+      },
+      {
+        "title": "美术工坊",
+        "description": "实体列表、风格预设、生成进度与变体切换",
+        "file": "screenshots/07-art-studio.png",
+        "captureGuide": "/art-studio；左侧选 entityType（如 enemy 或 card）；右侧可见预设风格按钮 + 至少一张已生成缩略图；若有「生成中」状态可等完成再截；展示变体/active 切换控件"
+      },
+      {
+        "title": "内容工坊 · LLM 校验",
+        "description": "职业主题生成、草稿校验报告（Schema/Budget/模拟）",
+        "file": "screenshots/08-content-forge.png",
+        "captureGuide": "/content-forge；已有一次 generate-class 结果或打开历史草稿；校验面板需可见 pass/fail 项（Power Budget、模拟胜率等）；无 LLM Key 时用模板 fallback 草稿同样可截"
+      },
+      {
+        "title": "平衡实验室",
+        "description": "多场景胜率矩阵、综合分与调优建议",
+        "file": "screenshots/09-balance-lab.png",
+        "captureGuide": "/balance-lab；先点「全局审计」或单职业审计跑完；截矩阵/评级表 + 综合分区域；确保有「过易/过难/平衡」等等级字样"
+      },
+      {
+        "title": "通关或死亡结算（可选）",
+        "description": "Victory/Defeat 页灵魂结算，体现 Roguelike 闭环",
+        "file": "screenshots/10-run-end-optional.png",
+        "captureGuide": "打完 Boss 或主动放弃；VictoryView 显示灵魂奖励与统计，或 DefeatView 失败文案；全屏居中弹层"
+      }
+    ],
+    "screenshotPriority": {
+      "mustHave": [
+        "screenshots/01-main-menu.png",
+        "screenshots/03-dungeon-map.png",
+        "screenshots/04-combat.png",
+        "screenshots/08-content-forge.png"
+      ],
+      "recommended": [
+        "screenshots/02-class-select.png",
+        "screenshots/05-reward.png",
+        "screenshots/07-art-studio.png",
+        "screenshots/09-balance-lab.png"
+      ],
+      "optional": [
+        "screenshots/06-meta-shrine.png",
+        "screenshots/10-run-end-optional.png"
+      ]
+    }
+  },
+
+  "demo": {
+    "available": true,
+    "mode": "本地开发（主流程无需 API Key；工坊功能可选配置 .env）",
+    "commands": [
+      "npm install",
+      "npm run build -w packages/shared",
+      "npm run dev"
+    ],
+    "entryPoints": {
+      "playthrough": "主菜单 → 开始探索 → 选职业 → 地图推进 → 战斗/商店/休息",
+      "tools": "美术工坊 / 内容工坊 / 平衡实验室（主菜单底部）"
+    },
+    "scenarios": [
+      "Seed TEST123 开局，验证地图可复现",
+      "地图打 1 场战斗 → 三选一奖励 → 返回地图",
+      "休息点升级一张手牌；商店购买遗物或删牌",
+      "主菜单 → 内容工坊：生成职业草稿 → 查看校验报告（可不批准）",
+      "主菜单 → 平衡实验室：运行全局审计，查看 lastReport",
+      "主菜单 → 继续存档：列出进行中 run，继续或放弃",
+      "通关或失败后灵魂祭坛购买永久升级，再开新局验证加成"
+    ]
+  },
+
+  "links": {
+    "github": "https://github.com/yufan2116/roguelike-card-battle",
+    "demo": "http://localhost:5173",
+    "docs": "",
+    "video": ""
+  },
+
+  "resumeBullets": {
+    "zh": [
+      "独立实现 Monorepo 卡牌 Roguelike：shared 战斗引擎 + Express API + React 19 前端，8 个 Phase 玩法闭环",
+      "设计 AI 内容准入管道：LLM 职业包经 Zod、Power Budget 与多场景战斗模拟后才可批准入库",
+      "构建图像生成工作流（风格预设、变体注册表、持久化 assets）及平衡实验室（三策略 × 多场景审计）",
+      "实现 Seed 地图、多存档、灵魂元进度与 75 张卡牌 / 15 遗物完整内容体系"
+    ],
+    "en": [
+      "Built a monorepo roguelike deckbuilder with shared combat engine, Express API, and React 19 UI across 8 delivery phases",
+      "Designed AI content pipeline: LLM class packs gated by Zod, power budget, and multi-scenario combat simulation before approval",
+      "Shipped image generation registry with style presets/variants and a balance lab with 3 AI strategies × encounter tiers",
+      "Delivered seed-based dungeon map, multi-slot saves, soul meta-progression, and 75 cards across 3 classes"
+    ]
+  },
+
+  "interview": {
+    "pitchZh": "这是一个把「杀戮尖塔式玩法」和「AI 做游戏内容」拆开的项目：玩家玩的每一回合都由确定性引擎算，AI 只在工坊里产草稿，校验过了才能进 JSON。",
+    "pitchEn": "A Slay-the-Spire-style roguelike where combat truth lives in a shared TypeScript engine, and LLM/image APIs only feed a validated content pipeline before data hits the game.",
+    "qa": [
+      {
+        "q": "为什么战斗逻辑放在 shared 包而不是前端？",
+        "a": "保证单一真相源：服务端跑 combatEngine，前端只渲染；便于 balance 模拟与 LLM 校验共用同一套规则，也避免刷新作弊。"
+      },
+      {
+        "q": "LLM 生成的卡怎么保证能玩？",
+        "a": "Zod 结构校验 + Power Budget 数值预算 +（真实 LLM 时）多策略对战模拟；不通过只能留草稿，批准才写入 data/cards。"
+      },
+      {
+        "q": "没有 API Key 能演示吗？",
+        "a": "可以。主流程三职业、地图、战斗、存档、元进度均不依赖 Key；图像用 SVG 占位，职业生成走规则模板，工具页仍可展示校验与审计 UI。"
+      }
+    ]
+  },
+
+  "tags": [
+    "Roguelike",
+    "Deckbuilder",
+    "TypeScript",
+    "LLM Content Pipeline",
+    "Game Balance",
+    "AI Image Generation",
+    "Monorepo"
+  ],
+  "targetRoles": [
+    "Full-Stack Developer",
+    "Game Tools Engineer",
+    "AI Engineer"
+  ],
+
+  "runtime": {
+    "stateMachine": [
+      {
+        "state": "menu",
+        "label": "主菜单",
+        "description": "选择新局、继续存档或进入工坊/元进度",
+        "transitions": "class_select | continue | meta | tools"
+      },
+      {
+        "state": "map",
+        "label": "地下城地图",
+        "description": "Seed 节点图，select-node 触发遭遇",
+        "transitions": "combat | shop | rest | event | treasure | boss"
+      },
+      {
+        "state": "combat",
+        "label": "战斗中",
+        "description": "play-card / end-turn 由服务端推进",
+        "transitions": "reward | defeat"
+      },
+      {
+        "state": "reward",
+        "label": "战后奖励",
+        "description": "三选一卡牌或跳过",
+        "transitions": "map"
+      },
+      {
+        "state": "victory",
+        "label": "通关结算",
+        "description": "Boss 击败，灵魂与统计写入 meta",
+        "transitions": "menu"
+      },
+      {
+        "state": "defeat",
+        "label": "失败结算",
+        "description": "HP 归零或放弃本局",
+        "transitions": "menu"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "1",
+        "time": "00:00.000",
+        "type": "status",
+        "label": "POST /api/game/runs",
+        "detail": "classId + optional seed → 初始化 RunState 与 saves",
+        "status": "done"
+      },
+      {
+        "id": "2",
+        "time": "00:01.000",
+        "type": "action",
+        "label": "select-node",
+        "detail": "地图节点 → 遭遇或自动开战",
+        "status": "done"
+      },
+      {
+        "id": "3",
+        "time": "00:02.000",
+        "type": "action",
+        "label": "combat loop",
+        "detail": "play-card → end-turn → 敌人行动 → 日志追加",
+        "status": "done"
+      },
+      {
+        "id": "4",
+        "time": "00:05.000",
+        "type": "status",
+        "label": "reward / persist",
+        "detail": "胜利选牌；状态写入 data/saves/{runId}.json",
+        "status": "done"
+      },
+      {
+        "id": "5",
+        "time": "00:10.000",
+        "type": "status",
+        "label": "meta settle",
+        "detail": "通关或失败 → souls → data/meta.json",
+        "status": "done"
+      }
+    ],
+    "recovery": [
+      {
+        "id": "save-slots",
+        "title": "多存档恢复",
+        "description": "GET /api/game/saves + 继续存档；localStorage rcb_last_run_id",
+        "icon": "Save"
+      },
+      {
+        "id": "no-api-key",
+        "title": "无 Key 可玩",
+        "description": "SVG 占位图 + LLM 模板 fallback，主流程与工具 UI 仍可演示",
+        "icon": "Shield"
+      },
+      {
+        "id": "abandon-run",
+        "title": "放弃本局",
+        "description": "POST runs/:id/abandon，按失败结算灵魂",
+        "icon": "XCircle"
+      }
+    ]
+  }
+}
