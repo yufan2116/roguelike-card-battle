@@ -3,6 +3,8 @@ dist/
 .env
 *.log
 .DS_Store
-assets/generated/
 data/game.db
-data/saves/
+# 本地游玩存档不提交；演示档见 data/saves/README.md
+data/saves/*
+!data/saves/run_DEMO_TEST123.json
+!data/saves/README.md
