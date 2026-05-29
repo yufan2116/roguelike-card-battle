@@ -1,0 +1,70 @@
+{
+  "classes": [
+    {
+      "id": "blood_blade_hunter",
+      "name": "血刃猎人",
+      "description": "以流血、连击与吸血为核心，高风险高收益的近战猎手。",
+      "maxHp": 70,
+      "startingGold": 99,
+      "starterDeck": [
+        "bb_strike",
+        "bb_strike",
+        "bb_strike",
+        "bb_strike",
+        "bb_guard",
+        "bb_guard",
+        "bb_guard",
+        "bb_guard",
+        "bb_bleed_slash",
+        "bb_vampiric_cut"
+      ],
+      "recommendedRelics": ["blood_ring", "hunters_token"],
+      "imagePrompt": "blood blade hunter adventurer, crimson cloak, dual daggers, dungeon explorer",
+      "styleTags": ["dark_fairy_tale"]
+    },
+    {
+      "id": "rune_mage",
+      "name": "符文法师",
+      "description": "操控元素符文，通过能量管理与元素叠加打出爆发伤害。",
+      "maxHp": 65,
+      "startingGold": 99,
+      "starterDeck": [
+        "rm_arc_bolt",
+        "rm_arc_bolt",
+        "rm_arc_bolt",
+        "rm_arc_bolt",
+        "rm_rune_shield",
+        "rm_rune_shield",
+        "rm_rune_shield",
+        "rm_rune_shield",
+        "rm_frost_mark",
+        "rm_overcharge"
+      ],
+      "recommendedRelics": ["arcane_battery", "ash_pendant"],
+      "imagePrompt": "rune mage spellcaster, glowing arcane symbols, hooded robe, ancient dungeon",
+      "styleTags": ["dark_fairy_tale"]
+    },
+    {
+      "id": "oath_knight",
+      "name": "旧誓骑士",
+      "description": "以格挡、防反和护甲转化攻击的稳健防御型战士。",
+      "maxHp": 80,
+      "startingGold": 99,
+      "starterDeck": [
+        "ok_shield_bash",
+        "ok_shield_bash",
+        "ok_shield_bash",
+        "ok_shield_bash",
+        "ok_fortify",
+        "ok_fortify",
+        "ok_fortify",
+        "ok_fortify",
+        "ok_counter_stance",
+        "ok_oath_strike"
+      ],
+      "recommendedRelics": ["old_knight_badge", "vow_shield"],
+      "imagePrompt": "oath knight warrior, worn plate armor, tower shield, solemn guardian",
+      "styleTags": ["dark_fairy_tale"]
+    }
+  ]
+}

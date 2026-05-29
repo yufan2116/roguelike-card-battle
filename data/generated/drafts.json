@@ -1,0 +1,3344 @@
+{
+  "drafts": [
+    {
+      "id": "draft_1780072953519_1",
+      "createdAt": "2026-05-29T16:42:33.519Z",
+      "theme": "shadow weaver",
+      "status": "validated",
+      "usedFallback": true,
+      "pack": {
+        "class": {
+          "id": "shadow_weaver",
+          "name": "shadow w行者",
+          "description": "以「shadow weaver」为主题的 AI 生成流派（模板）。",
+          "maxHp": 72,
+          "startingGold": 99,
+          "starterDeck": [
+            "shwe_strike",
+            "shwe_strike",
+            "shwe_strike",
+            "shwe_strike",
+            "shwe_guard",
+            "shwe_guard",
+            "shwe_guard",
+            "shwe_guard",
+            "shwe_sig_a",
+            "shwe_sig_b"
+          ],
+          "recommendedRelics": [
+            "broken_pocketwatch",
+            "blood_ring"
+          ],
+          "imagePrompt": "shadow weaver adventurer, memory dungeon theme, roguelike hero",
+          "styleTags": [
+            "dark_fairy_tale"
+          ]
+        },
+        "cards": [
+          {
+            "id": "shwe_strike",
+            "name": "shad击",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 5 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 5,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 5,
+            "imagePrompt": "shadow weaver strike attack"
+          },
+          {
+            "id": "shwe_guard",
+            "name": "shad护",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 5 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 5,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4,
+            "imagePrompt": "shadow weaver guard block"
+          },
+          {
+            "id": "shwe_sig_a",
+            "name": "忆痕斩",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 8 点伤害，施加 2 层流血。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 8,
+                "target": "enemy"
+              },
+              {
+                "mechanism": "applyBleed",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "shadow weaver bleed slash"
+          },
+          {
+            "id": "shwe_sig_b",
+            "name": "残忆护盾",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 7 点格挡，抽 1 张牌。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 7,
+                "target": "self"
+              },
+              {
+                "mechanism": "draw",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 11.600000000000001,
+            "imagePrompt": "shadow weaver memory shield"
+          },
+          {
+            "id": "shwe_heavy",
+            "name": "沉重一击",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "common",
+            "description": "造成 14 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 14,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 14,
+            "imagePrompt": "shadow weaver heavy blow"
+          },
+          {
+            "id": "shwe_wall",
+            "name": "铁壁",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 2,
+            "rarity": "common",
+            "description": "获得 12 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 12,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 9.600000000000001,
+            "imagePrompt": "shadow weaver iron wall"
+          },
+          {
+            "id": "shwe_focus",
+            "name": "集中",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "common",
+            "description": "抽 1 张牌。",
+            "effects": [
+              {
+                "mechanism": "draw",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "shadow weaver focus skill"
+          },
+          {
+            "id": "shwe_adrenaline",
+            "name": "应激",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "获得 1 点能量。",
+            "effects": [
+              {
+                "mechanism": "gainEnergy",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "shadow weaver adrenaline"
+          },
+          {
+            "id": "shwe_vuln",
+            "name": "暴露弱点",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层易伤。",
+            "effects": [
+              {
+                "mechanism": "applyVulnerable",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "shadow weaver vulnerable"
+          },
+          {
+            "id": "shwe_weak",
+            "name": "扰乱",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层虚弱。",
+            "effects": [
+              {
+                "mechanism": "applyWeak",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "shadow weaver weak debuff"
+          },
+          {
+            "id": "shwe_heal",
+            "name": "忆疗",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "回复 4 点生命。",
+            "effects": [
+              {
+                "mechanism": "heal",
+                "value": 4,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "shadow weaver heal"
+          },
+          {
+            "id": "shwe_str",
+            "name": "力量觉醒",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "获得 2 点力量。",
+            "effects": [
+              {
+                "mechanism": "gainStrength",
+                "value": 2,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "shadow weaver strength buff"
+          },
+          {
+            "id": "shwe_finisher",
+            "name": "终结",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "造成 18 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 18,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 18,
+            "imagePrompt": "shadow weaver finisher"
+          },
+          {
+            "id": "shwe_poison",
+            "name": "蚀忆",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "common",
+            "description": "施加 3 层中毒。",
+            "effects": [
+              {
+                "mechanism": "applyPoison",
+                "value": 3,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "shadow weaver poison"
+          },
+          {
+            "id": "shwe_extra_14",
+            "name": "衍生14",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "shadow weaver extra card 14"
+          },
+          {
+            "id": "shwe_extra_15",
+            "name": "衍生15",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "shadow weaver extra card 15"
+          },
+          {
+            "id": "shwe_extra_16",
+            "name": "衍生16",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "shadow weaver extra card 16"
+          },
+          {
+            "id": "shwe_extra_17",
+            "name": "衍生17",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "shadow weaver extra card 17"
+          },
+          {
+            "id": "shwe_extra_18",
+            "name": "衍生18",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "shadow weaver extra card 18"
+          },
+          {
+            "id": "shwe_extra_19",
+            "name": "衍生19",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "shadow weaver extra card 19"
+          },
+          {
+            "id": "shwe_extra_20",
+            "name": "衍生20",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "shadow weaver extra card 20"
+          },
+          {
+            "id": "shwe_extra_21",
+            "name": "衍生21",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "shadow weaver extra card 21"
+          }
+        ],
+        "recommendedRelics": [
+          "broken_pocketwatch",
+          "blood_ring"
+        ]
+      },
+      "validation": {
+        "schemaValid": true,
+        "schemaErrors": [],
+        "cardBudgetIssues": [],
+        "starterDeckValid": true,
+        "starterDeckErrors": [],
+        "relicRefsValid": true,
+        "invalidRelicIds": [],
+        "duplicateCardIds": [],
+        "classIdMismatch": [],
+        "simulation": null,
+        "overallValid": true,
+        "warnings": [
+          "模板模式：已跳过战斗模拟（配置 LLM_API_KEY 后生成内容将强制模拟）"
+        ]
+      },
+      "prompt": "You are a roguelike deckbuilder game designer for \"遗迹吞忆\" (Memory Devouring Ruins).\nDesign ONE new player class with 20-30 cards. Output ONLY a single JSON object, no markdown fences.\n\nJSON shape:\n{\n  \"class\": {\n    \"id\": \"snake_case_unique_id\",\n    \"name\": \"Chinese display name\",\n    \"description\": \"1-2 sentences in Chinese\",\n    \"maxHp\": 65-80,\n    \"startingGold\": 99,\n    \"starterDeck\": [\"card_id\", ... exactly 10 entries, only starter/common cards],\n    \"recommendedRelics\": [\"existing_relic_id\", ... 2 items from provided list],\n    \"imagePrompt\": \"English art prompt for character portrait\",\n    \"styleTags\": [\"dark_fairy_tale\"]\n  },\n  \"cards\": [ ... 20-30 card objects ... ],\n  \"recommendedRelics\": [\"same 2 relic ids as class.recommendedRelics\"]\n}\n\nEach card:\n{\n  \"id\": \"{class_prefix}_snake_name\",\n  \"name\": \"Chinese name\",\n  \"classId\": \"must match class.id\",\n  \"type\": \"attack|defense|skill|status|curse\",\n  \"cost\": 0-3,\n  \"rarity\": \"starter|common|uncommon|rare\",\n  \"description\": \"Chinese, concise\",\n  \"effects\": [{ \"mechanism\": \"...\", \"value\": number, \"target\": \"self|enemy|all_enemies|random_enemy\" }],\n  \"powerBudget\": number (must equal sum of mechanism power),\n  \"imagePrompt\": \"English card art prompt\"\n}\n\nAllowed mechanisms ONLY: damage, block, draw, gainEnergy, heal, applyBleed, applyWeak, applyVulnerable, applyPoison, exhaust, retain, discard, loseHp, gainGold, addTemporaryCard, reduceCardCostThisCombat, increaseNextAttackDamage, gainStrength, gainDexterity\n\nPower budget rules (calculated = sum of mechanism power, must be <= limit):\n- cost 0: max 6\n- cost 1: max 12\n- cost 2: max 20\n- cost 3: max 30\n\nMechanism power per point: damage=1, block=0.8, draw=6, gainEnergy=8, heal=3, applyBleed=2, applyWeak=4, applyVulnerable=4, applyPoison=2, gainStrength=4, gainDexterity=4\n\nDesign rules:\n- Theme must fit memory-absorbing dungeon fantasy (original, not Slayer of Spire copies)\n- starterDeck: 4 basic attacks, 4 basic defenses, 2 signature cards\n- Include 6-8 starter rarity, rest common/uncommon with 2-4 rare\n- All card IDs unique, snake_case, prefixed with class id abbreviation\n- recommendedRelics MUST be chosen ONLY from the provided relic id list\n- Do NOT invent relic ids\n- descriptions in Simplified Chinese\n- imagePrompt in English\n\n---\n\nTheme / 流派概念: shadow weaver\nUse class id prefix starting with: shadow_weaver\nTarget card count: 22\nAvailable relic ids (pick exactly 2): broken_pocketwatch, blood_ring, old_knight_badge, demon_dice, ash_pendant, memory_shard, iron_charm, cursed_coin, healer_salve, void_lens, thornmail_shackles, arcane_battery, hunters_token, vow_shield, memory_crown"
+    },
+    {
+      "id": "draft_1780072871337_1",
+      "createdAt": "2026-05-29T16:41:11.337Z",
+      "theme": "shadow weaver",
+      "status": "rejected",
+      "usedFallback": true,
+      "pack": {
+        "class": {
+          "id": "shadow_weaver",
+          "name": "shadow w行者",
+          "description": "以「shadow weaver」为主题的 AI 生成流派（模板）。",
+          "maxHp": 58,
+          "startingGold": 99,
+          "starterDeck": [
+            "shwe_strike",
+            "shwe_strike",
+            "shwe_strike",
+            "shwe_strike",
+            "shwe_guard",
+            "shwe_guard",
+            "shwe_guard",
+            "shwe_guard",
+            "shwe_sig_a",
+            "shwe_sig_b"
+          ],
+          "recommendedRelics": [
+            "broken_pocketwatch",
+            "blood_ring"
+          ],
+          "imagePrompt": "shadow weaver adventurer, memory dungeon theme, roguelike hero",
+          "styleTags": [
+            "dark_fairy_tale"
+          ]
+        },
+        "cards": [
+          {
+            "id": "shwe_strike",
+            "name": "shad击",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 5 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 5,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 5,
+            "imagePrompt": "shadow weaver strike attack"
+          },
+          {
+            "id": "shwe_guard",
+            "name": "shad护",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 5 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 5,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4,
+            "imagePrompt": "shadow weaver guard block"
+          },
+          {
+            "id": "shwe_sig_a",
+            "name": "忆痕斩",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 8 点伤害，施加 2 层流血。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 8,
+                "target": "enemy"
+              },
+              {
+                "mechanism": "applyBleed",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "shadow weaver bleed slash"
+          },
+          {
+            "id": "shwe_sig_b",
+            "name": "残忆护盾",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 7 点格挡，抽 1 张牌。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 7,
+                "target": "self"
+              },
+              {
+                "mechanism": "draw",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 11.600000000000001,
+            "imagePrompt": "shadow weaver memory shield"
+          },
+          {
+            "id": "shwe_heavy",
+            "name": "沉重一击",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "common",
+            "description": "造成 14 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 14,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 14,
+            "imagePrompt": "shadow weaver heavy blow"
+          },
+          {
+            "id": "shwe_wall",
+            "name": "铁壁",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 2,
+            "rarity": "common",
+            "description": "获得 12 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 12,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 9.600000000000001,
+            "imagePrompt": "shadow weaver iron wall"
+          },
+          {
+            "id": "shwe_focus",
+            "name": "集中",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "common",
+            "description": "抽 1 张牌。",
+            "effects": [
+              {
+                "mechanism": "draw",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "shadow weaver focus skill"
+          },
+          {
+            "id": "shwe_adrenaline",
+            "name": "应激",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "获得 1 点能量。",
+            "effects": [
+              {
+                "mechanism": "gainEnergy",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "shadow weaver adrenaline"
+          },
+          {
+            "id": "shwe_vuln",
+            "name": "暴露弱点",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层易伤。",
+            "effects": [
+              {
+                "mechanism": "applyVulnerable",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "shadow weaver vulnerable"
+          },
+          {
+            "id": "shwe_weak",
+            "name": "扰乱",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层虚弱。",
+            "effects": [
+              {
+                "mechanism": "applyWeak",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "shadow weaver weak debuff"
+          },
+          {
+            "id": "shwe_heal",
+            "name": "忆疗",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "回复 4 点生命。",
+            "effects": [
+              {
+                "mechanism": "heal",
+                "value": 4,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "shadow weaver heal"
+          },
+          {
+            "id": "shwe_str",
+            "name": "力量觉醒",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "获得 2 点力量。",
+            "effects": [
+              {
+                "mechanism": "gainStrength",
+                "value": 2,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "shadow weaver strength buff"
+          },
+          {
+            "id": "shwe_finisher",
+            "name": "终结",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "造成 18 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 18,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 18,
+            "imagePrompt": "shadow weaver finisher"
+          },
+          {
+            "id": "shwe_poison",
+            "name": "蚀忆",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "common",
+            "description": "施加 3 层中毒。",
+            "effects": [
+              {
+                "mechanism": "applyPoison",
+                "value": 3,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "shadow weaver poison"
+          },
+          {
+            "id": "shwe_extra_14",
+            "name": "衍生14",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "shadow weaver extra card 14"
+          },
+          {
+            "id": "shwe_extra_15",
+            "name": "衍生15",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "shadow weaver extra card 15"
+          },
+          {
+            "id": "shwe_extra_16",
+            "name": "衍生16",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "shadow weaver extra card 16"
+          },
+          {
+            "id": "shwe_extra_17",
+            "name": "衍生17",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "shadow weaver extra card 17"
+          },
+          {
+            "id": "shwe_extra_18",
+            "name": "衍生18",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "shadow weaver extra card 18"
+          },
+          {
+            "id": "shwe_extra_19",
+            "name": "衍生19",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "shadow weaver extra card 19"
+          },
+          {
+            "id": "shwe_extra_20",
+            "name": "衍生20",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "shadow weaver extra card 20"
+          },
+          {
+            "id": "shwe_extra_21",
+            "name": "衍生21",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "shadow weaver extra card 21"
+          }
+        ],
+        "recommendedRelics": [
+          "broken_pocketwatch",
+          "blood_ring"
+        ]
+      },
+      "validation": {
+        "schemaValid": true,
+        "schemaErrors": [],
+        "cardBudgetIssues": [],
+        "starterDeckValid": true,
+        "starterDeckErrors": [],
+        "relicRefsValid": true,
+        "invalidRelicIds": [],
+        "duplicateCardIds": [],
+        "classIdMismatch": [],
+        "simulation": {
+          "runs": 12,
+          "wins": 12,
+          "losses": 0,
+          "timeouts": 0,
+          "winRate": 1,
+          "avgTurns": 3.5,
+          "passed": false,
+          "enemyId": "mirror_knight",
+          "enemyName": "镜中骑士"
+        },
+        "overallValid": false,
+        "warnings": [
+          "战斗模拟未通过：胜率 100%，平均 3.5 回合（过强/过弱/超时）"
+        ]
+      },
+      "prompt": "You are a roguelike deckbuilder game designer for \"遗迹吞忆\" (Memory Devouring Ruins).\nDesign ONE new player class with 20-30 cards. Output ONLY a single JSON object, no markdown fences.\n\nJSON shape:\n{\n  \"class\": {\n    \"id\": \"snake_case_unique_id\",\n    \"name\": \"Chinese display name\",\n    \"description\": \"1-2 sentences in Chinese\",\n    \"maxHp\": 65-80,\n    \"startingGold\": 99,\n    \"starterDeck\": [\"card_id\", ... exactly 10 entries, only starter/common cards],\n    \"recommendedRelics\": [\"existing_relic_id\", ... 2 items from provided list],\n    \"imagePrompt\": \"English art prompt for character portrait\",\n    \"styleTags\": [\"dark_fairy_tale\"]\n  },\n  \"cards\": [ ... 20-30 card objects ... ],\n  \"recommendedRelics\": [\"same 2 relic ids as class.recommendedRelics\"]\n}\n\nEach card:\n{\n  \"id\": \"{class_prefix}_snake_name\",\n  \"name\": \"Chinese name\",\n  \"classId\": \"must match class.id\",\n  \"type\": \"attack|defense|skill|status|curse\",\n  \"cost\": 0-3,\n  \"rarity\": \"starter|common|uncommon|rare\",\n  \"description\": \"Chinese, concise\",\n  \"effects\": [{ \"mechanism\": \"...\", \"value\": number, \"target\": \"self|enemy|all_enemies|random_enemy\" }],\n  \"powerBudget\": number (must equal sum of mechanism power),\n  \"imagePrompt\": \"English card art prompt\"\n}\n\nAllowed mechanisms ONLY: damage, block, draw, gainEnergy, heal, applyBleed, applyWeak, applyVulnerable, applyPoison, exhaust, retain, discard, loseHp, gainGold, addTemporaryCard, reduceCardCostThisCombat, increaseNextAttackDamage, gainStrength, gainDexterity\n\nPower budget rules (calculated = sum of mechanism power, must be <= limit):\n- cost 0: max 6\n- cost 1: max 12\n- cost 2: max 20\n- cost 3: max 30\n\nMechanism power per point: damage=1, block=0.8, draw=6, gainEnergy=8, heal=3, applyBleed=2, applyWeak=4, applyVulnerable=4, applyPoison=2, gainStrength=4, gainDexterity=4\n\nDesign rules:\n- Theme must fit memory-absorbing dungeon fantasy (original, not Slayer of Spire copies)\n- starterDeck: 4 basic attacks, 4 basic defenses, 2 signature cards\n- Include 6-8 starter rarity, rest common/uncommon with 2-4 rare\n- All card IDs unique, snake_case, prefixed with class id abbreviation\n- recommendedRelics MUST be chosen ONLY from the provided relic id list\n- Do NOT invent relic ids\n- descriptions in Simplified Chinese\n- imagePrompt in English\n\n---\n\nTheme / 流派概念: shadow weaver\nUse class id prefix starting with: shadow_weaver\nTarget card count: 22\nAvailable relic ids (pick exactly 2): broken_pocketwatch, blood_ring, old_knight_badge, demon_dice, ash_pendant, memory_shard, iron_charm, cursed_coin, healer_salve, void_lens, thornmail_shackles, arcane_battery, hunters_token, vow_shield, memory_crown"
+    },
+    {
+      "id": "draft_1780072845883_2",
+      "createdAt": "2026-05-29T16:40:45.883Z",
+      "theme": "shadow weaver",
+      "status": "rejected",
+      "usedFallback": true,
+      "pack": {
+        "class": {
+          "id": "shadow_weaver",
+          "name": "shadow w行者",
+          "description": "以「shadow weaver」为主题的 AI 生成流派（模板）。",
+          "maxHp": 72,
+          "startingGold": 99,
+          "starterDeck": [
+            "shwe_strike",
+            "shwe_strike",
+            "shwe_strike",
+            "shwe_strike",
+            "shwe_guard",
+            "shwe_guard",
+            "shwe_guard",
+            "shwe_guard",
+            "shwe_sig_a",
+            "shwe_sig_b"
+          ],
+          "recommendedRelics": [
+            "broken_pocketwatch",
+            "blood_ring"
+          ],
+          "imagePrompt": "shadow weaver adventurer, memory dungeon theme, roguelike hero",
+          "styleTags": [
+            "dark_fairy_tale"
+          ]
+        },
+        "cards": [
+          {
+            "id": "shwe_strike",
+            "name": "shad击",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 5 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 5,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 5,
+            "imagePrompt": "shadow weaver strike attack"
+          },
+          {
+            "id": "shwe_guard",
+            "name": "shad护",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 5 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 5,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4,
+            "imagePrompt": "shadow weaver guard block"
+          },
+          {
+            "id": "shwe_sig_a",
+            "name": "忆痕斩",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 8 点伤害，施加 2 层流血。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 8,
+                "target": "enemy"
+              },
+              {
+                "mechanism": "applyBleed",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "shadow weaver bleed slash"
+          },
+          {
+            "id": "shwe_sig_b",
+            "name": "残忆护盾",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 7 点格挡，抽 1 张牌。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 7,
+                "target": "self"
+              },
+              {
+                "mechanism": "draw",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 11.600000000000001,
+            "imagePrompt": "shadow weaver memory shield"
+          },
+          {
+            "id": "shwe_heavy",
+            "name": "沉重一击",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "common",
+            "description": "造成 14 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 14,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 14,
+            "imagePrompt": "shadow weaver heavy blow"
+          },
+          {
+            "id": "shwe_wall",
+            "name": "铁壁",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 2,
+            "rarity": "common",
+            "description": "获得 12 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 12,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 9.600000000000001,
+            "imagePrompt": "shadow weaver iron wall"
+          },
+          {
+            "id": "shwe_focus",
+            "name": "集中",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "common",
+            "description": "抽 1 张牌。",
+            "effects": [
+              {
+                "mechanism": "draw",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "shadow weaver focus skill"
+          },
+          {
+            "id": "shwe_adrenaline",
+            "name": "应激",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "获得 1 点能量。",
+            "effects": [
+              {
+                "mechanism": "gainEnergy",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "shadow weaver adrenaline"
+          },
+          {
+            "id": "shwe_vuln",
+            "name": "暴露弱点",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层易伤。",
+            "effects": [
+              {
+                "mechanism": "applyVulnerable",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "shadow weaver vulnerable"
+          },
+          {
+            "id": "shwe_weak",
+            "name": "扰乱",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层虚弱。",
+            "effects": [
+              {
+                "mechanism": "applyWeak",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "shadow weaver weak debuff"
+          },
+          {
+            "id": "shwe_heal",
+            "name": "忆疗",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "回复 4 点生命。",
+            "effects": [
+              {
+                "mechanism": "heal",
+                "value": 4,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "shadow weaver heal"
+          },
+          {
+            "id": "shwe_str",
+            "name": "力量觉醒",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "获得 2 点力量。",
+            "effects": [
+              {
+                "mechanism": "gainStrength",
+                "value": 2,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "shadow weaver strength buff"
+          },
+          {
+            "id": "shwe_finisher",
+            "name": "终结",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "造成 18 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 18,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 18,
+            "imagePrompt": "shadow weaver finisher"
+          },
+          {
+            "id": "shwe_poison",
+            "name": "蚀忆",
+            "classId": "shadow_weaver",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "common",
+            "description": "施加 3 层中毒。",
+            "effects": [
+              {
+                "mechanism": "applyPoison",
+                "value": 3,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "shadow weaver poison"
+          },
+          {
+            "id": "shwe_extra_14",
+            "name": "衍生14",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "shadow weaver extra card 14"
+          },
+          {
+            "id": "shwe_extra_15",
+            "name": "衍生15",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "shadow weaver extra card 15"
+          },
+          {
+            "id": "shwe_extra_16",
+            "name": "衍生16",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "shadow weaver extra card 16"
+          },
+          {
+            "id": "shwe_extra_17",
+            "name": "衍生17",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "shadow weaver extra card 17"
+          },
+          {
+            "id": "shwe_extra_18",
+            "name": "衍生18",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "shadow weaver extra card 18"
+          },
+          {
+            "id": "shwe_extra_19",
+            "name": "衍生19",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "shadow weaver extra card 19"
+          },
+          {
+            "id": "shwe_extra_20",
+            "name": "衍生20",
+            "classId": "shadow_weaver",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "shadow weaver extra card 20"
+          },
+          {
+            "id": "shwe_extra_21",
+            "name": "衍生21",
+            "classId": "shadow_weaver",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "shadow weaver extra card 21"
+          }
+        ],
+        "recommendedRelics": [
+          "broken_pocketwatch",
+          "blood_ring"
+        ]
+      },
+      "validation": {
+        "schemaValid": true,
+        "schemaErrors": [],
+        "cardBudgetIssues": [],
+        "starterDeckValid": true,
+        "starterDeckErrors": [],
+        "relicRefsValid": true,
+        "invalidRelicIds": [],
+        "duplicateCardIds": [],
+        "classIdMismatch": [],
+        "simulation": {
+          "runs": 12,
+          "wins": 12,
+          "losses": 0,
+          "timeouts": 0,
+          "winRate": 1,
+          "avgTurns": 3.5,
+          "passed": false,
+          "enemyId": "mirror_knight",
+          "enemyName": "镜中骑士"
+        },
+        "overallValid": false,
+        "warnings": [
+          "战斗模拟未通过：胜率 100%，平均 3.5 回合（过强/过弱/超时）"
+        ]
+      },
+      "prompt": "You are a roguelike deckbuilder game designer for \"遗迹吞忆\" (Memory Devouring Ruins).\nDesign ONE new player class with 20-30 cards. Output ONLY a single JSON object, no markdown fences.\n\nJSON shape:\n{\n  \"class\": {\n    \"id\": \"snake_case_unique_id\",\n    \"name\": \"Chinese display name\",\n    \"description\": \"1-2 sentences in Chinese\",\n    \"maxHp\": 65-80,\n    \"startingGold\": 99,\n    \"starterDeck\": [\"card_id\", ... exactly 10 entries, only starter/common cards],\n    \"recommendedRelics\": [\"existing_relic_id\", ... 2 items from provided list],\n    \"imagePrompt\": \"English art prompt for character portrait\",\n    \"styleTags\": [\"dark_fairy_tale\"]\n  },\n  \"cards\": [ ... 20-30 card objects ... ],\n  \"recommendedRelics\": [\"same 2 relic ids as class.recommendedRelics\"]\n}\n\nEach card:\n{\n  \"id\": \"{class_prefix}_snake_name\",\n  \"name\": \"Chinese name\",\n  \"classId\": \"must match class.id\",\n  \"type\": \"attack|defense|skill|status|curse\",\n  \"cost\": 0-3,\n  \"rarity\": \"starter|common|uncommon|rare\",\n  \"description\": \"Chinese, concise\",\n  \"effects\": [{ \"mechanism\": \"...\", \"value\": number, \"target\": \"self|enemy|all_enemies|random_enemy\" }],\n  \"powerBudget\": number (must equal sum of mechanism power),\n  \"imagePrompt\": \"English card art prompt\"\n}\n\nAllowed mechanisms ONLY: damage, block, draw, gainEnergy, heal, applyBleed, applyWeak, applyVulnerable, applyPoison, exhaust, retain, discard, loseHp, gainGold, addTemporaryCard, reduceCardCostThisCombat, increaseNextAttackDamage, gainStrength, gainDexterity\n\nPower budget rules (calculated = sum of mechanism power, must be <= limit):\n- cost 0: max 6\n- cost 1: max 12\n- cost 2: max 20\n- cost 3: max 30\n\nMechanism power per point: damage=1, block=0.8, draw=6, gainEnergy=8, heal=3, applyBleed=2, applyWeak=4, applyVulnerable=4, applyPoison=2, gainStrength=4, gainDexterity=4\n\nDesign rules:\n- Theme must fit memory-absorbing dungeon fantasy (original, not Slayer of Spire copies)\n- starterDeck: 4 basic attacks, 4 basic defenses, 2 signature cards\n- Include 6-8 starter rarity, rest common/uncommon with 2-4 rare\n- All card IDs unique, snake_case, prefixed with class id abbreviation\n- recommendedRelics MUST be chosen ONLY from the provided relic id list\n- Do NOT invent relic ids\n- descriptions in Simplified Chinese\n- imagePrompt in English\n\n---\n\nTheme / 流派概念: shadow weaver\nUse class id prefix starting with: shadow_weaver\nTarget card count: 22\nAvailable relic ids (pick exactly 2): broken_pocketwatch, blood_ring, old_knight_badge, demon_dice, ash_pendant, memory_shard, iron_charm, cursed_coin, healer_salve, void_lens, thornmail_shackles, arcane_battery, hunters_token, vow_shield, memory_crown"
+    },
+    {
+      "id": "draft_1780072838622_1",
+      "createdAt": "2026-05-29T16:40:38.622Z",
+      "theme": "mirror memory thief",
+      "status": "rejected",
+      "usedFallback": true,
+      "pack": {
+        "class": {
+          "id": "mirror_thief3",
+          "name": "mirror m行者",
+          "description": "以「mirror memory thief」为主题的 AI 生成流派（模板）。",
+          "maxHp": 72,
+          "startingGold": 99,
+          "starterDeck": [
+            "mith_strike",
+            "mith_strike",
+            "mith_strike",
+            "mith_strike",
+            "mith_guard",
+            "mith_guard",
+            "mith_guard",
+            "mith_guard",
+            "mith_sig_a",
+            "mith_sig_b"
+          ],
+          "recommendedRelics": [
+            "broken_pocketwatch",
+            "blood_ring"
+          ],
+          "imagePrompt": "mirror memory thief adventurer, memory dungeon theme, roguelike hero",
+          "styleTags": [
+            "dark_fairy_tale"
+          ]
+        },
+        "cards": [
+          {
+            "id": "mith_strike",
+            "name": "mirr击",
+            "classId": "mirror_thief3",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 5 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 5,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 5,
+            "imagePrompt": "mirror memory thief strike attack"
+          },
+          {
+            "id": "mith_guard",
+            "name": "mirr护",
+            "classId": "mirror_thief3",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 5 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 5,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4,
+            "imagePrompt": "mirror memory thief guard block"
+          },
+          {
+            "id": "mith_sig_a",
+            "name": "忆痕斩",
+            "classId": "mirror_thief3",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 8 点伤害，施加 2 层流血。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 8,
+                "target": "enemy"
+              },
+              {
+                "mechanism": "applyBleed",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "mirror memory thief bleed slash"
+          },
+          {
+            "id": "mith_sig_b",
+            "name": "残忆护盾",
+            "classId": "mirror_thief3",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 7 点格挡，抽 1 张牌。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 7,
+                "target": "self"
+              },
+              {
+                "mechanism": "draw",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 11.600000000000001,
+            "imagePrompt": "mirror memory thief memory shield"
+          },
+          {
+            "id": "mith_heavy",
+            "name": "沉重一击",
+            "classId": "mirror_thief3",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "common",
+            "description": "造成 14 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 14,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 14,
+            "imagePrompt": "mirror memory thief heavy blow"
+          },
+          {
+            "id": "mith_wall",
+            "name": "铁壁",
+            "classId": "mirror_thief3",
+            "type": "defense",
+            "cost": 2,
+            "rarity": "common",
+            "description": "获得 12 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 12,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 9.600000000000001,
+            "imagePrompt": "mirror memory thief iron wall"
+          },
+          {
+            "id": "mith_focus",
+            "name": "集中",
+            "classId": "mirror_thief3",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "common",
+            "description": "抽 1 张牌。",
+            "effects": [
+              {
+                "mechanism": "draw",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "mirror memory thief focus skill"
+          },
+          {
+            "id": "mith_adrenaline",
+            "name": "应激",
+            "classId": "mirror_thief3",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "获得 1 点能量。",
+            "effects": [
+              {
+                "mechanism": "gainEnergy",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "mirror memory thief adrenaline"
+          },
+          {
+            "id": "mith_vuln",
+            "name": "暴露弱点",
+            "classId": "mirror_thief3",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层易伤。",
+            "effects": [
+              {
+                "mechanism": "applyVulnerable",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "mirror memory thief vulnerable"
+          },
+          {
+            "id": "mith_weak",
+            "name": "扰乱",
+            "classId": "mirror_thief3",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层虚弱。",
+            "effects": [
+              {
+                "mechanism": "applyWeak",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "mirror memory thief weak debuff"
+          },
+          {
+            "id": "mith_heal",
+            "name": "忆疗",
+            "classId": "mirror_thief3",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "回复 4 点生命。",
+            "effects": [
+              {
+                "mechanism": "heal",
+                "value": 4,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "mirror memory thief heal"
+          },
+          {
+            "id": "mith_str",
+            "name": "力量觉醒",
+            "classId": "mirror_thief3",
+            "type": "skill",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "获得 2 点力量。",
+            "effects": [
+              {
+                "mechanism": "gainStrength",
+                "value": 2,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "mirror memory thief strength buff"
+          },
+          {
+            "id": "mith_finisher",
+            "name": "终结",
+            "classId": "mirror_thief3",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "造成 18 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 18,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 18,
+            "imagePrompt": "mirror memory thief finisher"
+          },
+          {
+            "id": "mith_poison",
+            "name": "蚀忆",
+            "classId": "mirror_thief3",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "common",
+            "description": "施加 3 层中毒。",
+            "effects": [
+              {
+                "mechanism": "applyPoison",
+                "value": 3,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "mirror memory thief poison"
+          },
+          {
+            "id": "mith_extra_14",
+            "name": "衍生14",
+            "classId": "mirror_thief3",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "mirror memory thief extra card 14"
+          },
+          {
+            "id": "mith_extra_15",
+            "name": "衍生15",
+            "classId": "mirror_thief3",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "mirror memory thief extra card 15"
+          },
+          {
+            "id": "mith_extra_16",
+            "name": "衍生16",
+            "classId": "mirror_thief3",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "mirror memory thief extra card 16"
+          },
+          {
+            "id": "mith_extra_17",
+            "name": "衍生17",
+            "classId": "mirror_thief3",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "mirror memory thief extra card 17"
+          },
+          {
+            "id": "mith_extra_18",
+            "name": "衍生18",
+            "classId": "mirror_thief3",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "mirror memory thief extra card 18"
+          },
+          {
+            "id": "mith_extra_19",
+            "name": "衍生19",
+            "classId": "mirror_thief3",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "mirror memory thief extra card 19"
+          },
+          {
+            "id": "mith_extra_20",
+            "name": "衍生20",
+            "classId": "mirror_thief3",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "mirror memory thief extra card 20"
+          },
+          {
+            "id": "mith_extra_21",
+            "name": "衍生21",
+            "classId": "mirror_thief3",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "mirror memory thief extra card 21"
+          }
+        ],
+        "recommendedRelics": [
+          "broken_pocketwatch",
+          "blood_ring"
+        ]
+      },
+      "validation": {
+        "schemaValid": true,
+        "schemaErrors": [],
+        "cardBudgetIssues": [],
+        "starterDeckValid": true,
+        "starterDeckErrors": [],
+        "relicRefsValid": true,
+        "invalidRelicIds": [],
+        "duplicateCardIds": [],
+        "classIdMismatch": [],
+        "simulation": {
+          "runs": 12,
+          "wins": 12,
+          "losses": 0,
+          "timeouts": 0,
+          "winRate": 1,
+          "avgTurns": 3.3333333333333335,
+          "passed": false,
+          "enemyId": "mirror_knight",
+          "enemyName": "镜中骑士"
+        },
+        "overallValid": false,
+        "warnings": [
+          "战斗模拟未通过：胜率 100%，平均 3.3 回合（过强/过弱/超时）"
+        ]
+      },
+      "prompt": "You are a roguelike deckbuilder game designer for \"遗迹吞忆\" (Memory Devouring Ruins).\nDesign ONE new player class with 20-30 cards. Output ONLY a single JSON object, no markdown fences.\n\nJSON shape:\n{\n  \"class\": {\n    \"id\": \"snake_case_unique_id\",\n    \"name\": \"Chinese display name\",\n    \"description\": \"1-2 sentences in Chinese\",\n    \"maxHp\": 65-80,\n    \"startingGold\": 99,\n    \"starterDeck\": [\"card_id\", ... exactly 10 entries, only starter/common cards],\n    \"recommendedRelics\": [\"existing_relic_id\", ... 2 items from provided list],\n    \"imagePrompt\": \"English art prompt for character portrait\",\n    \"styleTags\": [\"dark_fairy_tale\"]\n  },\n  \"cards\": [ ... 20-30 card objects ... ],\n  \"recommendedRelics\": [\"same 2 relic ids as class.recommendedRelics\"]\n}\n\nEach card:\n{\n  \"id\": \"{class_prefix}_snake_name\",\n  \"name\": \"Chinese name\",\n  \"classId\": \"must match class.id\",\n  \"type\": \"attack|defense|skill|status|curse\",\n  \"cost\": 0-3,\n  \"rarity\": \"starter|common|uncommon|rare\",\n  \"description\": \"Chinese, concise\",\n  \"effects\": [{ \"mechanism\": \"...\", \"value\": number, \"target\": \"self|enemy|all_enemies|random_enemy\" }],\n  \"powerBudget\": number (must equal sum of mechanism power),\n  \"imagePrompt\": \"English card art prompt\"\n}\n\nAllowed mechanisms ONLY: damage, block, draw, gainEnergy, heal, applyBleed, applyWeak, applyVulnerable, applyPoison, exhaust, retain, discard, loseHp, gainGold, addTemporaryCard, reduceCardCostThisCombat, increaseNextAttackDamage, gainStrength, gainDexterity\n\nPower budget rules (calculated = sum of mechanism power, must be <= limit):\n- cost 0: max 6\n- cost 1: max 12\n- cost 2: max 20\n- cost 3: max 30\n\nMechanism power per point: damage=1, block=0.8, draw=6, gainEnergy=8, heal=3, applyBleed=2, applyWeak=4, applyVulnerable=4, applyPoison=2, gainStrength=4, gainDexterity=4\n\nDesign rules:\n- Theme must fit memory-absorbing dungeon fantasy (original, not Slayer of Spire copies)\n- starterDeck: 4 basic attacks, 4 basic defenses, 2 signature cards\n- Include 6-8 starter rarity, rest common/uncommon with 2-4 rare\n- All card IDs unique, snake_case, prefixed with class id abbreviation\n- recommendedRelics MUST be chosen ONLY from the provided relic id list\n- Do NOT invent relic ids\n- descriptions in Simplified Chinese\n- imagePrompt in English\n\n---\n\nTheme / 流派概念: mirror memory thief\nUse class id prefix starting with: mirror_thief3\nTarget card count: 22\nAvailable relic ids (pick exactly 2): broken_pocketwatch, blood_ring, old_knight_badge, demon_dice, ash_pendant, memory_shard, iron_charm, cursed_coin, healer_salve, void_lens, thornmail_shackles, arcane_battery, hunters_token, vow_shield, memory_crown"
+    },
+    {
+      "id": "draft_1780072809771_1",
+      "createdAt": "2026-05-29T16:40:09.771Z",
+      "theme": "mirror memory thief",
+      "status": "rejected",
+      "usedFallback": true,
+      "pack": {
+        "class": {
+          "id": "mirror_thief2",
+          "name": "mirror m行者",
+          "description": "以「mirror memory thief」为主题的 AI 生成流派（模板）。",
+          "maxHp": 72,
+          "startingGold": 99,
+          "starterDeck": [
+            "mith_strike",
+            "mith_strike",
+            "mith_strike",
+            "mith_strike",
+            "mith_guard",
+            "mith_guard",
+            "mith_guard",
+            "mith_guard",
+            "mith_sig_a",
+            "mith_sig_b"
+          ],
+          "recommendedRelics": [
+            "broken_pocketwatch",
+            "blood_ring"
+          ],
+          "imagePrompt": "mirror memory thief adventurer, memory dungeon theme, roguelike hero",
+          "styleTags": [
+            "dark_fairy_tale"
+          ]
+        },
+        "cards": [
+          {
+            "id": "mith_strike",
+            "name": "mirr击",
+            "classId": "mirror_thief2",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 5 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 5,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 5,
+            "imagePrompt": "mirror memory thief strike attack"
+          },
+          {
+            "id": "mith_guard",
+            "name": "mirr护",
+            "classId": "mirror_thief2",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 5 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 5,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4,
+            "imagePrompt": "mirror memory thief guard block"
+          },
+          {
+            "id": "mith_sig_a",
+            "name": "忆痕斩",
+            "classId": "mirror_thief2",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 8 点伤害，施加 2 层流血。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 8,
+                "target": "enemy"
+              },
+              {
+                "mechanism": "applyBleed",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "mirror memory thief bleed slash"
+          },
+          {
+            "id": "mith_sig_b",
+            "name": "残忆护盾",
+            "classId": "mirror_thief2",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 7 点格挡，抽 1 张牌。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 7,
+                "target": "self"
+              },
+              {
+                "mechanism": "draw",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 11.600000000000001,
+            "imagePrompt": "mirror memory thief memory shield"
+          },
+          {
+            "id": "mith_heavy",
+            "name": "沉重一击",
+            "classId": "mirror_thief2",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "common",
+            "description": "造成 14 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 14,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 14,
+            "imagePrompt": "mirror memory thief heavy blow"
+          },
+          {
+            "id": "mith_wall",
+            "name": "铁壁",
+            "classId": "mirror_thief2",
+            "type": "defense",
+            "cost": 2,
+            "rarity": "common",
+            "description": "获得 12 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 12,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 9.600000000000001,
+            "imagePrompt": "mirror memory thief iron wall"
+          },
+          {
+            "id": "mith_focus",
+            "name": "集中",
+            "classId": "mirror_thief2",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "common",
+            "description": "抽 1 张牌。",
+            "effects": [
+              {
+                "mechanism": "draw",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "mirror memory thief focus skill"
+          },
+          {
+            "id": "mith_adrenaline",
+            "name": "应激",
+            "classId": "mirror_thief2",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "获得 1 点能量。",
+            "effects": [
+              {
+                "mechanism": "gainEnergy",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "mirror memory thief adrenaline"
+          },
+          {
+            "id": "mith_vuln",
+            "name": "暴露弱点",
+            "classId": "mirror_thief2",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层易伤。",
+            "effects": [
+              {
+                "mechanism": "applyVulnerable",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "mirror memory thief vulnerable"
+          },
+          {
+            "id": "mith_weak",
+            "name": "扰乱",
+            "classId": "mirror_thief2",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层虚弱。",
+            "effects": [
+              {
+                "mechanism": "applyWeak",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "mirror memory thief weak debuff"
+          },
+          {
+            "id": "mith_heal",
+            "name": "忆疗",
+            "classId": "mirror_thief2",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "回复 4 点生命。",
+            "effects": [
+              {
+                "mechanism": "heal",
+                "value": 4,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "mirror memory thief heal"
+          },
+          {
+            "id": "mith_str",
+            "name": "力量觉醒",
+            "classId": "mirror_thief2",
+            "type": "skill",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "获得 2 点力量。",
+            "effects": [
+              {
+                "mechanism": "gainStrength",
+                "value": 2,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "mirror memory thief strength buff"
+          },
+          {
+            "id": "mith_finisher",
+            "name": "终结",
+            "classId": "mirror_thief2",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "造成 18 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 18,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 18,
+            "imagePrompt": "mirror memory thief finisher"
+          },
+          {
+            "id": "mith_poison",
+            "name": "蚀忆",
+            "classId": "mirror_thief2",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "common",
+            "description": "施加 3 层中毒。",
+            "effects": [
+              {
+                "mechanism": "applyPoison",
+                "value": 3,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "mirror memory thief poison"
+          },
+          {
+            "id": "mith_extra_14",
+            "name": "衍生14",
+            "classId": "mirror_thief2",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "mirror memory thief extra card 14"
+          },
+          {
+            "id": "mith_extra_15",
+            "name": "衍生15",
+            "classId": "mirror_thief2",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "mirror memory thief extra card 15"
+          },
+          {
+            "id": "mith_extra_16",
+            "name": "衍生16",
+            "classId": "mirror_thief2",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "mirror memory thief extra card 16"
+          },
+          {
+            "id": "mith_extra_17",
+            "name": "衍生17",
+            "classId": "mirror_thief2",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "mirror memory thief extra card 17"
+          },
+          {
+            "id": "mith_extra_18",
+            "name": "衍生18",
+            "classId": "mirror_thief2",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "mirror memory thief extra card 18"
+          },
+          {
+            "id": "mith_extra_19",
+            "name": "衍生19",
+            "classId": "mirror_thief2",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "mirror memory thief extra card 19"
+          },
+          {
+            "id": "mith_extra_20",
+            "name": "衍生20",
+            "classId": "mirror_thief2",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "mirror memory thief extra card 20"
+          },
+          {
+            "id": "mith_extra_21",
+            "name": "衍生21",
+            "classId": "mirror_thief2",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "mirror memory thief extra card 21"
+          }
+        ],
+        "recommendedRelics": [
+          "broken_pocketwatch",
+          "blood_ring"
+        ]
+      },
+      "validation": {
+        "schemaValid": true,
+        "schemaErrors": [],
+        "cardBudgetIssues": [],
+        "starterDeckValid": true,
+        "starterDeckErrors": [],
+        "relicRefsValid": true,
+        "invalidRelicIds": [],
+        "duplicateCardIds": [],
+        "classIdMismatch": [],
+        "simulation": {
+          "runs": 12,
+          "wins": 12,
+          "losses": 0,
+          "timeouts": 0,
+          "winRate": 1,
+          "avgTurns": 3.4166666666666665,
+          "passed": false,
+          "enemyId": "mirror_knight",
+          "enemyName": "镜中骑士"
+        },
+        "overallValid": false,
+        "warnings": [
+          "战斗模拟未通过：胜率 100%（期望 25%~90%）"
+        ]
+      },
+      "prompt": "You are a roguelike deckbuilder game designer for \"遗迹吞忆\" (Memory Devouring Ruins).\nDesign ONE new player class with 20-30 cards. Output ONLY a single JSON object, no markdown fences.\n\nJSON shape:\n{\n  \"class\": {\n    \"id\": \"snake_case_unique_id\",\n    \"name\": \"Chinese display name\",\n    \"description\": \"1-2 sentences in Chinese\",\n    \"maxHp\": 65-80,\n    \"startingGold\": 99,\n    \"starterDeck\": [\"card_id\", ... exactly 10 entries, only starter/common cards],\n    \"recommendedRelics\": [\"existing_relic_id\", ... 2 items from provided list],\n    \"imagePrompt\": \"English art prompt for character portrait\",\n    \"styleTags\": [\"dark_fairy_tale\"]\n  },\n  \"cards\": [ ... 20-30 card objects ... ],\n  \"recommendedRelics\": [\"same 2 relic ids as class.recommendedRelics\"]\n}\n\nEach card:\n{\n  \"id\": \"{class_prefix}_snake_name\",\n  \"name\": \"Chinese name\",\n  \"classId\": \"must match class.id\",\n  \"type\": \"attack|defense|skill|status|curse\",\n  \"cost\": 0-3,\n  \"rarity\": \"starter|common|uncommon|rare\",\n  \"description\": \"Chinese, concise\",\n  \"effects\": [{ \"mechanism\": \"...\", \"value\": number, \"target\": \"self|enemy|all_enemies|random_enemy\" }],\n  \"powerBudget\": number (must equal sum of mechanism power),\n  \"imagePrompt\": \"English card art prompt\"\n}\n\nAllowed mechanisms ONLY: damage, block, draw, gainEnergy, heal, applyBleed, applyWeak, applyVulnerable, applyPoison, exhaust, retain, discard, loseHp, gainGold, addTemporaryCard, reduceCardCostThisCombat, increaseNextAttackDamage, gainStrength, gainDexterity\n\nPower budget rules (calculated = sum of mechanism power, must be <= limit):\n- cost 0: max 6\n- cost 1: max 12\n- cost 2: max 20\n- cost 3: max 30\n\nMechanism power per point: damage=1, block=0.8, draw=6, gainEnergy=8, heal=3, applyBleed=2, applyWeak=4, applyVulnerable=4, applyPoison=2, gainStrength=4, gainDexterity=4\n\nDesign rules:\n- Theme must fit memory-absorbing dungeon fantasy (original, not Slayer of Spire copies)\n- starterDeck: 4 basic attacks, 4 basic defenses, 2 signature cards\n- Include 6-8 starter rarity, rest common/uncommon with 2-4 rare\n- All card IDs unique, snake_case, prefixed with class id abbreviation\n- recommendedRelics MUST be chosen ONLY from the provided relic id list\n- Do NOT invent relic ids\n- descriptions in Simplified Chinese\n- imagePrompt in English\n\n---\n\nTheme / 流派概念: mirror memory thief\nUse class id prefix starting with: mirror_thief2\nTarget card count: 22\nAvailable relic ids (pick exactly 2): broken_pocketwatch, blood_ring, old_knight_badge, demon_dice, ash_pendant, memory_shard, iron_charm, cursed_coin, healer_salve, void_lens, thornmail_shackles, arcane_battery, hunters_token, vow_shield, memory_crown"
+    },
+    {
+      "id": "draft_1780072792958_1",
+      "createdAt": "2026-05-29T16:39:52.958Z",
+      "theme": "mirror memory thief",
+      "status": "rejected",
+      "usedFallback": true,
+      "pack": {
+        "class": {
+          "id": "mirror_thief",
+          "name": "mirror m行者",
+          "description": "以「mirror memory thief」为主题的 AI 生成流派（模板）。",
+          "maxHp": 72,
+          "startingGold": 99,
+          "starterDeck": [
+            "mith_strike",
+            "mith_strike",
+            "mith_strike",
+            "mith_strike",
+            "mith_guard",
+            "mith_guard",
+            "mith_guard",
+            "mith_guard",
+            "mith_sig_a",
+            "mith_sig_b"
+          ],
+          "recommendedRelics": [
+            "broken_pocketwatch",
+            "blood_ring"
+          ],
+          "imagePrompt": "mirror memory thief adventurer, memory dungeon theme, roguelike hero",
+          "styleTags": [
+            "dark_fairy_tale"
+          ]
+        },
+        "cards": [
+          {
+            "id": "mith_strike",
+            "name": "mirr击",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 5 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 5,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 5,
+            "imagePrompt": "mirror memory thief strike attack"
+          },
+          {
+            "id": "mith_guard",
+            "name": "mirr护",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 5 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 5,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4,
+            "imagePrompt": "mirror memory thief guard block"
+          },
+          {
+            "id": "mith_sig_a",
+            "name": "忆痕斩",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 8 点伤害，施加 2 层流血。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 8,
+                "target": "enemy"
+              },
+              {
+                "mechanism": "applyBleed",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "mirror memory thief bleed slash"
+          },
+          {
+            "id": "mith_sig_b",
+            "name": "残忆护盾",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 7 点格挡，抽 1 张牌。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 7,
+                "target": "self"
+              },
+              {
+                "mechanism": "draw",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 11.600000000000001,
+            "imagePrompt": "mirror memory thief memory shield"
+          },
+          {
+            "id": "mith_heavy",
+            "name": "沉重一击",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "common",
+            "description": "造成 14 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 14,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 14,
+            "imagePrompt": "mirror memory thief heavy blow"
+          },
+          {
+            "id": "mith_wall",
+            "name": "铁壁",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 2,
+            "rarity": "common",
+            "description": "获得 12 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 12,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 9.600000000000001,
+            "imagePrompt": "mirror memory thief iron wall"
+          },
+          {
+            "id": "mith_focus",
+            "name": "集中",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "common",
+            "description": "抽 1 张牌。",
+            "effects": [
+              {
+                "mechanism": "draw",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "mirror memory thief focus skill"
+          },
+          {
+            "id": "mith_adrenaline",
+            "name": "应激",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "获得 1 点能量。",
+            "effects": [
+              {
+                "mechanism": "gainEnergy",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "mirror memory thief adrenaline"
+          },
+          {
+            "id": "mith_vuln",
+            "name": "暴露弱点",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层易伤。",
+            "effects": [
+              {
+                "mechanism": "applyVulnerable",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "mirror memory thief vulnerable"
+          },
+          {
+            "id": "mith_weak",
+            "name": "扰乱",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层虚弱。",
+            "effects": [
+              {
+                "mechanism": "applyWeak",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "mirror memory thief weak debuff"
+          },
+          {
+            "id": "mith_heal",
+            "name": "忆疗",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "回复 4 点生命。",
+            "effects": [
+              {
+                "mechanism": "heal",
+                "value": 4,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "mirror memory thief heal"
+          },
+          {
+            "id": "mith_str",
+            "name": "力量觉醒",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "获得 2 点力量。",
+            "effects": [
+              {
+                "mechanism": "gainStrength",
+                "value": 2,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "mirror memory thief strength buff"
+          },
+          {
+            "id": "mith_finisher",
+            "name": "终结",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "造成 18 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 18,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 18,
+            "imagePrompt": "mirror memory thief finisher"
+          },
+          {
+            "id": "mith_poison",
+            "name": "蚀忆",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "common",
+            "description": "施加 3 层中毒。",
+            "effects": [
+              {
+                "mechanism": "applyPoison",
+                "value": 3,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "mirror memory thief poison"
+          },
+          {
+            "id": "mith_extra_14",
+            "name": "衍生14",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "mirror memory thief extra card 14"
+          },
+          {
+            "id": "mith_extra_15",
+            "name": "衍生15",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "mirror memory thief extra card 15"
+          },
+          {
+            "id": "mith_extra_16",
+            "name": "衍生16",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "mirror memory thief extra card 16"
+          },
+          {
+            "id": "mith_extra_17",
+            "name": "衍生17",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "mirror memory thief extra card 17"
+          },
+          {
+            "id": "mith_extra_18",
+            "name": "衍生18",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "mirror memory thief extra card 18"
+          },
+          {
+            "id": "mith_extra_19",
+            "name": "衍生19",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "mirror memory thief extra card 19"
+          },
+          {
+            "id": "mith_extra_20",
+            "name": "衍生20",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "mirror memory thief extra card 20"
+          },
+          {
+            "id": "mith_extra_21",
+            "name": "衍生21",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "mirror memory thief extra card 21"
+          }
+        ],
+        "recommendedRelics": [
+          "broken_pocketwatch",
+          "blood_ring"
+        ]
+      },
+      "validation": {
+        "schemaValid": true,
+        "schemaErrors": [],
+        "cardBudgetIssues": [],
+        "starterDeckValid": true,
+        "starterDeckErrors": [],
+        "relicRefsValid": true,
+        "invalidRelicIds": [],
+        "duplicateCardIds": [],
+        "classIdMismatch": [],
+        "simulation": {
+          "runs": 12,
+          "wins": 12,
+          "losses": 0,
+          "timeouts": 0,
+          "winRate": 1,
+          "avgTurns": 2,
+          "passed": false,
+          "enemyId": "broken_guard",
+          "enemyName": "破碎守卫"
+        },
+        "overallValid": false,
+        "warnings": [
+          "战斗模拟未通过：胜率 100%（期望 25%~90%）"
+        ]
+      },
+      "prompt": "You are a roguelike deckbuilder game designer for \"遗迹吞忆\" (Memory Devouring Ruins).\nDesign ONE new player class with 20-30 cards. Output ONLY a single JSON object, no markdown fences.\n\nJSON shape:\n{\n  \"class\": {\n    \"id\": \"snake_case_unique_id\",\n    \"name\": \"Chinese display name\",\n    \"description\": \"1-2 sentences in Chinese\",\n    \"maxHp\": 65-80,\n    \"startingGold\": 99,\n    \"starterDeck\": [\"card_id\", ... exactly 10 entries, only starter/common cards],\n    \"recommendedRelics\": [\"existing_relic_id\", ... 2 items from provided list],\n    \"imagePrompt\": \"English art prompt for character portrait\",\n    \"styleTags\": [\"dark_fairy_tale\"]\n  },\n  \"cards\": [ ... 20-30 card objects ... ],\n  \"recommendedRelics\": [\"same 2 relic ids as class.recommendedRelics\"]\n}\n\nEach card:\n{\n  \"id\": \"{class_prefix}_snake_name\",\n  \"name\": \"Chinese name\",\n  \"classId\": \"must match class.id\",\n  \"type\": \"attack|defense|skill|status|curse\",\n  \"cost\": 0-3,\n  \"rarity\": \"starter|common|uncommon|rare\",\n  \"description\": \"Chinese, concise\",\n  \"effects\": [{ \"mechanism\": \"...\", \"value\": number, \"target\": \"self|enemy|all_enemies|random_enemy\" }],\n  \"powerBudget\": number (must equal sum of mechanism power),\n  \"imagePrompt\": \"English card art prompt\"\n}\n\nAllowed mechanisms ONLY: damage, block, draw, gainEnergy, heal, applyBleed, applyWeak, applyVulnerable, applyPoison, exhaust, retain, discard, loseHp, gainGold, addTemporaryCard, reduceCardCostThisCombat, increaseNextAttackDamage, gainStrength, gainDexterity\n\nPower budget rules (calculated = sum of mechanism power, must be <= limit):\n- cost 0: max 6\n- cost 1: max 12\n- cost 2: max 20\n- cost 3: max 30\n\nMechanism power per point: damage=1, block=0.8, draw=6, gainEnergy=8, heal=3, applyBleed=2, applyWeak=4, applyVulnerable=4, applyPoison=2, gainStrength=4, gainDexterity=4\n\nDesign rules:\n- Theme must fit memory-absorbing dungeon fantasy (original, not Slayer of Spire copies)\n- starterDeck: 4 basic attacks, 4 basic defenses, 2 signature cards\n- Include 6-8 starter rarity, rest common/uncommon with 2-4 rare\n- All card IDs unique, snake_case, prefixed with class id abbreviation\n- recommendedRelics MUST be chosen ONLY from the provided relic id list\n- Do NOT invent relic ids\n- descriptions in Simplified Chinese\n- imagePrompt in English\n\n---\n\nTheme / 流派概念: mirror memory thief\nUse class id prefix starting with: mirror_thief\nTarget card count: 22\nAvailable relic ids (pick exactly 2): broken_pocketwatch, blood_ring, old_knight_badge, demon_dice, ash_pendant, memory_shard, iron_charm, cursed_coin, healer_salve, void_lens, thornmail_shackles, arcane_battery, hunters_token, vow_shield, memory_crown"
+    },
+    {
+      "id": "draft_1780072740380_1",
+      "createdAt": "2026-05-29T16:39:00.380Z",
+      "theme": "????",
+      "status": "rejected",
+      "usedFallback": true,
+      "pack": {
+        "class": {
+          "id": "mirror_thief",
+          "name": "????行者",
+          "description": "以「????」为主题的 AI 生成流派（模板）。",
+          "maxHp": 72,
+          "startingGold": 99,
+          "starterDeck": [
+            "mith_strike",
+            "mith_strike",
+            "mith_strike",
+            "mith_strike",
+            "mith_guard",
+            "mith_guard",
+            "mith_guard",
+            "mith_guard",
+            "mith_sig_a",
+            "mith_sig_b"
+          ],
+          "recommendedRelics": [
+            "broken_pocketwatch",
+            "blood_ring"
+          ],
+          "imagePrompt": "???? adventurer, memory dungeon theme, roguelike hero",
+          "styleTags": [
+            "dark_fairy_tale"
+          ]
+        },
+        "cards": [
+          {
+            "id": "mith_strike",
+            "name": "????击",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 6 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 6,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "???? strike attack"
+          },
+          {
+            "id": "mith_guard",
+            "name": "????护",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 5 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 5,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4,
+            "imagePrompt": "???? guard block"
+          },
+          {
+            "id": "mith_sig_a",
+            "name": "忆痕斩",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "造成 8 点伤害，施加 2 层流血。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 8,
+                "target": "enemy"
+              },
+              {
+                "mechanism": "applyBleed",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "???? bleed slash"
+          },
+          {
+            "id": "mith_sig_b",
+            "name": "残忆护盾",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "starter",
+            "description": "获得 7 点格挡，抽 1 张牌。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 7,
+                "target": "self"
+              },
+              {
+                "mechanism": "draw",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 11.600000000000001,
+            "imagePrompt": "???? memory shield"
+          },
+          {
+            "id": "mith_heavy",
+            "name": "沉重一击",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "common",
+            "description": "造成 14 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 14,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 14,
+            "imagePrompt": "???? heavy blow"
+          },
+          {
+            "id": "mith_wall",
+            "name": "铁壁",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 2,
+            "rarity": "common",
+            "description": "获得 12 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 12,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 9.600000000000001,
+            "imagePrompt": "???? iron wall"
+          },
+          {
+            "id": "mith_focus",
+            "name": "集中",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 0,
+            "rarity": "common",
+            "description": "抽 2 张牌。",
+            "effects": [
+              {
+                "mechanism": "draw",
+                "value": 2,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 12,
+            "imagePrompt": "???? focus skill"
+          },
+          {
+            "id": "mith_adrenaline",
+            "name": "应激",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 0,
+            "rarity": "uncommon",
+            "description": "获得 1 点能量。",
+            "effects": [
+              {
+                "mechanism": "gainEnergy",
+                "value": 1,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "???? adrenaline"
+          },
+          {
+            "id": "mith_vuln",
+            "name": "暴露弱点",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层易伤。",
+            "effects": [
+              {
+                "mechanism": "applyVulnerable",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "???? vulnerable"
+          },
+          {
+            "id": "mith_weak",
+            "name": "扰乱",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "施加 2 层虚弱。",
+            "effects": [
+              {
+                "mechanism": "applyWeak",
+                "value": 2,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "???? weak debuff"
+          },
+          {
+            "id": "mith_heal",
+            "name": "忆疗",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "uncommon",
+            "description": "回复 8 点生命。",
+            "effects": [
+              {
+                "mechanism": "heal",
+                "value": 8,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 24,
+            "imagePrompt": "???? heal"
+          },
+          {
+            "id": "mith_str",
+            "name": "力量觉醒",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "获得 2 点力量。",
+            "effects": [
+              {
+                "mechanism": "gainStrength",
+                "value": 2,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 8,
+            "imagePrompt": "???? strength buff"
+          },
+          {
+            "id": "mith_finisher",
+            "name": "终结",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 2,
+            "rarity": "rare",
+            "description": "造成 18 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 18,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 18,
+            "imagePrompt": "???? finisher"
+          },
+          {
+            "id": "mith_poison",
+            "name": "蚀忆",
+            "classId": "mirror_thief",
+            "type": "skill",
+            "cost": 1,
+            "rarity": "common",
+            "description": "施加 3 层中毒。",
+            "effects": [
+              {
+                "mechanism": "applyPoison",
+                "value": 3,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 6,
+            "imagePrompt": "???? poison"
+          },
+          {
+            "id": "mith_extra_14",
+            "name": "衍生14",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "???? extra card 14"
+          },
+          {
+            "id": "mith_extra_15",
+            "name": "衍生15",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "???? extra card 15"
+          },
+          {
+            "id": "mith_extra_16",
+            "name": "衍生16",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "???? extra card 16"
+          },
+          {
+            "id": "mith_extra_17",
+            "name": "衍生17",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "???? extra card 17"
+          },
+          {
+            "id": "mith_extra_18",
+            "name": "衍生18",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "???? extra card 18"
+          },
+          {
+            "id": "mith_extra_19",
+            "name": "衍生19",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "???? extra card 19"
+          },
+          {
+            "id": "mith_extra_20",
+            "name": "衍生20",
+            "classId": "mirror_thief",
+            "type": "attack",
+            "cost": 1,
+            "rarity": "common",
+            "description": "造成 7 点伤害。",
+            "effects": [
+              {
+                "mechanism": "damage",
+                "value": 7,
+                "target": "enemy"
+              }
+            ],
+            "powerBudget": 7,
+            "imagePrompt": "???? extra card 20"
+          },
+          {
+            "id": "mith_extra_21",
+            "name": "衍生21",
+            "classId": "mirror_thief",
+            "type": "defense",
+            "cost": 1,
+            "rarity": "common",
+            "description": "获得 6 点格挡。",
+            "effects": [
+              {
+                "mechanism": "block",
+                "value": 6,
+                "target": "self"
+              }
+            ],
+            "powerBudget": 4.800000000000001,
+            "imagePrompt": "???? extra card 21"
+          }
+        ],
+        "recommendedRelics": [
+          "broken_pocketwatch",
+          "blood_ring"
+        ]
+      },
+      "validation": {
+        "schemaValid": true,
+        "schemaErrors": [],
+        "cardBudgetIssues": [
+          {
+            "cardId": "mith_focus",
+            "cardName": "集中",
+            "calculated": 12,
+            "limit": 6,
+            "declared": 12,
+            "valid": false
+          },
+          {
+            "cardId": "mith_adrenaline",
+            "cardName": "应激",
+            "calculated": 8,
+            "limit": 6,
+            "declared": 8,
+            "valid": false
+          },
+          {
+            "cardId": "mith_heal",
+            "cardName": "忆疗",
+            "calculated": 24,
+            "limit": 12,
+            "declared": 24,
+            "valid": false
+          }
+        ],
+        "starterDeckValid": true,
+        "starterDeckErrors": [],
+        "relicRefsValid": true,
+        "invalidRelicIds": [],
+        "duplicateCardIds": [],
+        "classIdMismatch": [],
+        "simulation": {
+          "runs": 12,
+          "wins": 12,
+          "losses": 0,
+          "timeouts": 0,
+          "winRate": 1,
+          "avgTurns": 1,
+          "passed": false,
+          "enemyId": "memory_maggot",
+          "enemyName": "记忆蛆虫"
+        },
+        "overallValid": false,
+        "warnings": [
+          "战斗模拟未通过：胜率 100%（期望 25%~90%）"
+        ]
+      },
+      "prompt": "You are a roguelike deckbuilder game designer for \"遗迹吞忆\" (Memory Devouring Ruins).\nDesign ONE new player class with 20-30 cards. Output ONLY a single JSON object, no markdown fences.\n\nJSON shape:\n{\n  \"class\": {\n    \"id\": \"snake_case_unique_id\",\n    \"name\": \"Chinese display name\",\n    \"description\": \"1-2 sentences in Chinese\",\n    \"maxHp\": 65-80,\n    \"startingGold\": 99,\n    \"starterDeck\": [\"card_id\", ... exactly 10 entries, only starter/common cards],\n    \"recommendedRelics\": [\"existing_relic_id\", ... 2 items from provided list],\n    \"imagePrompt\": \"English art prompt for character portrait\",\n    \"styleTags\": [\"dark_fairy_tale\"]\n  },\n  \"cards\": [ ... 20-30 card objects ... ],\n  \"recommendedRelics\": [\"same 2 relic ids as class.recommendedRelics\"]\n}\n\nEach card:\n{\n  \"id\": \"{class_prefix}_snake_name\",\n  \"name\": \"Chinese name\",\n  \"classId\": \"must match class.id\",\n  \"type\": \"attack|defense|skill|status|curse\",\n  \"cost\": 0-3,\n  \"rarity\": \"starter|common|uncommon|rare\",\n  \"description\": \"Chinese, concise\",\n  \"effects\": [{ \"mechanism\": \"...\", \"value\": number, \"target\": \"self|enemy|all_enemies|random_enemy\" }],\n  \"powerBudget\": number (must equal sum of mechanism power),\n  \"imagePrompt\": \"English card art prompt\"\n}\n\nAllowed mechanisms ONLY: damage, block, draw, gainEnergy, heal, applyBleed, applyWeak, applyVulnerable, applyPoison, exhaust, retain, discard, loseHp, gainGold, addTemporaryCard, reduceCardCostThisCombat, increaseNextAttackDamage, gainStrength, gainDexterity\n\nPower budget rules (calculated = sum of mechanism power, must be <= limit):\n- cost 0: max 6\n- cost 1: max 12\n- cost 2: max 20\n- cost 3: max 30\n\nMechanism power per point: damage=1, block=0.8, draw=6, gainEnergy=8, heal=3, applyBleed=2, applyWeak=4, applyVulnerable=4, applyPoison=2, gainStrength=4, gainDexterity=4\n\nDesign rules:\n- Theme must fit memory-absorbing dungeon fantasy (original, not Slayer of Spire copies)\n- starterDeck: 4 basic attacks, 4 basic defenses, 2 signature cards\n- Include 6-8 starter rarity, rest common/uncommon with 2-4 rare\n- All card IDs unique, snake_case, prefixed with class id abbreviation\n- recommendedRelics MUST be chosen ONLY from the provided relic id list\n- Do NOT invent relic ids\n- descriptions in Simplified Chinese\n- imagePrompt in English\n\n---\n\nTheme / 流派概念: ????\nUse class id prefix starting with: mirror_thief\nTarget card count: 22\nAvailable relic ids (pick exactly 2): broken_pocketwatch, blood_ring, old_knight_badge, demon_dice, ash_pendant, memory_shard, iron_charm, cursed_coin, healer_salve, void_lens, thornmail_shackles, arcane_battery, hunters_token, vow_shield, memory_crown"
+    }
+  ]
+}

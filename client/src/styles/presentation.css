@@ -1,0 +1,512 @@
+/* ===== Phase 9: Presentation & Layout Rework ===== */
+
+/* --- Class Selection --- */
+.class-select--phase9 {
+  max-width: 1400px;
+}
+
+.class-select-layout {
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 380px);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.class-portrait-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.class-portrait-card {
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 0;
+  text-align: left;
+  color: var(--text);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.class-portrait-card:hover:not(.locked) {
+  transform: translateY(-3px);
+}
+
+.class-portrait-card.selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 24px var(--accent-glow);
+}
+
+.class-portrait-card.locked {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.class-portrait-card__frame {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(180deg, var(--bg-panel) 0%, var(--bg-deep) 100%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.class-portrait-card__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top center;
+}
+
+.class-portrait-card__info {
+  padding: 1rem 1.1rem 1.2rem;
+}
+
+.class-portrait-card__info h3 {
+  font-family: var(--font-display);
+  margin: 0 0 0.35rem;
+}
+
+.class-portrait-card__info p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin: 0 0 0.75rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.class-detail-panel {
+  position: sticky;
+  top: 1.5rem;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.class-detail-portrait {
+  width: 100%;
+  height: 320px;
+  background: linear-gradient(180deg, rgba(196, 92, 62, 0.08) 0%, var(--bg-deep) 100%);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.class-detail-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top center;
+}
+
+.class-detail-panel h2 {
+  font-family: var(--font-display);
+  margin: 0 0 0.5rem;
+}
+
+.class-detail-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0 0 1rem;
+}
+
+.class-detail-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+}
+
+.class-detail-stats div {
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 0.5rem 0.65rem;
+  text-align: center;
+}
+
+.class-detail-stats dt {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.class-detail-stats dd {
+  margin: 0.15rem 0 0;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.starter-deck-preview {
+  margin: 1rem 0;
+}
+
+.starter-deck-preview h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.starter-deck-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.5rem;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* --- Map Two-Column --- */
+.map-view--phase9 {
+  max-width: 1400px;
+  padding: 1.25rem 1.5rem;
+}
+
+.map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 30%);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.map-route-panel {
+  min-height: 520px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dungeon-map-canvas {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  min-height: 480px;
+}
+
+.map-connections {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.map-connection {
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 0.4;
+  stroke-dasharray: 1.2 0.8;
+}
+
+.map-connection.active {
+  stroke: rgba(196, 92, 62, 0.45);
+}
+
+.map-layers-stack {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.map-layer-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.layer-nodes-row {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.map-node--stage {
+  min-width: 72px;
+  padding: 0.6rem 0.75rem;
+}
+
+.run-status-sidebar {
+  position: sticky;
+  top: 1.25rem;
+}
+
+.run-status-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.run-status-card h3 {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+}
+
+.run-stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin: 0 0 1rem;
+}
+
+.run-stat-grid dt {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.run-stat-grid dd {
+  margin: 0.1rem 0 0;
+  font-weight: 600;
+}
+
+.run-stat-grid dd.gold {
+  color: var(--gold);
+}
+
+.run-hp-bar {
+  height: 8px;
+  background: var(--bg-deep);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.run-hp-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3a6b4a, var(--success));
+  transition: width 0.3s;
+}
+
+.run-current-node {
+  margin: 1rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.run-current-node h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.node-type-label {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin: 0 0 0.25rem;
+  color: var(--accent);
+}
+
+.node-hint,
+.available-count {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0.25rem 0 0;
+}
+
+/* --- Card Face --- */
+.card-face {
+  position: relative;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  color: var(--text);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.card-face--hand {
+  flex: 0 0 190px;
+  width: 190px;
+  height: 300px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.card-face--hand.playable:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+.card-face--hand.disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+}
+
+.card-face--preview {
+  width: 100%;
+  min-height: 140px;
+}
+
+.card-face--reward {
+  width: 200px;
+  min-height: 280px;
+  cursor: pointer;
+}
+
+.card-face__art {
+  height: 58%;
+  min-height: 96px;
+  background: var(--bg-deep);
+  overflow: hidden;
+  position: relative;
+}
+
+.card-face__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.card-face__body {
+  flex: 1;
+  padding: 0.35rem 0.45rem 0.4rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card-face__cost {
+  position: absolute;
+  top: -14px;
+  left: 6px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--bg-deep);
+  border: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--gold);
+  z-index: 2;
+}
+
+.card-face__name {
+  margin: 0.15rem 0 0.1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-face__effect {
+  margin: 0;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  line-height: 1.25;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-face__type {
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 0.15rem;
+}
+
+.card-detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card-detail-modal {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  max-width: 280px;
+  position: relative;
+}
+
+.card-detail-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.card-detail-full {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* Combat layout moved to battle-scene.css (BattlePage) */
+
+/* --- Responsive --- */
+@media (max-width: 960px) {
+  .class-select-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .class-detail-panel {
+    position: static;
+  }
+
+  .map-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .run-status-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .combat-screen {
+    padding: 0.5rem;
+  }
+
+  .combat-player-zone {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .combat-log-compact {
+    width: calc(100% - 1.3rem);
+  }
+}

@@ -1,0 +1,2645 @@
+{
+  "runsPerCell": 6,
+  "strategies": [
+    "greedy",
+    "defensive"
+  ],
+  "classes": [
+    {
+      "classId": "blood_blade_hunter",
+      "className": "血刃猎人",
+      "runsPerCell": 6,
+      "cells": [
+        {
+          "scenarioId": "normal_maggot",
+          "scenarioLabel": "普通·记忆蛆虫",
+          "enemyId": "memory_maggot",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 1.3333333333333333,
+            "passed": false,
+            "enemyId": "memory_maggot",
+            "enemyName": "记忆蛆虫",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.65,
+            "max": 0.98
+          }
+        },
+        {
+          "scenarioId": "normal_maggot",
+          "scenarioLabel": "普通·记忆蛆虫",
+          "enemyId": "memory_maggot",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 4,
+            "passed": false,
+            "enemyId": "memory_maggot",
+            "enemyName": "记忆蛆虫",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.65,
+            "max": 0.98
+          }
+        },
+        {
+          "scenarioId": "normal_hound",
+          "scenarioLabel": "普通·地下城猎犬",
+          "enemyId": "dungeon_hound",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 1.5,
+            "passed": false,
+            "enemyId": "dungeon_hound",
+            "enemyName": "地牢猎犬",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.55,
+            "max": 0.95
+          }
+        },
+        {
+          "scenarioId": "normal_hound",
+          "scenarioLabel": "普通·地下城猎犬",
+          "enemyId": "dungeon_hound",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 5,
+            "passed": false,
+            "enemyId": "dungeon_hound",
+            "enemyName": "地牢猎犬",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.55,
+            "max": 0.95
+          }
+        },
+        {
+          "scenarioId": "elite_mirror",
+          "scenarioLabel": "精英·镜中骑士",
+          "enemyId": "mirror_knight",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 3.8333333333333335,
+            "passed": false,
+            "enemyId": "mirror_knight",
+            "enemyName": "镜中骑士",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.2,
+            "max": 0.75
+          }
+        },
+        {
+          "scenarioId": "elite_mirror",
+          "scenarioLabel": "精英·镜中骑士",
+          "enemyId": "mirror_knight",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 10.333333333333334,
+            "passed": false,
+            "enemyId": "mirror_knight",
+            "enemyName": "镜中骑士",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.2,
+            "max": 0.75
+          }
+        },
+        {
+          "scenarioId": "elite_abyss",
+          "scenarioLabel": "精英·深渊收藏家",
+          "enemyId": "abyss_collector",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 3,
+            "passed": false,
+            "enemyId": "abyss_collector",
+            "enemyName": "深渊收藏家",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.15,
+            "max": 0.7
+          }
+        },
+        {
+          "scenarioId": "elite_abyss",
+          "scenarioLabel": "精英·深渊收藏家",
+          "enemyId": "abyss_collector",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 8.833333333333334,
+            "passed": false,
+            "enemyId": "abyss_collector",
+            "enemyName": "深渊收藏家",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.15,
+            "max": 0.7
+          }
+        },
+        {
+          "scenarioId": "boss_devourer",
+          "scenarioLabel": "Boss·遗迹吞忆者",
+          "enemyId": "memory_devourer",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 0,
+            "losses": 6,
+            "timeouts": 0,
+            "winRate": 0,
+            "avgTurns": 7,
+            "passed": false,
+            "enemyId": "memory_devourer",
+            "enemyName": "遗迹吞忆者",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_hard",
+          "expectedWinRate": {
+            "min": 0.05,
+            "max": 0.45
+          }
+        },
+        {
+          "scenarioId": "boss_devourer",
+          "scenarioLabel": "Boss·遗迹吞忆者",
+          "enemyId": "memory_devourer",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 0,
+            "losses": 6,
+            "timeouts": 0,
+            "winRate": 0,
+            "avgTurns": 13.333333333333334,
+            "passed": false,
+            "enemyId": "memory_devourer",
+            "enemyName": "遗迹吞忆者",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_hard",
+          "expectedWinRate": {
+            "min": 0.05,
+            "max": 0.45
+          }
+        },
+        {
+          "scenarioId": "full_pool_elite",
+          "scenarioLabel": "全卡池·镜中骑士",
+          "enemyId": "mirror_knight",
+          "strategy": "greedy",
+          "deckMode": "full_pool",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 2.6666666666666665,
+            "passed": false,
+            "enemyId": "mirror_knight",
+            "enemyName": "镜中骑士",
+            "strategy": "greedy",
+            "deckMode": "full_pool"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.35,
+            "max": 0.9
+          }
+        },
+        {
+          "scenarioId": "full_pool_elite",
+          "scenarioLabel": "全卡池·镜中骑士",
+          "enemyId": "mirror_knight",
+          "strategy": "defensive",
+          "deckMode": "full_pool",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 3.6666666666666665,
+            "passed": false,
+            "enemyId": "mirror_knight",
+            "enemyName": "镜中骑士",
+            "strategy": "defensive",
+            "deckMode": "full_pool"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.35,
+            "max": 0.9
+          }
+        }
+      ],
+      "cardAudit": [
+        {
+          "cardId": "bb_strike",
+          "cardName": "血刃斩",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "starter",
+          "calculated": 6,
+          "limit": 12,
+          "utilization": 0.5,
+          "valid": true
+        },
+        {
+          "cardId": "bb_guard",
+          "cardName": "猎手格挡",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "starter",
+          "calculated": 4,
+          "limit": 12,
+          "utilization": 0.3333333333333333,
+          "valid": true
+        },
+        {
+          "cardId": "bb_bleed_slash",
+          "cardName": "裂血斩",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "starter",
+          "calculated": 8,
+          "limit": 12,
+          "utilization": 0.6666666666666666,
+          "valid": true
+        },
+        {
+          "cardId": "bb_vampiric_cut",
+          "cardName": "吸血切割",
+          "classId": "blood_blade_hunter",
+          "cost": 2,
+          "rarity": "starter",
+          "calculated": 14,
+          "limit": 20,
+          "utilization": 0.7,
+          "valid": true
+        },
+        {
+          "cardId": "bb_deep_cut",
+          "cardName": "深割",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 7,
+          "limit": 12,
+          "utilization": 0.5833333333333334,
+          "valid": true
+        },
+        {
+          "cardId": "bb_blood_frenzy",
+          "cardName": "血狂",
+          "classId": "blood_blade_hunter",
+          "cost": 2,
+          "rarity": "common",
+          "calculated": 16,
+          "limit": 20,
+          "utilization": 0.8,
+          "valid": true
+        },
+        {
+          "cardId": "bb_adrenaline",
+          "cardName": "肾上腺素",
+          "classId": "blood_blade_hunter",
+          "cost": 0,
+          "rarity": "uncommon",
+          "calculated": 12,
+          "limit": 6,
+          "utilization": 2,
+          "valid": false,
+          "fixAction": "建议费用提升至 1"
+        },
+        {
+          "cardId": "bb_quick_slice",
+          "cardName": "快斩",
+          "classId": "blood_blade_hunter",
+          "cost": 0,
+          "rarity": "common",
+          "calculated": 3,
+          "limit": 6,
+          "utilization": 0.5,
+          "valid": true
+        },
+        {
+          "cardId": "bb_twin_fangs",
+          "cardName": "双牙",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 8,
+          "limit": 12,
+          "utilization": 0.6666666666666666,
+          "valid": true
+        },
+        {
+          "cardId": "bb_open_artery",
+          "cardName": "开脉",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 6,
+          "limit": 12,
+          "utilization": 0.5,
+          "valid": true
+        },
+        {
+          "cardId": "bb_blood_guard",
+          "cardName": "血盾",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 5.2,
+          "limit": 12,
+          "utilization": 0.43333333333333335,
+          "valid": true
+        },
+        {
+          "cardId": "bb_predator",
+          "cardName": "猎食本能",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 10,
+          "limit": 12,
+          "utilization": 0.8333333333333334,
+          "valid": true
+        },
+        {
+          "cardId": "bb_rupture",
+          "cardName": "破裂",
+          "classId": "blood_blade_hunter",
+          "cost": 2,
+          "rarity": "uncommon",
+          "calculated": 15,
+          "limit": 20,
+          "utilization": 0.75,
+          "valid": true
+        },
+        {
+          "cardId": "bb_sanguine",
+          "cardName": "血疗",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "uncommon",
+          "calculated": 12,
+          "limit": 12,
+          "utilization": 1,
+          "valid": true
+        },
+        {
+          "cardId": "bb_crimson_flurry",
+          "cardName": "赤色乱舞",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "uncommon",
+          "calculated": 11,
+          "limit": 12,
+          "utilization": 0.9166666666666666,
+          "valid": true
+        },
+        {
+          "cardId": "bb_life_tap",
+          "cardName": "生命换能",
+          "classId": "blood_blade_hunter",
+          "cost": 0,
+          "rarity": "common",
+          "calculated": 5,
+          "limit": 6,
+          "utilization": 0.8333333333333334,
+          "valid": true
+        },
+        {
+          "cardId": "bb_hemorrhage",
+          "cardName": "大出血",
+          "classId": "blood_blade_hunter",
+          "cost": 2,
+          "rarity": "uncommon",
+          "calculated": 15,
+          "limit": 20,
+          "utilization": 0.75,
+          "valid": true
+        },
+        {
+          "cardId": "bb_butcher",
+          "cardName": "屠夫",
+          "classId": "blood_blade_hunter",
+          "cost": 2,
+          "rarity": "rare",
+          "calculated": 14,
+          "limit": 20,
+          "utilization": 0.7,
+          "valid": true
+        },
+        {
+          "cardId": "bb_rend",
+          "cardName": "撕裂",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 7,
+          "limit": 12,
+          "utilization": 0.5833333333333334,
+          "valid": true
+        },
+        {
+          "cardId": "bb_bloodlust",
+          "cardName": "嗜血",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 2,
+          "limit": 12,
+          "utilization": 0.16666666666666666,
+          "valid": true
+        },
+        {
+          "cardId": "bb_evade",
+          "cardName": "闪避",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 8.4,
+          "limit": 12,
+          "utilization": 0.7000000000000001,
+          "valid": true
+        },
+        {
+          "cardId": "bb_fatal_cut",
+          "cardName": "致命切割",
+          "classId": "blood_blade_hunter",
+          "cost": 3,
+          "rarity": "rare",
+          "calculated": 20,
+          "limit": 30,
+          "utilization": 0.6666666666666666,
+          "valid": true
+        },
+        {
+          "cardId": "bb_coagulate",
+          "cardName": "凝血",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "uncommon",
+          "calculated": 20.4,
+          "limit": 12,
+          "utilization": 1.7,
+          "valid": false,
+          "fixAction": "建议费用提升至 3"
+        },
+        {
+          "cardId": "bb_expose",
+          "cardName": "暴露伤口",
+          "classId": "blood_blade_hunter",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 8,
+          "limit": 12,
+          "utilization": 0.6666666666666666,
+          "valid": true
+        },
+        {
+          "cardId": "bb_second_wind",
+          "cardName": "二度呼吸",
+          "classId": "blood_blade_hunter",
+          "cost": 2,
+          "rarity": "uncommon",
+          "calculated": 9.600000000000001,
+          "limit": 20,
+          "utilization": 0.4800000000000001,
+          "valid": true
+        }
+      ],
+      "overallScore": 16,
+      "passed": false,
+      "suggestions": [
+        "普通·记忆蛆虫 过简单（胜率 100%）：考虑削弱 starter 攻击或提高敌人压力",
+        "Boss·遗迹吞忆者 过难（胜率 0%）：考虑增强防御牌或降低 enemy 伤害预期",
+        " 2 张卡 Power Budget 超标，首张：肾上腺素（建议费用提升至 1）"
+      ],
+      "generatedAt": "2026-05-29T16:50:56.387Z"
+    },
+    {
+      "classId": "rune_mage",
+      "className": "符文法师",
+      "runsPerCell": 6,
+      "cells": [
+        {
+          "scenarioId": "normal_maggot",
+          "scenarioLabel": "普通·记忆蛆虫",
+          "enemyId": "memory_maggot",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 2.1666666666666665,
+            "passed": false,
+            "enemyId": "memory_maggot",
+            "enemyName": "记忆蛆虫",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.65,
+            "max": 0.98
+          }
+        },
+        {
+          "scenarioId": "normal_maggot",
+          "scenarioLabel": "普通·记忆蛆虫",
+          "enemyId": "memory_maggot",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 5.333333333333333,
+            "passed": false,
+            "enemyId": "memory_maggot",
+            "enemyName": "记忆蛆虫",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.65,
+            "max": 0.98
+          }
+        },
+        {
+          "scenarioId": "normal_hound",
+          "scenarioLabel": "普通·地下城猎犬",
+          "enemyId": "dungeon_hound",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 2.8333333333333335,
+            "passed": false,
+            "enemyId": "dungeon_hound",
+            "enemyName": "地牢猎犬",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.55,
+            "max": 0.95
+          }
+        },
+        {
+          "scenarioId": "normal_hound",
+          "scenarioLabel": "普通·地下城猎犬",
+          "enemyId": "dungeon_hound",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 8.5,
+            "passed": false,
+            "enemyId": "dungeon_hound",
+            "enemyName": "地牢猎犬",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.55,
+            "max": 0.95
+          }
+        },
+        {
+          "scenarioId": "elite_mirror",
+          "scenarioLabel": "精英·镜中骑士",
+          "enemyId": "mirror_knight",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 5,
+            "passed": false,
+            "enemyId": "mirror_knight",
+            "enemyName": "镜中骑士",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.2,
+            "max": 0.75
+          }
+        },
+        {
+          "scenarioId": "elite_mirror",
+          "scenarioLabel": "精英·镜中骑士",
+          "enemyId": "mirror_knight",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 14.833333333333334,
+            "passed": false,
+            "enemyId": "mirror_knight",
+            "enemyName": "镜中骑士",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.2,
+            "max": 0.75
+          }
+        },
+        {
+          "scenarioId": "elite_abyss",
+          "scenarioLabel": "精英·深渊收藏家",
+          "enemyId": "abyss_collector",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 4.833333333333333,
+            "passed": false,
+            "enemyId": "abyss_collector",
+            "enemyName": "深渊收藏家",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.15,
+            "max": 0.7
+          }
+        },
+        {
+          "scenarioId": "elite_abyss",
+          "scenarioLabel": "精英·深渊收藏家",
+          "enemyId": "abyss_collector",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 12,
+            "passed": false,
+            "enemyId": "abyss_collector",
+            "enemyName": "深渊收藏家",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.15,
+            "max": 0.7
+          }
+        },
+        {
+          "scenarioId": "boss_devourer",
+          "scenarioLabel": "Boss·遗迹吞忆者",
+          "enemyId": "memory_devourer",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 0,
+            "losses": 6,
+            "timeouts": 0,
+            "winRate": 0,
+            "avgTurns": 9.5,
+            "passed": false,
+            "enemyId": "memory_devourer",
+            "enemyName": "遗迹吞忆者",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_hard",
+          "expectedWinRate": {
+            "min": 0.05,
+            "max": 0.45
+          }
+        },
+        {
+          "scenarioId": "boss_devourer",
+          "scenarioLabel": "Boss·遗迹吞忆者",
+          "enemyId": "memory_devourer",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 0,
+            "losses": 6,
+            "timeouts": 0,
+            "winRate": 0,
+            "avgTurns": 18.5,
+            "passed": false,
+            "enemyId": "memory_devourer",
+            "enemyName": "遗迹吞忆者",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_hard",
+          "expectedWinRate": {
+            "min": 0.05,
+            "max": 0.45
+          }
+        },
+        {
+          "scenarioId": "full_pool_elite",
+          "scenarioLabel": "全卡池·镜中骑士",
+          "enemyId": "mirror_knight",
+          "strategy": "greedy",
+          "deckMode": "full_pool",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 3.1666666666666665,
+            "passed": false,
+            "enemyId": "mirror_knight",
+            "enemyName": "镜中骑士",
+            "strategy": "greedy",
+            "deckMode": "full_pool"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.35,
+            "max": 0.9
+          }
+        },
+        {
+          "scenarioId": "full_pool_elite",
+          "scenarioLabel": "全卡池·镜中骑士",
+          "enemyId": "mirror_knight",
+          "strategy": "defensive",
+          "deckMode": "full_pool",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 5.166666666666667,
+            "passed": false,
+            "enemyId": "mirror_knight",
+            "enemyName": "镜中骑士",
+            "strategy": "defensive",
+            "deckMode": "full_pool"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.35,
+            "max": 0.9
+          }
+        }
+      ],
+      "cardAudit": [
+        {
+          "cardId": "rm_arc_bolt",
+          "cardName": "弧光箭",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "starter",
+          "calculated": 5,
+          "limit": 12,
+          "utilization": 0.4166666666666667,
+          "valid": true
+        },
+        {
+          "cardId": "rm_rune_shield",
+          "cardName": "符文护盾",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "starter",
+          "calculated": 4.800000000000001,
+          "limit": 12,
+          "utilization": 0.4000000000000001,
+          "valid": true
+        },
+        {
+          "cardId": "rm_frost_mark",
+          "cardName": "霜印",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "starter",
+          "calculated": 8,
+          "limit": 12,
+          "utilization": 0.6666666666666666,
+          "valid": true
+        },
+        {
+          "cardId": "rm_overcharge",
+          "cardName": "过载",
+          "classId": "rune_mage",
+          "cost": 0,
+          "rarity": "starter",
+          "calculated": 7,
+          "limit": 6,
+          "utilization": 1.1666666666666667,
+          "valid": false,
+          "fixAction": "建议费用提升至 1"
+        },
+        {
+          "cardId": "rm_chain_lightning",
+          "cardName": "连锁闪电",
+          "classId": "rune_mage",
+          "cost": 2,
+          "rarity": "common",
+          "calculated": 14,
+          "limit": 20,
+          "utilization": 0.7,
+          "valid": true
+        },
+        {
+          "cardId": "rm_mana_surge",
+          "cardName": "法力涌动",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "uncommon",
+          "calculated": 16,
+          "limit": 12,
+          "utilization": 1.3333333333333333,
+          "valid": false,
+          "fixAction": "建议费用提升至 2"
+        },
+        {
+          "cardId": "rm_arcane_barrier",
+          "cardName": "奥术屏障",
+          "classId": "rune_mage",
+          "cost": 2,
+          "rarity": "common",
+          "calculated": 9.600000000000001,
+          "limit": 20,
+          "utilization": 0.4800000000000001,
+          "valid": true
+        },
+        {
+          "cardId": "rm_spark",
+          "cardName": "火花",
+          "classId": "rune_mage",
+          "cost": 0,
+          "rarity": "common",
+          "calculated": 4,
+          "limit": 6,
+          "utilization": 0.6666666666666666,
+          "valid": true
+        },
+        {
+          "cardId": "rm_frost_nova",
+          "cardName": "冰霜新星",
+          "classId": "rune_mage",
+          "cost": 2,
+          "rarity": "common",
+          "calculated": 14,
+          "limit": 20,
+          "utilization": 0.7,
+          "valid": true
+        },
+        {
+          "cardId": "rm_arcane_intellect",
+          "cardName": "奥术智慧",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 12,
+          "limit": 12,
+          "utilization": 1,
+          "valid": true
+        },
+        {
+          "cardId": "rm_flame_burst",
+          "cardName": "烈焰爆发",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 8,
+          "limit": 12,
+          "utilization": 0.6666666666666666,
+          "valid": true
+        },
+        {
+          "cardId": "rm_mana_shield",
+          "cardName": "法力护盾",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 10,
+          "limit": 12,
+          "utilization": 0.8333333333333334,
+          "valid": true
+        },
+        {
+          "cardId": "rm_element_stack",
+          "cardName": "元素叠加",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "uncommon",
+          "calculated": 12,
+          "limit": 12,
+          "utilization": 1,
+          "valid": true
+        },
+        {
+          "cardId": "rm_meteor",
+          "cardName": "陨石",
+          "classId": "rune_mage",
+          "cost": 3,
+          "rarity": "rare",
+          "calculated": 22,
+          "limit": 30,
+          "utilization": 0.7333333333333333,
+          "valid": true
+        },
+        {
+          "cardId": "rm_channel",
+          "cardName": "引导",
+          "classId": "rune_mage",
+          "cost": 0,
+          "rarity": "common",
+          "calculated": 11,
+          "limit": 6,
+          "utilization": 1.8333333333333333,
+          "valid": false,
+          "fixAction": "建议费用提升至 1"
+        },
+        {
+          "cardId": "rm_rune_draw",
+          "cardName": "符文抽取",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 12,
+          "limit": 12,
+          "utilization": 1,
+          "valid": true
+        },
+        {
+          "cardId": "rm_static_field",
+          "cardName": "静电场",
+          "classId": "rune_mage",
+          "cost": 2,
+          "rarity": "uncommon",
+          "calculated": 12,
+          "limit": 20,
+          "utilization": 0.6,
+          "valid": true
+        },
+        {
+          "cardId": "rm_arcane_blast",
+          "cardName": "奥术冲击",
+          "classId": "rune_mage",
+          "cost": 2,
+          "rarity": "uncommon",
+          "calculated": 14,
+          "limit": 20,
+          "utilization": 0.7,
+          "valid": true
+        },
+        {
+          "cardId": "rm_energy_well",
+          "cardName": "能量井",
+          "classId": "rune_mage",
+          "cost": 0,
+          "rarity": "uncommon",
+          "calculated": 14,
+          "limit": 6,
+          "utilization": 2.3333333333333335,
+          "valid": false,
+          "fixAction": "建议费用提升至 2"
+        },
+        {
+          "cardId": "rm_poison_rune",
+          "cardName": "毒符文",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 6,
+          "limit": 12,
+          "utilization": 0.5,
+          "valid": true
+        },
+        {
+          "cardId": "rm_ward",
+          "cardName": "守护符文",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "uncommon",
+          "calculated": 6.4,
+          "limit": 12,
+          "utilization": 0.5333333333333333,
+          "valid": true
+        },
+        {
+          "cardId": "rm_focus",
+          "cardName": "专注",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 14,
+          "limit": 12,
+          "utilization": 1.1666666666666667,
+          "valid": false,
+          "fixAction": "建议费用提升至 2"
+        },
+        {
+          "cardId": "rm_glacial_spike",
+          "cardName": "冰刺",
+          "classId": "rune_mage",
+          "cost": 2,
+          "rarity": "rare",
+          "calculated": 20,
+          "limit": 20,
+          "utilization": 1,
+          "valid": true
+        },
+        {
+          "cardId": "rm_cost_cut",
+          "cardName": "减费符文",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "rare",
+          "calculated": 4,
+          "limit": 12,
+          "utilization": 0.3333333333333333,
+          "valid": true
+        },
+        {
+          "cardId": "rm_surge_bolt",
+          "cardName": "涌能箭",
+          "classId": "rune_mage",
+          "cost": 1,
+          "rarity": "uncommon",
+          "calculated": 14,
+          "limit": 12,
+          "utilization": 1.1666666666666667,
+          "valid": false,
+          "fixAction": "建议费用提升至 2"
+        }
+      ],
+      "overallScore": 11,
+      "passed": false,
+      "suggestions": [
+        "普通·记忆蛆虫 过简单（胜率 100%）：考虑削弱 starter 攻击或提高敌人压力",
+        "Boss·遗迹吞忆者 过难（胜率 0%）：考虑增强防御牌或降低 enemy 伤害预期",
+        " 6 张卡 Power Budget 超标，首张：过载（建议费用提升至 1）",
+        "多张卡接近预算上限（4 张），整体卡组可能偏强"
+      ],
+      "generatedAt": "2026-05-29T16:50:56.477Z"
+    },
+    {
+      "classId": "oath_knight",
+      "className": "旧誓骑士",
+      "runsPerCell": 6,
+      "cells": [
+        {
+          "scenarioId": "normal_maggot",
+          "scenarioLabel": "普通·记忆蛆虫",
+          "enemyId": "memory_maggot",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 1.5,
+            "passed": false,
+            "enemyId": "memory_maggot",
+            "enemyName": "记忆蛆虫",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.65,
+            "max": 0.98
+          }
+        },
+        {
+          "scenarioId": "normal_maggot",
+          "scenarioLabel": "普通·记忆蛆虫",
+          "enemyId": "memory_maggot",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 6.166666666666667,
+            "passed": false,
+            "enemyId": "memory_maggot",
+            "enemyName": "记忆蛆虫",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.65,
+            "max": 0.98
+          }
+        },
+        {
+          "scenarioId": "normal_hound",
+          "scenarioLabel": "普通·地下城猎犬",
+          "enemyId": "dungeon_hound",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 2.1666666666666665,
+            "passed": false,
+            "enemyId": "dungeon_hound",
+            "enemyName": "地牢猎犬",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.55,
+            "max": 0.95
+          }
+        },
+        {
+          "scenarioId": "normal_hound",
+          "scenarioLabel": "普通·地下城猎犬",
+          "enemyId": "dungeon_hound",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 7.333333333333333,
+            "passed": false,
+            "enemyId": "dungeon_hound",
+            "enemyName": "地牢猎犬",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.55,
+            "max": 0.95
+          }
+        },
+        {
+          "scenarioId": "elite_mirror",
+          "scenarioLabel": "精英·镜中骑士",
+          "enemyId": "mirror_knight",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 4,
+            "passed": false,
+            "enemyId": "mirror_knight",
+            "enemyName": "镜中骑士",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.2,
+            "max": 0.75
+          }
+        },
+        {
+          "scenarioId": "elite_mirror",
+          "scenarioLabel": "精英·镜中骑士",
+          "enemyId": "mirror_knight",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 12.5,
+            "passed": false,
+            "enemyId": "mirror_knight",
+            "enemyName": "镜中骑士",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.2,
+            "max": 0.75
+          }
+        },
+        {
+          "scenarioId": "elite_abyss",
+          "scenarioLabel": "精英·深渊收藏家",
+          "enemyId": "abyss_collector",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 3.3333333333333335,
+            "passed": false,
+            "enemyId": "abyss_collector",
+            "enemyName": "深渊收藏家",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.15,
+            "max": 0.7
+          }
+        },
+        {
+          "scenarioId": "elite_abyss",
+          "scenarioLabel": "精英·深渊收藏家",
+          "enemyId": "abyss_collector",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 11.666666666666666,
+            "passed": false,
+            "enemyId": "abyss_collector",
+            "enemyName": "深渊收藏家",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.15,
+            "max": 0.7
+          }
+        },
+        {
+          "scenarioId": "boss_devourer",
+          "scenarioLabel": "Boss·遗迹吞忆者",
+          "enemyId": "memory_devourer",
+          "strategy": "greedy",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 0,
+            "losses": 6,
+            "timeouts": 0,
+            "winRate": 0,
+            "avgTurns": 8.5,
+            "passed": false,
+            "enemyId": "memory_devourer",
+            "enemyName": "遗迹吞忆者",
+            "strategy": "greedy",
+            "deckMode": "starter"
+          },
+          "rating": "too_hard",
+          "expectedWinRate": {
+            "min": 0.05,
+            "max": 0.45
+          }
+        },
+        {
+          "scenarioId": "boss_devourer",
+          "scenarioLabel": "Boss·遗迹吞忆者",
+          "enemyId": "memory_devourer",
+          "strategy": "defensive",
+          "deckMode": "starter",
+          "report": {
+            "runs": 6,
+            "wins": 0,
+            "losses": 6,
+            "timeouts": 0,
+            "winRate": 0,
+            "avgTurns": 19,
+            "passed": false,
+            "enemyId": "memory_devourer",
+            "enemyName": "遗迹吞忆者",
+            "strategy": "defensive",
+            "deckMode": "starter"
+          },
+          "rating": "too_hard",
+          "expectedWinRate": {
+            "min": 0.05,
+            "max": 0.45
+          }
+        },
+        {
+          "scenarioId": "full_pool_elite",
+          "scenarioLabel": "全卡池·镜中骑士",
+          "enemyId": "mirror_knight",
+          "strategy": "greedy",
+          "deckMode": "full_pool",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 3.6666666666666665,
+            "passed": false,
+            "enemyId": "mirror_knight",
+            "enemyName": "镜中骑士",
+            "strategy": "greedy",
+            "deckMode": "full_pool"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.35,
+            "max": 0.9
+          }
+        },
+        {
+          "scenarioId": "full_pool_elite",
+          "scenarioLabel": "全卡池·镜中骑士",
+          "enemyId": "mirror_knight",
+          "strategy": "defensive",
+          "deckMode": "full_pool",
+          "report": {
+            "runs": 6,
+            "wins": 6,
+            "losses": 0,
+            "timeouts": 0,
+            "winRate": 1,
+            "avgTurns": 18.833333333333332,
+            "passed": false,
+            "enemyId": "mirror_knight",
+            "enemyName": "镜中骑士",
+            "strategy": "defensive",
+            "deckMode": "full_pool"
+          },
+          "rating": "too_easy",
+          "expectedWinRate": {
+            "min": 0.35,
+            "max": 0.9
+          }
+        }
+      ],
+      "cardAudit": [
+        {
+          "cardId": "ok_shield_bash",
+          "cardName": "盾击",
+          "classId": "oath_knight",
+          "cost": 1,
+          "rarity": "starter",
+          "calculated": 7.2,
+          "limit": 12,
+          "utilization": 0.6,
+          "valid": true
+        },
+        {
+          "cardId": "ok_fortify",
+          "cardName": "筑垒",
+          "classId": "oath_knight",
+          "cost": 1,
+          "rarity": "starter",
+          "calculated": 5.6000000000000005,
+          "limit": 12,
+          "utilization": 0.46666666666666673,
+          "valid": true
+        },
+        {
+          "cardId": "ok_counter_stance",
+          "cardName": "反击姿态",
+          "classId": "oath_knight",
+          "cost": 1,
+          "rarity": "starter",
+          "calculated": 6.4,
+          "limit": 12,
+          "utilization": 0.5333333333333333,
+          "valid": true
+        },
+        {
+          "cardId": "ok_oath_strike",
+          "cardName": "誓约重击",
+          "classId": "oath_knight",
+          "cost": 2,
+          "rarity": "starter",
+          "calculated": 12,
+          "limit": 20,
+          "utilization": 0.6,
+          "valid": true
+        },
+        {
+          "cardId": "ok_iron_wall",
+          "cardName": "铁壁",
+          "classId": "oath_knight",
+          "cost": 2,
+          "rarity": "common",
+          "calculated": 11.200000000000001,
+          "limit": 20,
+          "utilization": 0.56,
+          "valid": true
+        },
+        {
+          "cardId": "ok_holy_strike",
+          "cardName": "圣誓打击",
+          "classId": "oath_knight",
+          "cost": 2,
+          "rarity": "uncommon",
+          "calculated": 17.2,
+          "limit": 20,
+          "utilization": 0.86,
+          "valid": true
+        },
+        {
+          "cardId": "ok_bulwark",
+          "cardName": "壁垒",
+          "classId": "oath_knight",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 8,
+          "limit": 12,
+          "utilization": 0.6666666666666666,
+          "valid": true
+        },
+        {
+          "cardId": "ok_pommel_strike",
+          "cardName": "柄击",
+          "classId": "oath_knight",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 8.4,
+          "limit": 12,
+          "utilization": 0.7000000000000001,
+          "valid": true
+        },
+        {
+          "cardId": "ok_hold_the_line",
+          "cardName": "坚守阵线",
+          "classId": "oath_knight",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 6.4,
+          "limit": 12,
+          "utilization": 0.5333333333333333,
+          "valid": true
+        },
+        {
+          "cardId": "ok_rally",
+          "cardName": "集结",
+          "classId": "oath_knight",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 7.2,
+          "limit": 12,
+          "utilization": 0.6,
+          "valid": true
+        },
+        {
+          "cardId": "ok_heavy_slash",
+          "cardName": "重斩",
+          "classId": "oath_knight",
+          "cost": 2,
+          "rarity": "common",
+          "calculated": 13,
+          "limit": 20,
+          "utilization": 0.65,
+          "valid": true
+        },
+        {
+          "cardId": "ok_deflect",
+          "cardName": "偏转",
+          "classId": "oath_knight",
+          "cost": 0,
+          "rarity": "common",
+          "calculated": 3.2,
+          "limit": 6,
+          "utilization": 0.5333333333333333,
+          "valid": true
+        },
+        {
+          "cardId": "ok_armor_up",
+          "cardName": "披甲",
+          "classId": "oath_knight",
+          "cost": 1,
+          "rarity": "uncommon",
+          "calculated": 8,
+          "limit": 12,
+          "utilization": 0.6666666666666666,
+          "valid": true
+        },
+        {
+          "cardId": "ok_judgment",
+          "cardName": "裁决",
+          "classId": "oath_knight",
+          "cost": 2,
+          "rarity": "uncommon",
+          "calculated": 18,
+          "limit": 20,
+          "utilization": 0.9,
+          "valid": true
+        },
+        {
+          "cardId": "ok_bastion",
+          "cardName": "堡垒",
+          "classId": "oath_knight",
+          "cost": 2,
+          "rarity": "uncommon",
+          "calculated": 12.8,
+          "limit": 20,
+          "utilization": 0.64,
+          "valid": true
+        },
+        {
+          "cardId": "ok_oath_guard",
+          "cardName": "誓约守护",
+          "classId": "oath_knight",
+          "cost": 1,
+          "rarity": "uncommon",
+          "calculated": 10.8,
+          "limit": 12,
+          "utilization": 0.9,
+          "valid": true
+        },
+        {
+          "cardId": "ok_shield_wall",
+          "cardName": "盾墙",
+          "classId": "oath_knight",
+          "cost": 3,
+          "rarity": "rare",
+          "calculated": 19.200000000000003,
+          "limit": 30,
+          "utilization": 0.6400000000000001,
+          "valid": true
+        },
+        {
+          "cardId": "ok_retaliate",
+          "cardName": "报复",
+          "classId": "oath_knight",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 9,
+          "limit": 12,
+          "utilization": 0.75,
+          "valid": true
+        },
+        {
+          "cardId": "ok_inspire",
+          "cardName": "鼓舞",
+          "classId": "oath_knight",
+          "cost": 1,
+          "rarity": "common",
+          "calculated": 10,
+          "limit": 12,
+          "utilization": 0.8333333333333334,
+          "valid": true
+        },
+        {
+          "cardId": "ok_crush",
+          "cardName": "粉碎",
+          "classId": "oath_knight",
+          "cost": 3,
+          "rarity": "rare",
+          "calculated": 18,
+          "limit": 30,
+          "utilization": 0.6,
+          "valid": true
+        },
+        {
+          "cardId": "ok_firm_stand",
+          "cardName": "稳固站姿",
+          "classId": "oath_knight",
+          "cost": 0,
+          "rarity": "common",
+          "calculated": 6.4,
+          "limit": 6,
+          "utilization": 1.0666666666666667,
+          "valid": false,
+          "fixAction": "建议费用提升至 1"
+        },
+        {
+          "cardId": "ok_parry",
+          "cardName": "招架",
+          "classId": "oath_knight",
+          "cost": 1,
+          "rarity": "uncommon",
+          "calculated": 8,
+          "limit": 12,
+          "utilization": 0.6666666666666666,
+          "valid": true
+        },
+        {
+          "cardId": "ok_oath_heal",
+          "cardName": "誓约疗愈",
+          "classId": "oath_knight",
+          "cost": 2,
+          "rarity": "uncommon",
+          "calculated": 28.8,
+          "limit": 20,
+          "utilization": 1.44,
+          "valid": false,
+          "fixAction": "建议费用提升至 3"
+        },
+        {
+          "cardId": "ok_unbreakable",
+          "cardName": "不屈",
+          "classId": "oath_knight",
+          "cost": 2,
+          "rarity": "rare",
+          "calculated": 18.4,
+          "limit": 20,
+          "utilization": 0.9199999999999999,
+          "valid": true
+        },
+        {
+          "cardId": "ok_final_stand",
+          "cardName": "最终防线",
+          "classId": "oath_knight",
+          "cost": 1,
+          "rarity": "rare",
+          "calculated": 8,
+          "limit": 12,
+          "utilization": 0.6666666666666666,
+          "valid": true
+        }
+      ],
+      "overallScore": 16,
+      "passed": false,
+      "suggestions": [
+        "普通·记忆蛆虫 过简单（胜率 100%）：考虑削弱 starter 攻击或提高敌人压力",
+        "Boss·遗迹吞忆者 过难（胜率 0%）：考虑增强防御牌或降低 enemy 伤害预期",
+        " 2 张卡 Power Budget 超标，首张：稳固站姿（建议费用提升至 1）"
+      ],
+      "generatedAt": "2026-05-29T16:50:56.549Z"
+    }
+  ],
+  "allCardAudit": [
+    {
+      "cardId": "bb_strike",
+      "cardName": "血刃斩",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "starter",
+      "calculated": 6,
+      "limit": 12,
+      "utilization": 0.5,
+      "valid": true
+    },
+    {
+      "cardId": "bb_guard",
+      "cardName": "猎手格挡",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "starter",
+      "calculated": 4,
+      "limit": 12,
+      "utilization": 0.3333333333333333,
+      "valid": true
+    },
+    {
+      "cardId": "bb_bleed_slash",
+      "cardName": "裂血斩",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "starter",
+      "calculated": 8,
+      "limit": 12,
+      "utilization": 0.6666666666666666,
+      "valid": true
+    },
+    {
+      "cardId": "bb_vampiric_cut",
+      "cardName": "吸血切割",
+      "classId": "blood_blade_hunter",
+      "cost": 2,
+      "rarity": "starter",
+      "calculated": 14,
+      "limit": 20,
+      "utilization": 0.7,
+      "valid": true
+    },
+    {
+      "cardId": "bb_deep_cut",
+      "cardName": "深割",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 7,
+      "limit": 12,
+      "utilization": 0.5833333333333334,
+      "valid": true
+    },
+    {
+      "cardId": "bb_blood_frenzy",
+      "cardName": "血狂",
+      "classId": "blood_blade_hunter",
+      "cost": 2,
+      "rarity": "common",
+      "calculated": 16,
+      "limit": 20,
+      "utilization": 0.8,
+      "valid": true
+    },
+    {
+      "cardId": "bb_adrenaline",
+      "cardName": "肾上腺素",
+      "classId": "blood_blade_hunter",
+      "cost": 0,
+      "rarity": "uncommon",
+      "calculated": 12,
+      "limit": 6,
+      "utilization": 2,
+      "valid": false,
+      "fixAction": "建议费用提升至 1"
+    },
+    {
+      "cardId": "bb_quick_slice",
+      "cardName": "快斩",
+      "classId": "blood_blade_hunter",
+      "cost": 0,
+      "rarity": "common",
+      "calculated": 3,
+      "limit": 6,
+      "utilization": 0.5,
+      "valid": true
+    },
+    {
+      "cardId": "bb_twin_fangs",
+      "cardName": "双牙",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 8,
+      "limit": 12,
+      "utilization": 0.6666666666666666,
+      "valid": true
+    },
+    {
+      "cardId": "bb_open_artery",
+      "cardName": "开脉",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 6,
+      "limit": 12,
+      "utilization": 0.5,
+      "valid": true
+    },
+    {
+      "cardId": "bb_blood_guard",
+      "cardName": "血盾",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 5.2,
+      "limit": 12,
+      "utilization": 0.43333333333333335,
+      "valid": true
+    },
+    {
+      "cardId": "bb_predator",
+      "cardName": "猎食本能",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 10,
+      "limit": 12,
+      "utilization": 0.8333333333333334,
+      "valid": true
+    },
+    {
+      "cardId": "bb_rupture",
+      "cardName": "破裂",
+      "classId": "blood_blade_hunter",
+      "cost": 2,
+      "rarity": "uncommon",
+      "calculated": 15,
+      "limit": 20,
+      "utilization": 0.75,
+      "valid": true
+    },
+    {
+      "cardId": "bb_sanguine",
+      "cardName": "血疗",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "uncommon",
+      "calculated": 12,
+      "limit": 12,
+      "utilization": 1,
+      "valid": true
+    },
+    {
+      "cardId": "bb_crimson_flurry",
+      "cardName": "赤色乱舞",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "uncommon",
+      "calculated": 11,
+      "limit": 12,
+      "utilization": 0.9166666666666666,
+      "valid": true
+    },
+    {
+      "cardId": "bb_life_tap",
+      "cardName": "生命换能",
+      "classId": "blood_blade_hunter",
+      "cost": 0,
+      "rarity": "common",
+      "calculated": 5,
+      "limit": 6,
+      "utilization": 0.8333333333333334,
+      "valid": true
+    },
+    {
+      "cardId": "bb_hemorrhage",
+      "cardName": "大出血",
+      "classId": "blood_blade_hunter",
+      "cost": 2,
+      "rarity": "uncommon",
+      "calculated": 15,
+      "limit": 20,
+      "utilization": 0.75,
+      "valid": true
+    },
+    {
+      "cardId": "bb_butcher",
+      "cardName": "屠夫",
+      "classId": "blood_blade_hunter",
+      "cost": 2,
+      "rarity": "rare",
+      "calculated": 14,
+      "limit": 20,
+      "utilization": 0.7,
+      "valid": true
+    },
+    {
+      "cardId": "bb_rend",
+      "cardName": "撕裂",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 7,
+      "limit": 12,
+      "utilization": 0.5833333333333334,
+      "valid": true
+    },
+    {
+      "cardId": "bb_bloodlust",
+      "cardName": "嗜血",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 2,
+      "limit": 12,
+      "utilization": 0.16666666666666666,
+      "valid": true
+    },
+    {
+      "cardId": "bb_evade",
+      "cardName": "闪避",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 8.4,
+      "limit": 12,
+      "utilization": 0.7000000000000001,
+      "valid": true
+    },
+    {
+      "cardId": "bb_fatal_cut",
+      "cardName": "致命切割",
+      "classId": "blood_blade_hunter",
+      "cost": 3,
+      "rarity": "rare",
+      "calculated": 20,
+      "limit": 30,
+      "utilization": 0.6666666666666666,
+      "valid": true
+    },
+    {
+      "cardId": "bb_coagulate",
+      "cardName": "凝血",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "uncommon",
+      "calculated": 20.4,
+      "limit": 12,
+      "utilization": 1.7,
+      "valid": false,
+      "fixAction": "建议费用提升至 3"
+    },
+    {
+      "cardId": "bb_expose",
+      "cardName": "暴露伤口",
+      "classId": "blood_blade_hunter",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 8,
+      "limit": 12,
+      "utilization": 0.6666666666666666,
+      "valid": true
+    },
+    {
+      "cardId": "bb_second_wind",
+      "cardName": "二度呼吸",
+      "classId": "blood_blade_hunter",
+      "cost": 2,
+      "rarity": "uncommon",
+      "calculated": 9.600000000000001,
+      "limit": 20,
+      "utilization": 0.4800000000000001,
+      "valid": true
+    },
+    {
+      "cardId": "rm_arc_bolt",
+      "cardName": "弧光箭",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "starter",
+      "calculated": 5,
+      "limit": 12,
+      "utilization": 0.4166666666666667,
+      "valid": true
+    },
+    {
+      "cardId": "rm_rune_shield",
+      "cardName": "符文护盾",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "starter",
+      "calculated": 4.800000000000001,
+      "limit": 12,
+      "utilization": 0.4000000000000001,
+      "valid": true
+    },
+    {
+      "cardId": "rm_frost_mark",
+      "cardName": "霜印",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "starter",
+      "calculated": 8,
+      "limit": 12,
+      "utilization": 0.6666666666666666,
+      "valid": true
+    },
+    {
+      "cardId": "rm_overcharge",
+      "cardName": "过载",
+      "classId": "rune_mage",
+      "cost": 0,
+      "rarity": "starter",
+      "calculated": 7,
+      "limit": 6,
+      "utilization": 1.1666666666666667,
+      "valid": false,
+      "fixAction": "建议费用提升至 1"
+    },
+    {
+      "cardId": "rm_chain_lightning",
+      "cardName": "连锁闪电",
+      "classId": "rune_mage",
+      "cost": 2,
+      "rarity": "common",
+      "calculated": 14,
+      "limit": 20,
+      "utilization": 0.7,
+      "valid": true
+    },
+    {
+      "cardId": "rm_mana_surge",
+      "cardName": "法力涌动",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "uncommon",
+      "calculated": 16,
+      "limit": 12,
+      "utilization": 1.3333333333333333,
+      "valid": false,
+      "fixAction": "建议费用提升至 2"
+    },
+    {
+      "cardId": "rm_arcane_barrier",
+      "cardName": "奥术屏障",
+      "classId": "rune_mage",
+      "cost": 2,
+      "rarity": "common",
+      "calculated": 9.600000000000001,
+      "limit": 20,
+      "utilization": 0.4800000000000001,
+      "valid": true
+    },
+    {
+      "cardId": "rm_spark",
+      "cardName": "火花",
+      "classId": "rune_mage",
+      "cost": 0,
+      "rarity": "common",
+      "calculated": 4,
+      "limit": 6,
+      "utilization": 0.6666666666666666,
+      "valid": true
+    },
+    {
+      "cardId": "rm_frost_nova",
+      "cardName": "冰霜新星",
+      "classId": "rune_mage",
+      "cost": 2,
+      "rarity": "common",
+      "calculated": 14,
+      "limit": 20,
+      "utilization": 0.7,
+      "valid": true
+    },
+    {
+      "cardId": "rm_arcane_intellect",
+      "cardName": "奥术智慧",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 12,
+      "limit": 12,
+      "utilization": 1,
+      "valid": true
+    },
+    {
+      "cardId": "rm_flame_burst",
+      "cardName": "烈焰爆发",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 8,
+      "limit": 12,
+      "utilization": 0.6666666666666666,
+      "valid": true
+    },
+    {
+      "cardId": "rm_mana_shield",
+      "cardName": "法力护盾",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 10,
+      "limit": 12,
+      "utilization": 0.8333333333333334,
+      "valid": true
+    },
+    {
+      "cardId": "rm_element_stack",
+      "cardName": "元素叠加",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "uncommon",
+      "calculated": 12,
+      "limit": 12,
+      "utilization": 1,
+      "valid": true
+    },
+    {
+      "cardId": "rm_meteor",
+      "cardName": "陨石",
+      "classId": "rune_mage",
+      "cost": 3,
+      "rarity": "rare",
+      "calculated": 22,
+      "limit": 30,
+      "utilization": 0.7333333333333333,
+      "valid": true
+    },
+    {
+      "cardId": "rm_channel",
+      "cardName": "引导",
+      "classId": "rune_mage",
+      "cost": 0,
+      "rarity": "common",
+      "calculated": 11,
+      "limit": 6,
+      "utilization": 1.8333333333333333,
+      "valid": false,
+      "fixAction": "建议费用提升至 1"
+    },
+    {
+      "cardId": "rm_rune_draw",
+      "cardName": "符文抽取",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 12,
+      "limit": 12,
+      "utilization": 1,
+      "valid": true
+    },
+    {
+      "cardId": "rm_static_field",
+      "cardName": "静电场",
+      "classId": "rune_mage",
+      "cost": 2,
+      "rarity": "uncommon",
+      "calculated": 12,
+      "limit": 20,
+      "utilization": 0.6,
+      "valid": true
+    },
+    {
+      "cardId": "rm_arcane_blast",
+      "cardName": "奥术冲击",
+      "classId": "rune_mage",
+      "cost": 2,
+      "rarity": "uncommon",
+      "calculated": 14,
+      "limit": 20,
+      "utilization": 0.7,
+      "valid": true
+    },
+    {
+      "cardId": "rm_energy_well",
+      "cardName": "能量井",
+      "classId": "rune_mage",
+      "cost": 0,
+      "rarity": "uncommon",
+      "calculated": 14,
+      "limit": 6,
+      "utilization": 2.3333333333333335,
+      "valid": false,
+      "fixAction": "建议费用提升至 2"
+    },
+    {
+      "cardId": "rm_poison_rune",
+      "cardName": "毒符文",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 6,
+      "limit": 12,
+      "utilization": 0.5,
+      "valid": true
+    },
+    {
+      "cardId": "rm_ward",
+      "cardName": "守护符文",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "uncommon",
+      "calculated": 6.4,
+      "limit": 12,
+      "utilization": 0.5333333333333333,
+      "valid": true
+    },
+    {
+      "cardId": "rm_focus",
+      "cardName": "专注",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 14,
+      "limit": 12,
+      "utilization": 1.1666666666666667,
+      "valid": false,
+      "fixAction": "建议费用提升至 2"
+    },
+    {
+      "cardId": "rm_glacial_spike",
+      "cardName": "冰刺",
+      "classId": "rune_mage",
+      "cost": 2,
+      "rarity": "rare",
+      "calculated": 20,
+      "limit": 20,
+      "utilization": 1,
+      "valid": true
+    },
+    {
+      "cardId": "rm_cost_cut",
+      "cardName": "减费符文",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "rare",
+      "calculated": 4,
+      "limit": 12,
+      "utilization": 0.3333333333333333,
+      "valid": true
+    },
+    {
+      "cardId": "rm_surge_bolt",
+      "cardName": "涌能箭",
+      "classId": "rune_mage",
+      "cost": 1,
+      "rarity": "uncommon",
+      "calculated": 14,
+      "limit": 12,
+      "utilization": 1.1666666666666667,
+      "valid": false,
+      "fixAction": "建议费用提升至 2"
+    },
+    {
+      "cardId": "ok_shield_bash",
+      "cardName": "盾击",
+      "classId": "oath_knight",
+      "cost": 1,
+      "rarity": "starter",
+      "calculated": 7.2,
+      "limit": 12,
+      "utilization": 0.6,
+      "valid": true
+    },
+    {
+      "cardId": "ok_fortify",
+      "cardName": "筑垒",
+      "classId": "oath_knight",
+      "cost": 1,
+      "rarity": "starter",
+      "calculated": 5.6000000000000005,
+      "limit": 12,
+      "utilization": 0.46666666666666673,
+      "valid": true
+    },
+    {
+      "cardId": "ok_counter_stance",
+      "cardName": "反击姿态",
+      "classId": "oath_knight",
+      "cost": 1,
+      "rarity": "starter",
+      "calculated": 6.4,
+      "limit": 12,
+      "utilization": 0.5333333333333333,
+      "valid": true
+    },
+    {
+      "cardId": "ok_oath_strike",
+      "cardName": "誓约重击",
+      "classId": "oath_knight",
+      "cost": 2,
+      "rarity": "starter",
+      "calculated": 12,
+      "limit": 20,
+      "utilization": 0.6,
+      "valid": true
+    },
+    {
+      "cardId": "ok_iron_wall",
+      "cardName": "铁壁",
+      "classId": "oath_knight",
+      "cost": 2,
+      "rarity": "common",
+      "calculated": 11.200000000000001,
+      "limit": 20,
+      "utilization": 0.56,
+      "valid": true
+    },
+    {
+      "cardId": "ok_holy_strike",
+      "cardName": "圣誓打击",
+      "classId": "oath_knight",
+      "cost": 2,
+      "rarity": "uncommon",
+      "calculated": 17.2,
+      "limit": 20,
+      "utilization": 0.86,
+      "valid": true
+    },
+    {
+      "cardId": "ok_bulwark",
+      "cardName": "壁垒",
+      "classId": "oath_knight",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 8,
+      "limit": 12,
+      "utilization": 0.6666666666666666,
+      "valid": true
+    },
+    {
+      "cardId": "ok_pommel_strike",
+      "cardName": "柄击",
+      "classId": "oath_knight",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 8.4,
+      "limit": 12,
+      "utilization": 0.7000000000000001,
+      "valid": true
+    },
+    {
+      "cardId": "ok_hold_the_line",
+      "cardName": "坚守阵线",
+      "classId": "oath_knight",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 6.4,
+      "limit": 12,
+      "utilization": 0.5333333333333333,
+      "valid": true
+    },
+    {
+      "cardId": "ok_rally",
+      "cardName": "集结",
+      "classId": "oath_knight",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 7.2,
+      "limit": 12,
+      "utilization": 0.6,
+      "valid": true
+    },
+    {
+      "cardId": "ok_heavy_slash",
+      "cardName": "重斩",
+      "classId": "oath_knight",
+      "cost": 2,
+      "rarity": "common",
+      "calculated": 13,
+      "limit": 20,
+      "utilization": 0.65,
+      "valid": true
+    },
+    {
+      "cardId": "ok_deflect",
+      "cardName": "偏转",
+      "classId": "oath_knight",
+      "cost": 0,
+      "rarity": "common",
+      "calculated": 3.2,
+      "limit": 6,
+      "utilization": 0.5333333333333333,
+      "valid": true
+    },
+    {
+      "cardId": "ok_armor_up",
+      "cardName": "披甲",
+      "classId": "oath_knight",
+      "cost": 1,
+      "rarity": "uncommon",
+      "calculated": 8,
+      "limit": 12,
+      "utilization": 0.6666666666666666,
+      "valid": true
+    },
+    {
+      "cardId": "ok_judgment",
+      "cardName": "裁决",
+      "classId": "oath_knight",
+      "cost": 2,
+      "rarity": "uncommon",
+      "calculated": 18,
+      "limit": 20,
+      "utilization": 0.9,
+      "valid": true
+    },
+    {
+      "cardId": "ok_bastion",
+      "cardName": "堡垒",
+      "classId": "oath_knight",
+      "cost": 2,
+      "rarity": "uncommon",
+      "calculated": 12.8,
+      "limit": 20,
+      "utilization": 0.64,
+      "valid": true
+    },
+    {
+      "cardId": "ok_oath_guard",
+      "cardName": "誓约守护",
+      "classId": "oath_knight",
+      "cost": 1,
+      "rarity": "uncommon",
+      "calculated": 10.8,
+      "limit": 12,
+      "utilization": 0.9,
+      "valid": true
+    },
+    {
+      "cardId": "ok_shield_wall",
+      "cardName": "盾墙",
+      "classId": "oath_knight",
+      "cost": 3,
+      "rarity": "rare",
+      "calculated": 19.200000000000003,
+      "limit": 30,
+      "utilization": 0.6400000000000001,
+      "valid": true
+    },
+    {
+      "cardId": "ok_retaliate",
+      "cardName": "报复",
+      "classId": "oath_knight",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 9,
+      "limit": 12,
+      "utilization": 0.75,
+      "valid": true
+    },
+    {
+      "cardId": "ok_inspire",
+      "cardName": "鼓舞",
+      "classId": "oath_knight",
+      "cost": 1,
+      "rarity": "common",
+      "calculated": 10,
+      "limit": 12,
+      "utilization": 0.8333333333333334,
+      "valid": true
+    },
+    {
+      "cardId": "ok_crush",
+      "cardName": "粉碎",
+      "classId": "oath_knight",
+      "cost": 3,
+      "rarity": "rare",
+      "calculated": 18,
+      "limit": 30,
+      "utilization": 0.6,
+      "valid": true
+    },
+    {
+      "cardId": "ok_firm_stand",
+      "cardName": "稳固站姿",
+      "classId": "oath_knight",
+      "cost": 0,
+      "rarity": "common",
+      "calculated": 6.4,
+      "limit": 6,
+      "utilization": 1.0666666666666667,
+      "valid": false,
+      "fixAction": "建议费用提升至 1"
+    },
+    {
+      "cardId": "ok_parry",
+      "cardName": "招架",
+      "classId": "oath_knight",
+      "cost": 1,
+      "rarity": "uncommon",
+      "calculated": 8,
+      "limit": 12,
+      "utilization": 0.6666666666666666,
+      "valid": true
+    },
+    {
+      "cardId": "ok_oath_heal",
+      "cardName": "誓约疗愈",
+      "classId": "oath_knight",
+      "cost": 2,
+      "rarity": "uncommon",
+      "calculated": 28.8,
+      "limit": 20,
+      "utilization": 1.44,
+      "valid": false,
+      "fixAction": "建议费用提升至 3"
+    },
+    {
+      "cardId": "ok_unbreakable",
+      "cardName": "不屈",
+      "classId": "oath_knight",
+      "cost": 2,
+      "rarity": "rare",
+      "calculated": 18.4,
+      "limit": 20,
+      "utilization": 0.9199999999999999,
+      "valid": true
+    },
+    {
+      "cardId": "ok_final_stand",
+      "cardName": "最终防线",
+      "classId": "oath_knight",
+      "cost": 1,
+      "rarity": "rare",
+      "calculated": 8,
+      "limit": 12,
+      "utilization": 0.6666666666666666,
+      "valid": true
+    }
+  ],
+  "overallScore": 14,
+  "passed": false,
+  "suggestions": [
+    "普通·记忆蛆虫 过简单（胜率 100%）：考虑削弱 starter 攻击或提高敌人压力",
+    "Boss·遗迹吞忆者 过难（胜率 0%）：考虑增强防御牌或降低 enemy 伤害预期",
+    " 2 张卡 Power Budget 超标，首张：肾上腺素（建议费用提升至 1）",
+    " 6 张卡 Power Budget 超标，首张：过载（建议费用提升至 1）",
+    "多张卡接近预算上限（4 张），整体卡组可能偏强",
+    " 2 张卡 Power Budget 超标，首张：稳固站姿（建议费用提升至 1）",
+    "全局：10 张卡预算校验失败，请优先修复"
+  ],
+  "generatedAt": "2026-05-29T16:50:56.550Z"
+}

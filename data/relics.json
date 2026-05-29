@@ -1,0 +1,139 @@
+{
+  "relics": [
+    {
+      "id": "broken_pocketwatch",
+      "name": "破碎怀表",
+      "description": "每场战斗第一回合多抽 1 张牌。",
+      "trigger": "combat_start_first_turn",
+      "params": { "drawBonus": 1 },
+      "rarity": "common",
+      "imagePrompt": "broken pocket watch relic, cracked glass, stopped hands"
+    },
+    {
+      "id": "blood_ring",
+      "name": "血色戒指",
+      "description": "每次造成流血时回复 1 点生命。",
+      "trigger": "on_bleed_dealt",
+      "params": { "heal": 1 },
+      "rarity": "uncommon",
+      "imagePrompt": "blood ring relic, crimson gem, dark metal band"
+    },
+    {
+      "id": "old_knight_badge",
+      "name": "旧骑士徽章",
+      "description": "每回合第一次打出防御牌效果 +2。",
+      "trigger": "first_defense_card",
+      "params": { "blockBonus": 2 },
+      "rarity": "common",
+      "imagePrompt": "old knight badge relic, worn crest, tarnished silver"
+    },
+    {
+      "id": "demon_dice",
+      "name": "恶魔骰子",
+      "description": "战斗开始时随机一张手牌费用变为 0。",
+      "trigger": "combat_start",
+      "params": {},
+      "rarity": "uncommon",
+      "imagePrompt": "demon dice relic, black bone dice, red pips"
+    },
+    {
+      "id": "ash_pendant",
+      "name": "灰烬吊坠",
+      "description": "每场战斗第一次生命低于 50% 时获得 2 点能量。",
+      "trigger": "low_hp_once",
+      "params": { "energy": 2, "threshold": 0.5 },
+      "rarity": "rare",
+      "imagePrompt": "ash pendant relic, gray cinder stone, silver chain"
+    },
+    {
+      "id": "memory_shard",
+      "name": "记忆碎片",
+      "description": "战斗胜利额外获得 10 金币。",
+      "trigger": "combat_victory",
+      "params": { "goldBonus": 10 },
+      "rarity": "common",
+      "imagePrompt": "memory shard relic, glowing crystal fragment"
+    },
+    {
+      "id": "iron_charm",
+      "name": "铁护符",
+      "description": "战斗开始时获得 4 点格挡。",
+      "trigger": "combat_start",
+      "params": { "block": 4 },
+      "rarity": "common",
+      "imagePrompt": "iron charm relic, rugged talisman"
+    },
+    {
+      "id": "cursed_coin",
+      "name": "诅咒硬币",
+      "description": "获得金币 +20%，但最大生命 -5。",
+      "trigger": "passive",
+      "params": { "goldMultiplier": 1.2, "maxHpPenalty": 5 },
+      "rarity": "uncommon",
+      "imagePrompt": "cursed coin relic, tarnished gold, dark aura"
+    },
+    {
+      "id": "healer_salve",
+      "name": "疗愈香膏",
+      "description": "休息点额外回复 5 点生命。",
+      "trigger": "rest_bonus",
+      "params": { "healBonus": 5 },
+      "rarity": "common",
+      "imagePrompt": "healer salve relic, small jar, herbal paste"
+    },
+    {
+      "id": "void_lens",
+      "name": "虚空透镜",
+      "description": "精英战斗胜利额外获得 15 金币。",
+      "trigger": "elite_victory",
+      "params": { "goldBonus": 15 },
+      "rarity": "rare",
+      "imagePrompt": "void lens relic, dark glass orb"
+    },
+    {
+      "id": "thornmail_shackles",
+      "name": "荆棘镣铐",
+      "description": "受到攻击伤害后，对敌人施加 1 层流血。",
+      "trigger": "on_damage_taken",
+      "params": { "bleed": 1 },
+      "rarity": "uncommon",
+      "imagePrompt": "thornmail shackles relic, rusted chains with spikes"
+    },
+    {
+      "id": "arcane_battery",
+      "name": "奥术电池",
+      "description": "每回合第一次打出技能牌额外获得 1 点能量。",
+      "trigger": "first_skill_card",
+      "params": { "energy": 1 },
+      "rarity": "uncommon",
+      "imagePrompt": "arcane battery relic, glowing crystal capacitor"
+    },
+    {
+      "id": "hunters_token",
+      "name": "猎人信物",
+      "description": "每回合第一次攻击额外造成 3 点伤害。",
+      "trigger": "first_attack_card",
+      "params": { "damage": 3 },
+      "rarity": "common",
+      "imagePrompt": "hunter token relic, carved bone talisman"
+    },
+    {
+      "id": "vow_shield",
+      "name": "誓约之盾",
+      "description": "每回合开始时获得 2 点格挡。",
+      "trigger": "turn_start",
+      "params": { "block": 2 },
+      "rarity": "common",
+      "imagePrompt": "vow shield relic, small enchanted buckler"
+    },
+    {
+      "id": "memory_crown",
+      "name": "记忆王冠",
+      "description": "击败 Boss 额外获得 30 金币。",
+      "trigger": "boss_victory",
+      "params": { "goldBonus": 30 },
+      "rarity": "rare",
+      "imagePrompt": "memory crown relic, fractured golden circlet"
+    }
+  ]
+}

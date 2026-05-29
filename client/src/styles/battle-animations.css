@@ -1,0 +1,231 @@
+/* ===== Battle Presentation Layer (Phase 9) ===== */
+
+.battle-view-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.battle-animation-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.hit-shake {
+  animation: hitShake 0.45s ease-out;
+}
+
+@keyframes hitShake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-12px); }
+  40% { transform: translateX(12px); }
+  60% { transform: translateX(-8px); }
+  80% { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+
+.enemy-idle {
+  animation: enemyIdle 4s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.boss-idle {
+  animation: bossIdle 3.5s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes enemyIdle {
+  0%, 100% { transform: scale(1) rotate(-0.8deg) translateY(0); }
+  50% { transform: scale(1.015) rotate(0.8deg) translateY(-4px); }
+}
+
+@keyframes bossIdle {
+  0%, 100% { transform: scale(1) rotate(-1deg) translateY(0); }
+  50% { transform: scale(1.025) rotate(1deg) translateY(-6px); }
+}
+
+.eye-blink .enemy-sprite-placeholder,
+.eye-blink .monster-portrait-frame,
+.eye-blink .monster-sprite__frame {
+  animation: eyeBlink 120ms ease-out;
+}
+
+@keyframes eyeBlink {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.04); }
+}
+
+.combat-portrait-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.combat-portrait-glow {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 18%;
+  background: radial-gradient(ellipse, rgba(196, 92, 62, 0.35) 0%, transparent 70%);
+  filter: blur(8px);
+  z-index: 0;
+}
+
+.enemy-sprite-placeholder {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transform-origin: center bottom;
+  overflow: visible;
+}
+
+.enemy-size-normal .enemy-sprite-placeholder {
+  width: 220px;
+  height: 280px;
+}
+
+.enemy-size-elite .enemy-sprite-placeholder {
+  width: 280px;
+  height: 360px;
+}
+
+.enemy-size-boss .enemy-sprite-placeholder {
+  width: 340px;
+  height: 460px;
+}
+
+.enemy-sprite-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom center;
+  border-radius: 8px;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.55));
+}
+
+.sprite-icon {
+  font-size: 4rem;
+}
+
+.animated-combatant.enemy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animated-combatant.player {
+  flex-shrink: 0;
+}
+
+.player-idle {
+  animation: playerBreathe 4s ease-in-out infinite;
+}
+
+@keyframes playerBreathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.008); }
+}
+
+.floating-text {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 2rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+  z-index: 110;
+  font-family: var(--font-display);
+}
+
+.float-damage { color: #ff4444; }
+.float-block { color: #6eb5ff; }
+.float-heal { color: #5aee8a; }
+.float-status { color: #d4a853; }
+
+.flying-card {
+  position: fixed;
+  z-index: 105;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(135deg, var(--bg-card), var(--accent));
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.screen-flash {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+}
+
+.flash-red {
+  background: radial-gradient(circle, rgba(180, 40, 40, 0.6) 0%, rgba(80, 0, 0, 0.3) 100%);
+}
+
+.boss-phase-banner {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 120;
+  padding: 1rem 2rem;
+  background: rgba(80, 10, 10, 0.9);
+  border: 2px solid #ff4444;
+  border-radius: 8px;
+  color: #ffd0d0;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.card-face--hand.playable {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card-face--hand.playable:active {
+  transform: translateY(-4px) scale(0.96);
+}
+
+.combat-screen {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .enemy-size-normal .enemy-sprite-placeholder {
+    width: 180px;
+    height: 230px;
+  }
+
+  .enemy-size-elite .enemy-sprite-placeholder {
+    width: 220px;
+    height: 280px;
+  }
+
+  .enemy-size-boss .enemy-sprite-placeholder {
+    width: 260px;
+    height: 340px;
+  }
+}

@@ -1,0 +1,553 @@
+{
+  "cards": [
+    {
+      "id": "bb_strike",
+      "name": "血刃斩",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 1,
+      "rarity": "starter",
+      "description": "造成 6 点伤害。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 6,
+          "target": "enemy"
+        }
+      ],
+      "upgradedEffects": [
+        {
+          "mechanism": "damage",
+          "value": 9,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 6,
+      "imagePrompt": "血刃斩 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_guard",
+      "name": "猎手格挡",
+      "classId": "blood_blade_hunter",
+      "type": "defense",
+      "cost": 1,
+      "rarity": "starter",
+      "description": "获得 5 点格挡。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 5,
+          "target": "self"
+        }
+      ],
+      "upgradedEffects": [
+        {
+          "mechanism": "block",
+          "value": 8,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 4,
+      "imagePrompt": "猎手格挡 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_bleed_slash",
+      "name": "裂血斩",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 1,
+      "rarity": "starter",
+      "description": "造成 4 点伤害，施加 2 层流血。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 4,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "applyBleed",
+          "value": 2,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 8,
+      "imagePrompt": "裂血斩 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_vampiric_cut",
+      "name": "吸血切割",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 2,
+      "rarity": "starter",
+      "description": "造成 8 点伤害，回复 2 点生命。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 8,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "heal",
+          "value": 2,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 14,
+      "imagePrompt": "吸血切割 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_deep_cut",
+      "name": "深割",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 1,
+      "rarity": "common",
+      "description": "造成 5 点伤害，施加 1 层流血。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 5,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "applyBleed",
+          "value": 1,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 7,
+      "imagePrompt": "深割 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_blood_frenzy",
+      "name": "血狂",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 2,
+      "rarity": "common",
+      "description": "造成 10 点伤害，施加 3 层流血。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 10,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "applyBleed",
+          "value": 3,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 16,
+      "imagePrompt": "血狂 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_adrenaline",
+      "name": "肾上腺素",
+      "classId": "blood_blade_hunter",
+      "type": "skill",
+      "cost": 0,
+      "rarity": "uncommon",
+      "description": "获得 1 点能量，抽 1 张牌，失去 2 点生命。",
+      "effects": [
+        {
+          "mechanism": "gainEnergy",
+          "value": 1,
+          "target": "self"
+        },
+        {
+          "mechanism": "draw",
+          "value": 1,
+          "target": "self"
+        },
+        {
+          "mechanism": "loseHp",
+          "value": 2,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 6,
+      "imagePrompt": "肾上腺素 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_quick_slice",
+      "name": "快斩",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 0,
+      "rarity": "common",
+      "description": "造成 3 点伤害。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 3,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 3,
+      "imagePrompt": "快斩 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_twin_fangs",
+      "name": "双牙",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 1,
+      "rarity": "common",
+      "description": "造成 4 点伤害两次。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 4,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "damage",
+          "value": 4,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 8,
+      "imagePrompt": "双牙 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_open_artery",
+      "name": "开脉",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 1,
+      "rarity": "common",
+      "description": "施加 3 层流血。",
+      "effects": [
+        {
+          "mechanism": "applyBleed",
+          "value": 3,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 6,
+      "imagePrompt": "开脉 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_blood_guard",
+      "name": "血盾",
+      "classId": "blood_blade_hunter",
+      "type": "defense",
+      "cost": 1,
+      "rarity": "common",
+      "description": "获得 4 点格挡，施加 1 层流血。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 4,
+          "target": "self"
+        },
+        {
+          "mechanism": "applyBleed",
+          "value": 1,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 5.2,
+      "imagePrompt": "血盾 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_predator",
+      "name": "猎食本能",
+      "classId": "blood_blade_hunter",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "common",
+      "description": "抽 2 张牌，失去 2 点生命。",
+      "effects": [
+        {
+          "mechanism": "draw",
+          "value": 2,
+          "target": "self"
+        },
+        {
+          "mechanism": "loseHp",
+          "value": 2,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 10,
+      "imagePrompt": "猎食本能 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_rupture",
+      "name": "破裂",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 2,
+      "rarity": "uncommon",
+      "description": "造成 11 点伤害，施加 2 层流血。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 11,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "applyBleed",
+          "value": 2,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 15,
+      "imagePrompt": "破裂 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_sanguine",
+      "name": "血疗",
+      "classId": "blood_blade_hunter",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "uncommon",
+      "description": "回复 4 点生命。",
+      "effects": [
+        {
+          "mechanism": "heal",
+          "value": 4,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 12,
+      "imagePrompt": "血疗 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_crimson_flurry",
+      "name": "赤色乱舞",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 1,
+      "rarity": "uncommon",
+      "description": "造成 5 点伤害，抽 1 张牌。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 5,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "draw",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 11,
+      "imagePrompt": "赤色乱舞 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_life_tap",
+      "name": "生命换能",
+      "classId": "blood_blade_hunter",
+      "type": "skill",
+      "cost": 0,
+      "rarity": "common",
+      "description": "获得 1 点能量，失去 3 点生命。",
+      "effects": [
+        {
+          "mechanism": "gainEnergy",
+          "value": 1,
+          "target": "self"
+        },
+        {
+          "mechanism": "loseHp",
+          "value": 3,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 5,
+      "imagePrompt": "生命换能 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_hemorrhage",
+      "name": "大出血",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 2,
+      "rarity": "uncommon",
+      "description": "造成 7 点伤害，施加 4 层流血。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 7,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "applyBleed",
+          "value": 4,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 15,
+      "imagePrompt": "大出血 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_butcher",
+      "name": "屠夫",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 2,
+      "rarity": "rare",
+      "description": "造成 16 点伤害，消耗。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 16,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "exhaust",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 14,
+      "imagePrompt": "屠夫 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_rend",
+      "name": "撕裂",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 1,
+      "rarity": "common",
+      "description": "造成 7 点伤害。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 7,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 7,
+      "imagePrompt": "撕裂 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_bloodlust",
+      "name": "嗜血",
+      "classId": "blood_blade_hunter",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "common",
+      "description": "获得 1 点力量，失去 2 点生命。",
+      "effects": [
+        {
+          "mechanism": "gainStrength",
+          "value": 1,
+          "target": "self"
+        },
+        {
+          "mechanism": "loseHp",
+          "value": 2,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 2,
+      "imagePrompt": "嗜血 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_evade",
+      "name": "闪避",
+      "classId": "blood_blade_hunter",
+      "type": "defense",
+      "cost": 1,
+      "rarity": "common",
+      "description": "获得 3 点格挡，抽 1 张牌。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 3,
+          "target": "self"
+        },
+        {
+          "mechanism": "draw",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 8.4,
+      "imagePrompt": "闪避 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_fatal_cut",
+      "name": "致命切割",
+      "classId": "blood_blade_hunter",
+      "type": "attack",
+      "cost": 3,
+      "rarity": "rare",
+      "description": "造成 20 点伤害。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 20,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 20,
+      "imagePrompt": "致命切割 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_coagulate",
+      "name": "凝血",
+      "classId": "blood_blade_hunter",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "uncommon",
+      "description": "回复 6 点生命，获得 3 点格挡。",
+      "effects": [
+        {
+          "mechanism": "heal",
+          "value": 6,
+          "target": "self"
+        },
+        {
+          "mechanism": "block",
+          "value": 3,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 20.4,
+      "imagePrompt": "凝血 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_expose",
+      "name": "暴露伤口",
+      "classId": "blood_blade_hunter",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "common",
+      "description": "施加 2 层易伤。",
+      "effects": [
+        {
+          "mechanism": "applyVulnerable",
+          "value": 2,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 8,
+      "imagePrompt": "暴露伤口 card art, blood_blade_hunter, dungeon roguelike"
+    },
+    {
+      "id": "bb_second_wind",
+      "name": "二度呼吸",
+      "classId": "blood_blade_hunter",
+      "type": "defense",
+      "cost": 2,
+      "rarity": "uncommon",
+      "description": "获得 12 点格挡。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 12,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 9.6,
+      "imagePrompt": "二度呼吸 card art, blood_blade_hunter, dungeon roguelike"
+    }
+  ]
+}

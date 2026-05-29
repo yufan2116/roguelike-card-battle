@@ -1,0 +1,95 @@
+﻿{
+    "ok":  true,
+    "results":  [
+                    {
+                        "entityId":  "broken_pocketwatch",
+                        "entityName":  "破碎怀表",
+                        "imagePath":  "generated/relic/broken_pocketwatch/var_1780074646635_14.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "blood_ring",
+                        "entityName":  "血色戒指",
+                        "imagePath":  "generated/relic/blood_ring/var_1780074669546_15.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "old_knight_badge",
+                        "entityName":  "旧骑士徽章",
+                        "imagePath":  "generated/relic/old_knight_badge/var_1780074706811_16.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "demon_dice",
+                        "entityName":  "恶魔骰子",
+                        "imagePath":  "generated/relic/demon_dice/var_1780074724630_17.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "ash_pendant",
+                        "entityName":  "灰烬吊坠",
+                        "imagePath":  "generated/relic/ash_pendant/var_1780074762103_18.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "memory_shard",
+                        "entityName":  "记忆碎片",
+                        "imagePath":  "generated/relic/memory_shard/var_1780074802643_19.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "iron_charm",
+                        "entityName":  "铁护符",
+                        "imagePath":  "generated/relic/iron_charm/var_1780074840051_20.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "cursed_coin",
+                        "entityName":  "诅咒硬币",
+                        "imagePath":  "generated/relic/cursed_coin/var_1780074876059_21.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "healer_salve",
+                        "entityName":  "疗愈香膏",
+                        "imagePath":  "generated/relic/healer_salve/var_1780074912908_22.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "void_lens",
+                        "entityName":  "虚空透镜",
+                        "imagePath":  "generated/relic/void_lens/var_1780074957355_23.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "thornmail_shackles",
+                        "entityName":  "荆棘镣铐",
+                        "imagePath":  "generated/relic/thornmail_shackles/var_1780074994663_24.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "arcane_battery",
+                        "entityName":  "奥术电池",
+                        "imagePath":  "generated/relic/arcane_battery/var_1780075034152_25.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "hunters_token",
+                        "entityName":  "猎人信物",
+                        "imagePath":  "generated/relic/hunters_token/var_1780075089779_26.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "vow_shield",
+                        "entityName":  "誓约之盾",
+                        "imagePath":  "generated/relic/vow_shield/var_1780075126146_27.png",
+                        "usedFallback":  false
+                    },
+                    {
+                        "entityId":  "memory_crown",
+                        "entityName":  "记忆王冠",
+                        "imagePath":  "generated/relic/memory_crown/var_1780075160647_28.png",
+                        "usedFallback":  false
+                    }
+                ]
+}

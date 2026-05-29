@@ -1,0 +1,452 @@
+﻿[
+    {
+        "id":  "bb_strike",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_strike/var_1780075226575_29.png"
+    },
+    {
+        "id":  "bb_guard",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_guard/var_1780075264485_30.png"
+    },
+    {
+        "id":  "bb_bleed_slash",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_bleed_slash/var_1780075305811_31.png"
+    },
+    {
+        "id":  "bb_vampiric_cut",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_vampiric_cut/var_1780075355032_32.png"
+    },
+    {
+        "id":  "bb_deep_cut",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_deep_cut/var_1780075395426_33.png"
+    },
+    {
+        "id":  "bb_blood_frenzy",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_blood_frenzy/var_1780075437848_34.png"
+    },
+    {
+        "id":  "bb_adrenaline",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_adrenaline/var_1780075485669_35.png"
+    },
+    {
+        "id":  "bb_quick_slice",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_quick_slice/var_1780075534935_36.png"
+    },
+    {
+        "id":  "bb_twin_fangs",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_twin_fangs/var_1780075585307_37.png"
+    },
+    {
+        "id":  "bb_open_artery",
+        "ok":  true,
+        "fallback":  true,
+        "path":  "generated/card/bb_open_artery/var_1780075625246_38.svg"
+    },
+    {
+        "id":  "bb_blood_guard",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_blood_guard/var_1780075656471_39.png"
+    },
+    {
+        "id":  "bb_predator",
+        "ok":  true,
+        "fallback":  true,
+        "path":  "generated/card/bb_predator/var_1780075692673_40.svg"
+    },
+    {
+        "id":  "bb_rupture",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_rupture/var_1780075710813_41.png"
+    },
+    {
+        "id":  "bb_sanguine",
+        "ok":  true,
+        "fallback":  true,
+        "path":  "generated/card/bb_sanguine/var_1780075752350_42.svg"
+    },
+    {
+        "id":  "bb_crimson_flurry",
+        "ok":  true,
+        "fallback":  true,
+        "path":  "generated/card/bb_crimson_flurry/var_1780075758457_43.svg"
+    },
+    {
+        "id":  "bb_life_tap",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_life_tap/var_1780075790556_44.png"
+    },
+    {
+        "id":  "bb_hemorrhage",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_hemorrhage/var_1780075830434_45.png"
+    },
+    {
+        "id":  "bb_butcher",
+        "ok":  true,
+        "fallback":  true,
+        "path":  "generated/card/bb_butcher/var_1780075873137_46.svg"
+    },
+    {
+        "id":  "bb_rend",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_rend/var_1780075887532_47.png"
+    },
+    {
+        "id":  "bb_bloodlust",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_bloodlust/var_1780075929325_48.png"
+    },
+    {
+        "id":  "bb_evade",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_evade/var_1780075968296_49.png"
+    },
+    {
+        "id":  "bb_fatal_cut",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_fatal_cut/var_1780076008671_50.png"
+    },
+    {
+        "id":  "bb_coagulate",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_coagulate/var_1780076050379_51.png"
+    },
+    {
+        "id":  "bb_expose",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_expose/var_1780076088642_52.png"
+    },
+    {
+        "id":  "bb_second_wind",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/bb_second_wind/var_1780076135109_53.png"
+    },
+    {
+        "id":  "rm_arc_bolt",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_arc_bolt/var_1780076173147_54.png"
+    },
+    {
+        "id":  "rm_rune_shield",
+        "ok":  true,
+        "fallback":  true,
+        "path":  "generated/card/rm_rune_shield/var_1780076216513_55.svg"
+    },
+    {
+        "id":  "rm_frost_mark",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_frost_mark/var_1780076230325_56.png"
+    },
+    {
+        "id":  "rm_overcharge",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_overcharge/var_1780076270273_57.png"
+    },
+    {
+        "id":  "rm_chain_lightning",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_chain_lightning/var_1780076305781_58.png"
+    },
+    {
+        "id":  "rm_mana_surge",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_mana_surge/var_1780076351117_59.png"
+    },
+    {
+        "id":  "rm_arcane_barrier",
+        "ok":  true,
+        "fallback":  true,
+        "path":  "generated/card/rm_arcane_barrier/var_1780076394894_60.svg"
+    },
+    {
+        "id":  "rm_spark",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_spark/var_1780076415783_61.png"
+    },
+    {
+        "id":  "rm_frost_nova",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_frost_nova/var_1780076450350_62.png"
+    },
+    {
+        "id":  "rm_arcane_intellect",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_arcane_intellect/var_1780076489778_63.png"
+    },
+    {
+        "id":  "rm_flame_burst",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_flame_burst/var_1780076533872_64.png"
+    },
+    {
+        "id":  "rm_mana_shield",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_mana_shield/var_1780076577032_65.png"
+    },
+    {
+        "id":  "rm_element_stack",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_element_stack/var_1780076626334_66.png"
+    },
+    {
+        "id":  "rm_meteor",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_meteor/var_1780076664480_67.png"
+    },
+    {
+        "id":  "rm_channel",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_channel/var_1780076700659_68.png"
+    },
+    {
+        "id":  "rm_rune_draw",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_rune_draw/var_1780076739342_69.png"
+    },
+    {
+        "id":  "rm_static_field",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_static_field/var_1780076785591_70.png"
+    },
+    {
+        "id":  "rm_arcane_blast",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_arcane_blast/var_1780076823566_71.png"
+    },
+    {
+        "id":  "rm_energy_well",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_energy_well/var_1780076860887_72.png"
+    },
+    {
+        "id":  "rm_poison_rune",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_poison_rune/var_1780076896885_73.png"
+    },
+    {
+        "id":  "rm_ward",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_ward/var_1780076936520_74.png"
+    },
+    {
+        "id":  "rm_focus",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_focus/var_1780076974378_75.png"
+    },
+    {
+        "id":  "rm_glacial_spike",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_glacial_spike/var_1780077019405_76.png"
+    },
+    {
+        "id":  "rm_cost_cut",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_cost_cut/var_1780077063652_77.png"
+    },
+    {
+        "id":  "rm_surge_bolt",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/rm_surge_bolt/var_1780077105635_78.png"
+    },
+    {
+        "id":  "ok_shield_bash",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_shield_bash/var_1780077156772_79.png"
+    },
+    {
+        "id":  "ok_fortify",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_fortify/var_1780077194287_80.png"
+    },
+    {
+        "id":  "ok_counter_stance",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_counter_stance/var_1780077231778_81.png"
+    },
+    {
+        "id":  "ok_oath_strike",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_oath_strike/var_1780077272330_82.png"
+    },
+    {
+        "id":  "ok_iron_wall",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_iron_wall/var_1780077309006_83.png"
+    },
+    {
+        "id":  "ok_holy_strike",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_holy_strike/var_1780077350168_84.png"
+    },
+    {
+        "id":  "ok_bulwark",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_bulwark/var_1780077388627_85.png"
+    },
+    {
+        "id":  "ok_pommel_strike",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_pommel_strike/var_1780077428726_86.png"
+    },
+    {
+        "id":  "ok_hold_the_line",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_hold_the_line/var_1780077465203_87.png"
+    },
+    {
+        "id":  "ok_rally",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_rally/var_1780077502231_88.png"
+    },
+    {
+        "id":  "ok_heavy_slash",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_heavy_slash/var_1780077540422_89.png"
+    },
+    {
+        "id":  "ok_deflect",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_deflect/var_1780077582391_90.png"
+    },
+    {
+        "id":  "ok_armor_up",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_armor_up/var_1780077622248_91.png"
+    },
+    {
+        "id":  "ok_judgment",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_judgment/var_1780077661331_92.png"
+    },
+    {
+        "id":  "ok_bastion",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_bastion/var_1780077699843_93.png"
+    },
+    {
+        "id":  "ok_oath_guard",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_oath_guard/var_1780077733102_94.png"
+    },
+    {
+        "id":  "ok_shield_wall",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_shield_wall/var_1780077771483_95.png"
+    },
+    {
+        "id":  "ok_retaliate",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_retaliate/var_1780077808544_96.png"
+    },
+    {
+        "id":  "ok_inspire",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_inspire/var_1780077855200_97.png"
+    },
+    {
+        "id":  "ok_crush",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_crush/var_1780077901812_98.png"
+    },
+    {
+        "id":  "ok_firm_stand",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_firm_stand/var_1780077943177_99.png"
+    },
+    {
+        "id":  "ok_parry",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_parry/var_1780077980128_100.png"
+    },
+    {
+        "id":  "ok_oath_heal",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_oath_heal/var_1780078015361_101.png"
+    },
+    {
+        "id":  "ok_unbreakable",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_unbreakable/var_1780078056176_102.png"
+    },
+    {
+        "id":  "ok_final_stand",
+        "ok":  true,
+        "fallback":  false,
+        "path":  "generated/card/ok_final_stand/var_1780078094181_103.png"
+    }
+]

@@ -1,0 +1,300 @@
+{
+  "enemies": [
+    {
+      "id": "memory_maggot",
+      "name": "记忆蛆虫",
+      "maxHp": 28,
+      "actions": [
+        {
+          "id": "nibble",
+          "intent": { "type": "attack", "value": 4, "description": "啃咬" },
+          "effects": [{ "mechanism": "damage", "value": 4, "target": "enemy" }]
+        },
+        {
+          "id": "wriggle",
+          "intent": { "type": "defend", "value": 5, "description": "蠕动防御" },
+          "effects": [{ "mechanism": "block", "value": 5, "target": "self" }]
+        },
+        {
+          "id": "nibble",
+          "intent": { "type": "attack", "value": 6, "description": "猛啃" },
+          "effects": [{ "mechanism": "damage", "value": 6, "target": "enemy" }]
+        }
+      ],
+      "imagePrompt": "memory maggot monster, pale worm with glowing fragments"
+    },
+    {
+      "id": "broken_guard",
+      "name": "破碎守卫",
+      "maxHp": 38,
+      "actions": [
+        {
+          "id": "shield_slam",
+          "intent": { "type": "attack", "value": 7, "description": "盾击" },
+          "effects": [{ "mechanism": "damage", "value": 7, "target": "enemy" }]
+        },
+        {
+          "id": "brace",
+          "intent": { "type": "defend", "value": 8, "description": "举盾" },
+          "effects": [{ "mechanism": "block", "value": 8, "target": "self" }]
+        },
+        {
+          "id": "shield_slam",
+          "intent": { "type": "attack", "value": 9, "description": "重盾击" },
+          "effects": [{ "mechanism": "damage", "value": 9, "target": "enemy" }]
+        }
+      ],
+      "imagePrompt": "broken stone guard, cracked armor, dungeon sentinel"
+    },
+    {
+      "id": "fear_crow",
+      "name": "恐惧乌鸦",
+      "maxHp": 22,
+      "actions": [
+        {
+          "id": "peck",
+          "intent": { "type": "attack", "value": 5, "description": "啄击" },
+          "effects": [{ "mechanism": "damage", "value": 5, "target": "enemy" }]
+        },
+        {
+          "id": "caw",
+          "intent": { "type": "debuff", "value": 2, "description": "恐惧嘶鸣" },
+          "effects": [{ "mechanism": "applyWeak", "value": 2, "target": "enemy" }]
+        },
+        {
+          "id": "peck",
+          "intent": { "type": "attack", "value": 8, "description": "连啄" },
+          "effects": [{ "mechanism": "damage", "value": 8, "target": "enemy" }]
+        }
+      ],
+      "imagePrompt": "fear crow monster, shadowy feathers, red eyes"
+    },
+    {
+      "id": "dungeon_hound",
+      "name": "地牢猎犬",
+      "maxHp": 32,
+      "actions": [
+        {
+          "id": "bite",
+          "intent": { "type": "attack", "value": 6, "description": "撕咬" },
+          "effects": [{ "mechanism": "damage", "value": 6, "target": "enemy" }]
+        },
+        {
+          "id": "bite",
+          "intent": { "type": "attack", "value": 6, "description": "撕咬" },
+          "effects": [{ "mechanism": "damage", "value": 6, "target": "enemy" }]
+        },
+        {
+          "id": "howl",
+          "intent": { "type": "buff", "value": 2, "description": "战吼" },
+          "effects": [{ "mechanism": "gainStrength", "value": 2, "target": "self" }]
+        }
+      ],
+      "imagePrompt": "dungeon hound beast, scarred fur, chain collar"
+    },
+    {
+      "id": "lost_thief",
+      "name": "失魂盗贼",
+      "maxHp": 26,
+      "actions": [
+        {
+          "id": "stab",
+          "intent": { "type": "attack", "value": 8, "description": "背刺" },
+          "effects": [{ "mechanism": "damage", "value": 8, "target": "enemy" }]
+        },
+        {
+          "id": "dodge",
+          "intent": { "type": "defend", "value": 6, "description": "闪避" },
+          "effects": [{ "mechanism": "block", "value": 6, "target": "self" }]
+        },
+        {
+          "id": "stab",
+          "intent": { "type": "attack", "value": 5, "description": "快刺" },
+          "effects": [
+            { "mechanism": "damage", "value": 5, "target": "enemy" },
+            { "mechanism": "applyBleed", "value": 2, "target": "enemy" }
+          ]
+        }
+      ],
+      "imagePrompt": "lost soul thief, hollow eyes, tattered cloak"
+    },
+    {
+      "id": "corrupt_priest",
+      "name": "腐化祭司",
+      "maxHp": 30,
+      "actions": [
+        {
+          "id": "dark_bolt",
+          "intent": { "type": "attack", "value": 7, "description": "暗弹" },
+          "effects": [{ "mechanism": "damage", "value": 7, "target": "enemy" }]
+        },
+        {
+          "id": "curse",
+          "intent": { "type": "debuff", "value": 2, "description": "腐化诅咒" },
+          "effects": [{ "mechanism": "applyVulnerable", "value": 2, "target": "enemy" }]
+        },
+        {
+          "id": "heal_self",
+          "intent": { "type": "buff", "value": 6, "description": "汲取记忆" },
+          "effects": [{ "mechanism": "heal", "value": 6, "target": "self" }]
+        }
+      ],
+      "imagePrompt": "corrupt priest, torn robes, memory altar"
+    },
+    {
+      "id": "mirror_knight",
+      "name": "镜中骑士",
+      "maxHp": 58,
+      "isElite": true,
+      "actions": [
+        {
+          "id": "mirror_slash",
+          "intent": { "type": "attack", "value": 12, "description": "镜光斩" },
+          "effects": [{ "mechanism": "damage", "value": 12, "target": "enemy" }]
+        },
+        {
+          "id": "reflect",
+          "intent": { "type": "defend", "value": 12, "description": "镜盾" },
+          "effects": [{ "mechanism": "block", "value": 12, "target": "self" }]
+        },
+        {
+          "id": "mirror_slash",
+          "intent": { "type": "attack", "value": 15, "description": "裂镜斩" },
+          "effects": [
+            { "mechanism": "damage", "value": 15, "target": "enemy" },
+            { "mechanism": "applyWeak", "value": 1, "target": "enemy" }
+          ]
+        },
+        {
+          "id": "shatter",
+          "intent": { "type": "attack", "value": 10, "description": "碎镜连击" },
+          "effects": [
+            { "mechanism": "damage", "value": 10, "target": "enemy" },
+            { "mechanism": "damage", "value": 10, "target": "enemy" }
+          ]
+        }
+      ],
+      "imagePrompt": "mirror knight elite, reflective armor, fractured face"
+    },
+    {
+      "id": "abyss_collector",
+      "name": "深渊收藏家",
+      "maxHp": 52,
+      "isElite": true,
+      "actions": [
+        {
+          "id": "snatch",
+          "intent": { "type": "attack", "value": 10, "description": "攫取" },
+          "effects": [{ "mechanism": "damage", "value": 10, "target": "enemy" }]
+        },
+        {
+          "id": "hoard",
+          "intent": { "type": "buff", "value": 3, "description": "囤积力量" },
+          "effects": [{ "mechanism": "gainStrength", "value": 3, "target": "self" }]
+        },
+        {
+          "id": "snatch",
+          "intent": { "type": "attack", "value": 14, "description": "深渊攫取" },
+          "effects": [
+            { "mechanism": "damage", "value": 14, "target": "enemy" },
+            { "mechanism": "applyVulnerable", "value": 2, "target": "enemy" }
+          ]
+        },
+        {
+          "id": "collect",
+          "intent": { "type": "special", "value": 0, "description": "收藏诅咒" },
+          "effects": [{ "mechanism": "applyPoison", "value": 3, "target": "enemy" }]
+        }
+      ],
+      "imagePrompt": "abyss collector elite, many relics, tentacle arms"
+    },
+    {
+      "id": "memory_devourer",
+      "name": "遗迹吞忆者",
+      "maxHp": 120,
+      "isBoss": true,
+      "actions": [
+        {
+          "id": "memory_drain",
+          "intent": { "type": "debuff", "value": 2, "description": "吸收记忆" },
+          "effects": [
+            { "mechanism": "applyWeak", "value": 2, "target": "enemy" },
+            { "mechanism": "damage", "value": 8, "target": "enemy" }
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "phase": 1,
+          "hpThreshold": 1,
+          "actions": [
+            {
+              "id": "memory_drain",
+              "intent": { "type": "debuff", "value": 2, "description": "吸收记忆" },
+              "effects": [
+                { "mechanism": "applyWeak", "value": 2, "target": "enemy" },
+                { "mechanism": "damage", "value": 8, "target": "enemy" }
+              ]
+            },
+            {
+              "id": "summon_phantom",
+              "intent": { "type": "special", "value": 0, "description": "召唤幻影" },
+              "effects": [
+                { "mechanism": "gainStrength", "value": 2, "target": "self" },
+                { "mechanism": "block", "value": 8, "target": "self" }
+              ]
+            },
+            {
+              "id": "fear_pulse",
+              "intent": { "type": "attack", "value": 12, "description": "恐惧脉冲" },
+              "effects": [{ "mechanism": "damage", "value": 12, "target": "enemy" }]
+            }
+          ],
+          "onEnterEffects": []
+        },
+        {
+          "phase": 2,
+          "hpThreshold": 0.5,
+          "actions": [
+            {
+              "id": "rampage",
+              "intent": { "type": "attack", "value": 10, "description": "暴走连击" },
+              "effects": [
+                { "mechanism": "damage", "value": 10, "target": "enemy" },
+                { "mechanism": "damage", "value": 10, "target": "enemy" }
+              ]
+            },
+            {
+              "id": "curse_burst",
+              "intent": { "type": "debuff", "value": 3, "description": "强力诅咒" },
+              "effects": [
+                { "mechanism": "applyVulnerable", "value": 2, "target": "enemy" },
+                { "mechanism": "applyPoison", "value": 3, "target": "enemy" }
+              ]
+            },
+            {
+              "id": "devour",
+              "intent": { "type": "attack", "value": 18, "description": "吞噬" },
+              "effects": [
+                { "mechanism": "damage", "value": 18, "target": "enemy" },
+                { "mechanism": "heal", "value": 10, "target": "self" }
+              ]
+            },
+            {
+              "id": "memory_storm",
+              "intent": { "type": "attack", "value": 14, "description": "记忆风暴" },
+              "effects": [
+                { "mechanism": "damage", "value": 14, "target": "enemy" },
+                { "mechanism": "applyWeak", "value": 1, "target": "enemy" }
+              ]
+            }
+          ],
+          "onEnterEffects": [
+            { "mechanism": "gainStrength", "value": 3, "target": "self" }
+          ]
+        }
+      ],
+      "imagePrompt": "memory devourer boss, massive shadow entity absorbing memories"
+    }
+  ]
+}

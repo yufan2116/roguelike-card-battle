@@ -1,0 +1,518 @@
+{
+  "cards": [
+    {
+      "id": "rm_arc_bolt",
+      "name": "弧光箭",
+      "classId": "rune_mage",
+      "type": "attack",
+      "cost": 1,
+      "rarity": "starter",
+      "description": "造成 5 点伤害。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 5,
+          "target": "enemy"
+        }
+      ],
+      "upgradedEffects": [
+        {
+          "mechanism": "damage",
+          "value": 8,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 5,
+      "imagePrompt": "弧光箭 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_rune_shield",
+      "name": "符文护盾",
+      "classId": "rune_mage",
+      "type": "defense",
+      "cost": 1,
+      "rarity": "starter",
+      "description": "获得 6 点格挡。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 6,
+          "target": "self"
+        }
+      ],
+      "upgradedEffects": [
+        {
+          "mechanism": "block",
+          "value": 9,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 4.8,
+      "imagePrompt": "符文护盾 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_frost_mark",
+      "name": "霜印",
+      "classId": "rune_mage",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "starter",
+      "description": "施加 2 层虚弱。",
+      "effects": [
+        {
+          "mechanism": "applyWeak",
+          "value": 2,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 8,
+      "imagePrompt": "霜印 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_overcharge",
+      "name": "过载",
+      "classId": "rune_mage",
+      "type": "skill",
+      "cost": 0,
+      "rarity": "starter",
+      "description": "下一张攻击牌伤害 +3，失去 2 点生命。",
+      "effects": [
+        {
+          "mechanism": "increaseNextAttackDamage",
+          "value": 3,
+          "target": "self"
+        },
+        {
+          "mechanism": "loseHp",
+          "value": 2,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 7,
+      "imagePrompt": "过载 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_chain_lightning",
+      "name": "连锁闪电",
+      "classId": "rune_mage",
+      "type": "attack",
+      "cost": 2,
+      "rarity": "common",
+      "description": "造成 8 点伤害，抽 1 张牌。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 8,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "draw",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 14,
+      "imagePrompt": "连锁闪电 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_mana_surge",
+      "name": "法力涌动",
+      "classId": "rune_mage",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "uncommon",
+      "description": "获得 2 点能量。",
+      "effects": [
+        {
+          "mechanism": "gainEnergy",
+          "value": 2,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 16,
+      "imagePrompt": "法力涌动 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_arcane_barrier",
+      "name": "奥术屏障",
+      "classId": "rune_mage",
+      "type": "defense",
+      "cost": 2,
+      "rarity": "common",
+      "description": "获得 12 点格挡。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 12,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 9.6,
+      "imagePrompt": "奥术屏障 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_spark",
+      "name": "火花",
+      "classId": "rune_mage",
+      "type": "attack",
+      "cost": 0,
+      "rarity": "common",
+      "description": "造成 4 点伤害。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 4,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 4,
+      "imagePrompt": "火花 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_frost_nova",
+      "name": "冰霜新星",
+      "classId": "rune_mage",
+      "type": "attack",
+      "cost": 2,
+      "rarity": "common",
+      "description": "造成 6 点伤害，施加 2 层虚弱。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 6,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "applyWeak",
+          "value": 2,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 14,
+      "imagePrompt": "冰霜新星 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_arcane_intellect",
+      "name": "奥术智慧",
+      "classId": "rune_mage",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "common",
+      "description": "抽 2 张牌。",
+      "effects": [
+        {
+          "mechanism": "draw",
+          "value": 2,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 12,
+      "imagePrompt": "奥术智慧 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_flame_burst",
+      "name": "烈焰爆发",
+      "classId": "rune_mage",
+      "type": "attack",
+      "cost": 1,
+      "rarity": "common",
+      "description": "造成 8 点伤害。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 8,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 8,
+      "imagePrompt": "烈焰爆发 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_mana_shield",
+      "name": "法力护盾",
+      "classId": "rune_mage",
+      "type": "defense",
+      "cost": 1,
+      "rarity": "common",
+      "description": "获得 5 点格挡，抽 1 张牌。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 5,
+          "target": "self"
+        },
+        {
+          "mechanism": "draw",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 10,
+      "imagePrompt": "法力护盾 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_element_stack",
+      "name": "元素叠加",
+      "classId": "rune_mage",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "uncommon",
+      "description": "施加 2 层易伤，获得 1 点力量。",
+      "effects": [
+        {
+          "mechanism": "applyVulnerable",
+          "value": 2,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "gainStrength",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 12,
+      "imagePrompt": "元素叠加 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_meteor",
+      "name": "陨石",
+      "classId": "rune_mage",
+      "type": "attack",
+      "cost": 3,
+      "rarity": "rare",
+      "description": "造成 22 点伤害。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 22,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 22,
+      "imagePrompt": "陨石 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_channel",
+      "name": "引导",
+      "classId": "rune_mage",
+      "type": "skill",
+      "cost": 0,
+      "rarity": "common",
+      "description": "下一张攻击牌伤害 +4，失去 1 点生命。",
+      "effects": [
+        {
+          "mechanism": "increaseNextAttackDamage",
+          "value": 4,
+          "target": "self"
+        },
+        {
+          "mechanism": "loseHp",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 10,
+      "imagePrompt": "引导 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_rune_draw",
+      "name": "符文抽取",
+      "classId": "rune_mage",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "common",
+      "description": "抽 3 张牌，丢弃 1 张（简化为抽 2）。",
+      "effects": [
+        {
+          "mechanism": "draw",
+          "value": 2,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 12,
+      "imagePrompt": "符文抽取 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_static_field",
+      "name": "静电场",
+      "classId": "rune_mage",
+      "type": "skill",
+      "cost": 2,
+      "rarity": "uncommon",
+      "description": "施加 3 层虚弱。",
+      "effects": [
+        {
+          "mechanism": "applyWeak",
+          "value": 3,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 12,
+      "imagePrompt": "静电场 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_arcane_blast",
+      "name": "奥术冲击",
+      "classId": "rune_mage",
+      "type": "attack",
+      "cost": 2,
+      "rarity": "uncommon",
+      "description": "造成 14 点伤害。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 14,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 14,
+      "imagePrompt": "奥术冲击 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_energy_well",
+      "name": "能量井",
+      "classId": "rune_mage",
+      "type": "skill",
+      "cost": 0,
+      "rarity": "uncommon",
+      "description": "获得 2 点能量，消耗。",
+      "effects": [
+        {
+          "mechanism": "gainEnergy",
+          "value": 2,
+          "target": "self"
+        },
+        {
+          "mechanism": "exhaust",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 14,
+      "imagePrompt": "能量井 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_poison_rune",
+      "name": "毒符文",
+      "classId": "rune_mage",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "common",
+      "description": "施加 3 层中毒。",
+      "effects": [
+        {
+          "mechanism": "applyPoison",
+          "value": 3,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 6,
+      "imagePrompt": "毒符文 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_ward",
+      "name": "守护符文",
+      "classId": "rune_mage",
+      "type": "defense",
+      "cost": 1,
+      "rarity": "uncommon",
+      "description": "获得 8 点格挡。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 8,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 6.4,
+      "imagePrompt": "守护符文 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_focus",
+      "name": "专注",
+      "classId": "rune_mage",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "common",
+      "description": "获得 1 点能量，抽 1 张牌。",
+      "effects": [
+        {
+          "mechanism": "gainEnergy",
+          "value": 1,
+          "target": "self"
+        },
+        {
+          "mechanism": "draw",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 14,
+      "imagePrompt": "专注 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_glacial_spike",
+      "name": "冰刺",
+      "classId": "rune_mage",
+      "type": "attack",
+      "cost": 2,
+      "rarity": "rare",
+      "description": "造成 12 点伤害，施加 2 层虚弱。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 12,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "applyWeak",
+          "value": 2,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 20,
+      "imagePrompt": "冰刺 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_cost_cut",
+      "name": "减费符文",
+      "classId": "rune_mage",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "rare",
+      "description": "本场战斗卡牌费用 -1。",
+      "effects": [
+        {
+          "mechanism": "reduceCardCostThisCombat",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 4,
+      "imagePrompt": "减费符文 card art, rune_mage, dungeon roguelike"
+    },
+    {
+      "id": "rm_surge_bolt",
+      "name": "涌能箭",
+      "classId": "rune_mage",
+      "type": "attack",
+      "cost": 1,
+      "rarity": "uncommon",
+      "description": "造成 6 点伤害，获得 1 点能量。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 6,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "gainEnergy",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 14,
+      "imagePrompt": "涌能箭 card art, rune_mage, dungeon roguelike"
+    }
+  ]
+}

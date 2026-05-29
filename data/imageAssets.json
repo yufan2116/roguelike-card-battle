@@ -1,0 +1,1550 @@
+{
+  "globalPreset": "dark_fairy_tale",
+  "records": [
+    {
+      "entityType": "class",
+      "entityId": "blood_blade_hunter",
+      "variants": [
+        {
+          "id": "var_1780082811794_1",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/class/blood_blade_hunter/var_1780082811794_1.png",
+          "createdAt": "2026-05-29T19:27:09.239Z"
+        }
+      ],
+      "activeVariantId": "var_1780082811794_1"
+    },
+    {
+      "entityType": "class",
+      "entityId": "rune_mage",
+      "variants": [
+        {
+          "id": "var_1780082830453_2",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/class/rune_mage/var_1780082830453_2.png",
+          "createdAt": "2026-05-29T19:27:47.579Z"
+        }
+      ],
+      "activeVariantId": "var_1780082830453_2"
+    },
+    {
+      "entityType": "class",
+      "entityId": "oath_knight",
+      "variants": [
+        {
+          "id": "var_1780082868794_3",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/class/oath_knight/var_1780082868794_3.png",
+          "createdAt": "2026-05-29T19:28:27.983Z"
+        }
+      ],
+      "activeVariantId": "var_1780082868794_3"
+    },
+    {
+      "entityType": "enemy",
+      "entityId": "memory_maggot",
+      "variants": [
+        {
+          "id": "var_1780082909192_4",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/memory_maggot/portrait/var_1780082909192_4.png",
+          "createdAt": "2026-05-29T19:29:28.707Z",
+          "role": "portrait"
+        },
+        {
+          "id": "var_1780082969934_5",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/memory_maggot/background/var_1780082969934_5.png",
+          "createdAt": "2026-05-29T19:30:16.026Z",
+          "role": "background"
+        }
+      ],
+      "activeVariantId": "var_1780082909192_4",
+      "monsterLayer": {
+        "portraitVariantId": "var_1780082909192_4",
+        "backgroundVariantId": "var_1780082969934_5"
+      }
+    },
+    {
+      "entityType": "enemy",
+      "entityId": "broken_guard",
+      "variants": [
+        {
+          "id": "var_1780083017252_6",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/broken_guard/portrait/var_1780083017252_6.png",
+          "createdAt": "2026-05-29T19:31:08.810Z",
+          "role": "portrait"
+        },
+        {
+          "id": "var_1780083070029_7",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/broken_guard/background/var_1780083070029_7.png",
+          "createdAt": "2026-05-29T19:31:59.445Z",
+          "role": "background"
+        }
+      ],
+      "activeVariantId": "var_1780083017252_6",
+      "monsterLayer": {
+        "portraitVariantId": "var_1780083017252_6",
+        "backgroundVariantId": "var_1780083070029_7"
+      }
+    },
+    {
+      "entityType": "enemy",
+      "entityId": "fear_crow",
+      "variants": [
+        {
+          "id": "var_1780083120657_8",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/fear_crow/portrait/var_1780083120657_8.png",
+          "createdAt": "2026-05-29T19:32:24.335Z",
+          "role": "portrait"
+        },
+        {
+          "id": "var_1780083145544_9",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/fear_crow/background/var_1780083145544_9.png",
+          "createdAt": "2026-05-29T19:33:15.044Z",
+          "role": "background"
+        }
+      ],
+      "activeVariantId": "var_1780083120657_8",
+      "monsterLayer": {
+        "portraitVariantId": "var_1780083120657_8",
+        "backgroundVariantId": "var_1780083145544_9"
+      }
+    },
+    {
+      "entityType": "enemy",
+      "entityId": "dungeon_hound",
+      "variants": [
+        {
+          "id": "var_1780083196259_10",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/dungeon_hound/portrait/var_1780083196259_10.png",
+          "createdAt": "2026-05-29T19:34:06.266Z",
+          "role": "portrait"
+        },
+        {
+          "id": "var_1780083247478_11",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/dungeon_hound/background/var_1780083247478_11.png",
+          "createdAt": "2026-05-29T19:34:57.896Z",
+          "role": "background"
+        }
+      ],
+      "activeVariantId": "var_1780083196259_10",
+      "monsterLayer": {
+        "portraitVariantId": "var_1780083196259_10",
+        "backgroundVariantId": "var_1780083247478_11"
+      }
+    },
+    {
+      "entityType": "enemy",
+      "entityId": "lost_thief",
+      "variants": [
+        {
+          "id": "var_1780083299127_12",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/lost_thief/portrait/var_1780083299127_12.png",
+          "createdAt": "2026-05-29T19:35:33.088Z",
+          "role": "portrait"
+        },
+        {
+          "id": "var_1780083334313_13",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/lost_thief/background/var_1780083334313_13.png",
+          "createdAt": "2026-05-29T19:36:03.119Z",
+          "role": "background"
+        }
+      ],
+      "activeVariantId": "var_1780083299127_12",
+      "monsterLayer": {
+        "portraitVariantId": "var_1780083299127_12",
+        "backgroundVariantId": "var_1780083334313_13"
+      }
+    },
+    {
+      "entityType": "enemy",
+      "entityId": "corrupt_priest",
+      "variants": [
+        {
+          "id": "var_1780083364379_14",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/corrupt_priest/portrait/var_1780083364379_14.png",
+          "createdAt": "2026-05-29T19:36:56.912Z",
+          "role": "portrait"
+        },
+        {
+          "id": "var_1780083418126_15",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/corrupt_priest/background/var_1780083418126_15.png",
+          "createdAt": "2026-05-29T19:37:21.555Z",
+          "role": "background"
+        }
+      ],
+      "activeVariantId": "var_1780083364379_14",
+      "monsterLayer": {
+        "portraitVariantId": "var_1780083364379_14",
+        "backgroundVariantId": "var_1780083418126_15"
+      }
+    },
+    {
+      "entityType": "enemy",
+      "entityId": "mirror_knight",
+      "variants": [
+        {
+          "id": "var_1780083442801_16",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/mirror_knight/portrait/var_1780083442801_16.png",
+          "createdAt": "2026-05-29T19:38:10.381Z",
+          "role": "portrait"
+        },
+        {
+          "id": "var_1780083491592_17",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/mirror_knight/background/var_1780083491592_17.png",
+          "createdAt": "2026-05-29T19:39:06.599Z",
+          "role": "background"
+        }
+      ],
+      "activeVariantId": "var_1780083442801_16",
+      "monsterLayer": {
+        "portraitVariantId": "var_1780083442801_16",
+        "backgroundVariantId": "var_1780083491592_17"
+      }
+    },
+    {
+      "entityType": "enemy",
+      "entityId": "abyss_collector",
+      "variants": [
+        {
+          "id": "var_1780083547839_18",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/abyss_collector/portrait/var_1780083547839_18.png",
+          "createdAt": "2026-05-29T19:40:02.039Z",
+          "role": "portrait"
+        },
+        {
+          "id": "var_1780083603257_19",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/enemy/abyss_collector/background/var_1780083603257_19.png",
+          "createdAt": "2026-05-29T19:41:00.883Z",
+          "role": "background"
+        }
+      ],
+      "activeVariantId": "var_1780083547839_18",
+      "monsterLayer": {
+        "portraitVariantId": "var_1780083547839_18",
+        "backgroundVariantId": "var_1780083603257_19"
+      }
+    },
+    {
+      "entityType": "boss",
+      "entityId": "memory_devourer",
+      "variants": [
+        {
+          "id": "var_1780083662105_20",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/boss/memory_devourer/portrait/var_1780083662105_20.png",
+          "createdAt": "2026-05-29T19:41:57.577Z",
+          "role": "portrait"
+        },
+        {
+          "id": "var_1780083718790_21",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/boss/memory_devourer/background/var_1780083718790_21.png",
+          "createdAt": "2026-05-29T19:43:00.190Z",
+          "role": "background"
+        }
+      ],
+      "activeVariantId": "var_1780083662105_20",
+      "monsterLayer": {
+        "portraitVariantId": "var_1780083662105_20",
+        "backgroundVariantId": "var_1780083718790_21"
+      }
+    },
+    {
+      "entityType": "relic",
+      "entityId": "broken_pocketwatch",
+      "variants": [
+        {
+          "id": "var_1780083781562_22",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/broken_pocketwatch/var_1780083781562_22.png",
+          "createdAt": "2026-05-29T19:43:23.641Z"
+        }
+      ],
+      "activeVariantId": "var_1780083781562_22"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "blood_ring",
+      "variants": [
+        {
+          "id": "var_1780083804880_23",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/blood_ring/var_1780083804880_23.png",
+          "createdAt": "2026-05-29T19:43:42.229Z"
+        }
+      ],
+      "activeVariantId": "var_1780083804880_23"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "old_knight_badge",
+      "variants": [
+        {
+          "id": "var_1780083823489_24",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/old_knight_badge/var_1780083823489_24.png",
+          "createdAt": "2026-05-29T19:44:19.911Z"
+        }
+      ],
+      "activeVariantId": "var_1780083823489_24"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "demon_dice",
+      "variants": [
+        {
+          "id": "var_1780083861144_25",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/demon_dice/var_1780083861144_25.png",
+          "createdAt": "2026-05-29T19:44:58.682Z"
+        }
+      ],
+      "activeVariantId": "var_1780083861144_25"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "ash_pendant",
+      "variants": [
+        {
+          "id": "var_1780083899986_26",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/ash_pendant/var_1780083899986_26.png",
+          "createdAt": "2026-05-29T19:45:39.909Z"
+        }
+      ],
+      "activeVariantId": "var_1780083899986_26"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "memory_shard",
+      "variants": [
+        {
+          "id": "var_1780083941146_27",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/memory_shard/var_1780083941146_27.png",
+          "createdAt": "2026-05-29T19:46:18.405Z"
+        }
+      ],
+      "activeVariantId": "var_1780083941146_27"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "iron_charm",
+      "variants": [
+        {
+          "id": "var_1780083979669_28",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/iron_charm/var_1780083979669_28.png",
+          "createdAt": "2026-05-29T19:46:59.393Z"
+        }
+      ],
+      "activeVariantId": "var_1780083979669_28"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "cursed_coin",
+      "variants": [
+        {
+          "id": "var_1780084020610_29",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/cursed_coin/var_1780084020610_29.png",
+          "createdAt": "2026-05-29T19:47:30.285Z"
+        }
+      ],
+      "activeVariantId": "var_1780084020610_29"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "healer_salve",
+      "variants": [
+        {
+          "id": "var_1780084051493_30",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/healer_salve/var_1780084051493_30.png",
+          "createdAt": "2026-05-29T19:48:06.202Z"
+        }
+      ],
+      "activeVariantId": "var_1780084051493_30"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "void_lens",
+      "variants": [
+        {
+          "id": "var_1780084087418_31",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/void_lens/var_1780084087418_31.png",
+          "createdAt": "2026-05-29T19:48:27.887Z"
+        }
+      ],
+      "activeVariantId": "var_1780084087418_31"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "thornmail_shackles",
+      "variants": [
+        {
+          "id": "var_1780084109125_32",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/thornmail_shackles/var_1780084109125_32.png",
+          "createdAt": "2026-05-29T19:49:13.532Z"
+        }
+      ],
+      "activeVariantId": "var_1780084109125_32"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "arcane_battery",
+      "variants": [
+        {
+          "id": "var_1780084154751_33",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/arcane_battery/var_1780084154751_33.png",
+          "createdAt": "2026-05-29T19:49:56.477Z"
+        }
+      ],
+      "activeVariantId": "var_1780084154751_33"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "hunters_token",
+      "variants": [
+        {
+          "id": "var_1780084197743_34",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/hunters_token/var_1780084197743_34.png",
+          "createdAt": "2026-05-29T19:50:32.499Z"
+        }
+      ],
+      "activeVariantId": "var_1780084197743_34"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "vow_shield",
+      "variants": [
+        {
+          "id": "var_1780084233739_35",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/vow_shield/var_1780084233739_35.png",
+          "createdAt": "2026-05-29T19:51:12.995Z"
+        }
+      ],
+      "activeVariantId": "var_1780084233739_35"
+    },
+    {
+      "entityType": "relic",
+      "entityId": "memory_crown",
+      "variants": [
+        {
+          "id": "var_1780084274262_36",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/relic/memory_crown/var_1780084274262_36.png",
+          "createdAt": "2026-05-29T19:51:32.884Z"
+        }
+      ],
+      "activeVariantId": "var_1780084274262_36"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_strike",
+      "variants": [
+        {
+          "id": "var_1780084294285_37",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_strike/var_1780084294285_37.png",
+          "createdAt": "2026-05-29T19:52:11.653Z"
+        }
+      ],
+      "activeVariantId": "var_1780084294285_37"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_guard",
+      "variants": [
+        {
+          "id": "var_1780084332875_38",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_guard/var_1780084332875_38.png",
+          "createdAt": "2026-05-29T19:53:00.115Z"
+        }
+      ],
+      "activeVariantId": "var_1780084332875_38"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_bleed_slash",
+      "variants": [
+        {
+          "id": "var_1780084381327_39",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_bleed_slash/var_1780084381327_39.png",
+          "createdAt": "2026-05-29T19:53:40.279Z"
+        }
+      ],
+      "activeVariantId": "var_1780084381327_39"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_vampiric_cut",
+      "variants": [
+        {
+          "id": "var_1780084421501_40",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_vampiric_cut/var_1780084421501_40.png",
+          "createdAt": "2026-05-29T19:54:21.197Z"
+        }
+      ],
+      "activeVariantId": "var_1780084421501_40"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_deep_cut",
+      "variants": [
+        {
+          "id": "var_1780084462412_41",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_deep_cut/var_1780084462412_41.png",
+          "createdAt": "2026-05-29T19:55:10.246Z"
+        }
+      ],
+      "activeVariantId": "var_1780084462412_41"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_blood_frenzy",
+      "variants": [
+        {
+          "id": "var_1780084511572_42",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_blood_frenzy/var_1780084511572_42.png",
+          "createdAt": "2026-05-29T19:55:51.743Z"
+        }
+      ],
+      "activeVariantId": "var_1780084511572_42"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_adrenaline",
+      "variants": [
+        {
+          "id": "var_1780084553064_43",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_adrenaline/var_1780084553064_43.png",
+          "createdAt": "2026-05-29T19:56:36.281Z"
+        }
+      ],
+      "activeVariantId": "var_1780084553064_43"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_quick_slice",
+      "variants": [
+        {
+          "id": "var_1780084597497_44",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_quick_slice/var_1780084597497_44.png",
+          "createdAt": "2026-05-29T19:57:18.492Z"
+        }
+      ],
+      "activeVariantId": "var_1780084597497_44"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_twin_fangs",
+      "variants": [
+        {
+          "id": "var_1780084639728_45",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_twin_fangs/var_1780084639728_45.png",
+          "createdAt": "2026-05-29T19:58:02.724Z"
+        }
+      ],
+      "activeVariantId": "var_1780084639728_45"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_open_artery",
+      "variants": [
+        {
+          "id": "var_1780084683944_46",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_open_artery/var_1780084683944_46.png",
+          "createdAt": "2026-05-29T19:58:42.702Z"
+        }
+      ],
+      "activeVariantId": "var_1780084683944_46"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_blood_guard",
+      "variants": [
+        {
+          "id": "var_1780084723966_47",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_blood_guard/var_1780084723966_47.png",
+          "createdAt": "2026-05-29T19:59:25.063Z"
+        }
+      ],
+      "activeVariantId": "var_1780084723966_47"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_predator",
+      "variants": [
+        {
+          "id": "var_1780084766291_48",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_predator/var_1780084766291_48.png",
+          "createdAt": "2026-05-29T20:00:11.536Z"
+        }
+      ],
+      "activeVariantId": "var_1780084766291_48"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_rupture",
+      "variants": [
+        {
+          "id": "var_1780084812807_49",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_rupture/var_1780084812807_49.png",
+          "createdAt": "2026-05-29T20:00:54.637Z"
+        }
+      ],
+      "activeVariantId": "var_1780084812807_49"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_sanguine",
+      "variants": [
+        {
+          "id": "var_1780084855854_50",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_sanguine/var_1780084855854_50.png",
+          "createdAt": "2026-05-29T20:01:33.220Z"
+        }
+      ],
+      "activeVariantId": "var_1780084855854_50"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_crimson_flurry",
+      "variants": [
+        {
+          "id": "var_1780084894582_51",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_crimson_flurry/var_1780084894582_51.png",
+          "createdAt": "2026-05-29T20:02:14.009Z"
+        }
+      ],
+      "activeVariantId": "var_1780084894582_51"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_life_tap",
+      "variants": [
+        {
+          "id": "var_1780084935236_52",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_life_tap/var_1780084935236_52.png",
+          "createdAt": "2026-05-29T20:02:59.828Z"
+        }
+      ],
+      "activeVariantId": "var_1780084935236_52"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_hemorrhage",
+      "variants": [
+        {
+          "id": "var_1780084981075_53",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_hemorrhage/var_1780084981075_53.png",
+          "createdAt": "2026-05-29T20:03:47.612Z"
+        }
+      ],
+      "activeVariantId": "var_1780084981075_53"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_butcher",
+      "variants": [
+        {
+          "id": "var_1780085028889_54",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_butcher/var_1780085028889_54.png",
+          "createdAt": "2026-05-29T20:04:31.156Z"
+        }
+      ],
+      "activeVariantId": "var_1780085028889_54"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_rend",
+      "variants": [
+        {
+          "id": "var_1780085072381_55",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_rend/var_1780085072381_55.png",
+          "createdAt": "2026-05-29T20:05:13.713Z"
+        }
+      ],
+      "activeVariantId": "var_1780085072381_55"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_bloodlust",
+      "variants": [
+        {
+          "id": "var_1780085114945_56",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_bloodlust/var_1780085114945_56.png",
+          "createdAt": "2026-05-29T20:05:53.553Z"
+        }
+      ],
+      "activeVariantId": "var_1780085114945_56"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_evade",
+      "variants": [
+        {
+          "id": "var_1780085154791_57",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_evade/var_1780085154791_57.png",
+          "createdAt": "2026-05-29T20:06:34.732Z"
+        }
+      ],
+      "activeVariantId": "var_1780085154791_57"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_fatal_cut",
+      "variants": [
+        {
+          "id": "var_1780085195982_58",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_fatal_cut/var_1780085195982_58.png",
+          "createdAt": "2026-05-29T20:07:17.874Z"
+        }
+      ],
+      "activeVariantId": "var_1780085195982_58"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_coagulate",
+      "variants": [
+        {
+          "id": "var_1780085239090_59",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_coagulate/var_1780085239090_59.png",
+          "createdAt": "2026-05-29T20:08:00.536Z"
+        }
+      ],
+      "activeVariantId": "var_1780085239090_59"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_expose",
+      "variants": [
+        {
+          "id": "var_1780085281776_60",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_expose/var_1780085281776_60.png",
+          "createdAt": "2026-05-29T20:08:42.106Z"
+        }
+      ],
+      "activeVariantId": "var_1780085281776_60"
+    },
+    {
+      "entityType": "card",
+      "entityId": "bb_second_wind",
+      "variants": [
+        {
+          "id": "var_1780085323360_61",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/bb_second_wind/var_1780085323360_61.png",
+          "createdAt": "2026-05-29T20:09:27.410Z"
+        }
+      ],
+      "activeVariantId": "var_1780085323360_61"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_arc_bolt",
+      "variants": [
+        {
+          "id": "var_1780085368633_62",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_arc_bolt/var_1780085368633_62.png",
+          "createdAt": "2026-05-29T20:10:08.923Z"
+        }
+      ],
+      "activeVariantId": "var_1780085368633_62"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_rune_shield",
+      "variants": [
+        {
+          "id": "var_1780085410480_63",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_rune_shield/var_1780085410480_63.png",
+          "createdAt": "2026-05-29T20:10:51.267Z"
+        }
+      ],
+      "activeVariantId": "var_1780085410480_63"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_frost_mark",
+      "variants": [
+        {
+          "id": "var_1780085452505_64",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_frost_mark/var_1780085452505_64.png",
+          "createdAt": "2026-05-29T20:11:44.965Z"
+        }
+      ],
+      "activeVariantId": "var_1780085452505_64"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_overcharge",
+      "variants": [
+        {
+          "id": "var_1780085506202_65",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_overcharge/var_1780085506202_65.png",
+          "createdAt": "2026-05-29T20:12:30.117Z"
+        }
+      ],
+      "activeVariantId": "var_1780085506202_65"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_chain_lightning",
+      "variants": [
+        {
+          "id": "var_1780085551416_66",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_chain_lightning/var_1780085551416_66.png",
+          "createdAt": "2026-05-29T20:13:14.513Z"
+        }
+      ],
+      "activeVariantId": "var_1780085551416_66"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_mana_surge",
+      "variants": [
+        {
+          "id": "var_1780085595762_67",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_mana_surge/var_1780085595762_67.png",
+          "createdAt": "2026-05-29T20:13:57.007Z"
+        }
+      ],
+      "activeVariantId": "var_1780085595762_67"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_arcane_barrier",
+      "variants": [
+        {
+          "id": "var_1780085638242_68",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_arcane_barrier/var_1780085638242_68.png",
+          "createdAt": "2026-05-29T20:14:40.023Z"
+        }
+      ],
+      "activeVariantId": "var_1780085638242_68"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_spark",
+      "variants": [
+        {
+          "id": "var_1780085681248_69",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_spark/var_1780085681248_69.png",
+          "createdAt": "2026-05-29T20:15:19.652Z"
+        }
+      ],
+      "activeVariantId": "var_1780085681248_69"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_frost_nova",
+      "variants": [
+        {
+          "id": "var_1780085720874_70",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_frost_nova/var_1780085720874_70.png",
+          "createdAt": "2026-05-29T20:16:20.166Z"
+        }
+      ],
+      "activeVariantId": "var_1780085720874_70"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_arcane_intellect",
+      "variants": [
+        {
+          "id": "var_1780085781424_71",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_arcane_intellect/var_1780085781424_71.png",
+          "createdAt": "2026-05-29T20:17:03.438Z"
+        }
+      ],
+      "activeVariantId": "var_1780085781424_71"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_flame_burst",
+      "variants": [
+        {
+          "id": "var_1780085824750_72",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_flame_burst/var_1780085824750_72.png",
+          "createdAt": "2026-05-29T20:17:28.650Z"
+        }
+      ],
+      "activeVariantId": "var_1780085824750_72"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_mana_shield",
+      "variants": [
+        {
+          "id": "var_1780085849882_73",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_mana_shield/var_1780085849882_73.png",
+          "createdAt": "2026-05-29T20:18:09.412Z"
+        }
+      ],
+      "activeVariantId": "var_1780085849882_73"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_element_stack",
+      "variants": [
+        {
+          "id": "var_1780085890639_74",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_element_stack/var_1780085890639_74.png",
+          "createdAt": "2026-05-29T20:18:50.519Z"
+        }
+      ],
+      "activeVariantId": "var_1780085890639_74"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_meteor",
+      "variants": [
+        {
+          "id": "var_1780085931735_75",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_meteor/var_1780085931735_75.png",
+          "createdAt": "2026-05-29T20:19:30.177Z"
+        }
+      ],
+      "activeVariantId": "var_1780085931735_75"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_channel",
+      "variants": [
+        {
+          "id": "var_1780085971395_76",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_channel/var_1780085971395_76.png",
+          "createdAt": "2026-05-29T20:20:11.850Z"
+        }
+      ],
+      "activeVariantId": "var_1780085971395_76"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_rune_draw",
+      "variants": [
+        {
+          "id": "var_1780086013062_77",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_rune_draw/var_1780086013062_77.png",
+          "createdAt": "2026-05-29T20:20:51.464Z"
+        }
+      ],
+      "activeVariantId": "var_1780086013062_77"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_static_field",
+      "variants": [
+        {
+          "id": "var_1780086052690_78",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_static_field/var_1780086052690_78.png",
+          "createdAt": "2026-05-29T20:21:33.970Z"
+        }
+      ],
+      "activeVariantId": "var_1780086052690_78"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_arcane_blast",
+      "variants": [
+        {
+          "id": "var_1780086095191_79",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_arcane_blast/var_1780086095191_79.png",
+          "createdAt": "2026-05-29T20:22:18.014Z"
+        }
+      ],
+      "activeVariantId": "var_1780086095191_79"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_energy_well",
+      "variants": [
+        {
+          "id": "var_1780086139226_80",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_energy_well/var_1780086139226_80.png",
+          "createdAt": "2026-05-29T20:22:57.003Z"
+        }
+      ],
+      "activeVariantId": "var_1780086139226_80"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_poison_rune",
+      "variants": [
+        {
+          "id": "var_1780086178224_81",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_poison_rune/var_1780086178224_81.png",
+          "createdAt": "2026-05-29T20:23:40.028Z"
+        }
+      ],
+      "activeVariantId": "var_1780086178224_81"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_ward",
+      "variants": [
+        {
+          "id": "var_1780086221244_82",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_ward/var_1780086221244_82.png",
+          "createdAt": "2026-05-29T20:24:23.423Z"
+        }
+      ],
+      "activeVariantId": "var_1780086221244_82"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_focus",
+      "variants": [
+        {
+          "id": "var_1780086264643_83",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_focus/var_1780086264643_83.png",
+          "createdAt": "2026-05-29T20:25:14.090Z"
+        }
+      ],
+      "activeVariantId": "var_1780086264643_83"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_glacial_spike",
+      "variants": [
+        {
+          "id": "var_1780086315354_84",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_glacial_spike/var_1780086315354_84.png",
+          "createdAt": "2026-05-29T20:25:56.041Z"
+        }
+      ],
+      "activeVariantId": "var_1780086315354_84"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_cost_cut",
+      "variants": [
+        {
+          "id": "var_1780086357389_85",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_cost_cut/var_1780086357389_85.png",
+          "createdAt": "2026-05-29T20:26:36.472Z"
+        }
+      ],
+      "activeVariantId": "var_1780086357389_85"
+    },
+    {
+      "entityType": "card",
+      "entityId": "rm_surge_bolt",
+      "variants": [
+        {
+          "id": "var_1780086397854_86",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/rm_surge_bolt/var_1780086397854_86.png",
+          "createdAt": "2026-05-29T20:27:16.227Z"
+        }
+      ],
+      "activeVariantId": "var_1780086397854_86"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_shield_bash",
+      "variants": [
+        {
+          "id": "var_1780086437471_87",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_shield_bash/var_1780086437471_87.png",
+          "createdAt": "2026-05-29T20:27:56.799Z"
+        }
+      ],
+      "activeVariantId": "var_1780086437471_87"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_fortify",
+      "variants": [
+        {
+          "id": "var_1780086478033_88",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_fortify/var_1780086478033_88.png",
+          "createdAt": "2026-05-29T20:28:34.097Z"
+        }
+      ],
+      "activeVariantId": "var_1780086478033_88"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_counter_stance",
+      "variants": [
+        {
+          "id": "var_1780086515330_89",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_counter_stance/var_1780086515330_89.png",
+          "createdAt": "2026-05-29T20:29:15.811Z"
+        }
+      ],
+      "activeVariantId": "var_1780086515330_89"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_oath_strike",
+      "variants": [
+        {
+          "id": "var_1780086557292_90",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_oath_strike/var_1780086557292_90.png",
+          "createdAt": "2026-05-29T20:29:59.051Z"
+        }
+      ],
+      "activeVariantId": "var_1780086557292_90"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_iron_wall",
+      "variants": [
+        {
+          "id": "var_1780086600404_91",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_iron_wall/var_1780086600404_91.png",
+          "createdAt": "2026-05-29T20:30:40.773Z"
+        }
+      ],
+      "activeVariantId": "var_1780086600404_91"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_holy_strike",
+      "variants": [
+        {
+          "id": "var_1780086642043_92",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_holy_strike/var_1780086642043_92.png",
+          "createdAt": "2026-05-29T20:31:19.671Z"
+        }
+      ],
+      "activeVariantId": "var_1780086642043_92"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_bulwark",
+      "variants": [
+        {
+          "id": "var_1780086680894_93",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_bulwark/var_1780086680894_93.png",
+          "createdAt": "2026-05-29T20:32:00.476Z"
+        }
+      ],
+      "activeVariantId": "var_1780086680894_93"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_pommel_strike",
+      "variants": [
+        {
+          "id": "var_1780086721685_94",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_pommel_strike/var_1780086721685_94.png",
+          "createdAt": "2026-05-29T20:32:37.480Z"
+        }
+      ],
+      "activeVariantId": "var_1780086721685_94"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_hold_the_line",
+      "variants": [
+        {
+          "id": "var_1780086758764_95",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_hold_the_line/var_1780086758764_95.png",
+          "createdAt": "2026-05-29T20:33:22.290Z"
+        }
+      ],
+      "activeVariantId": "var_1780086758764_95"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_rally",
+      "variants": [
+        {
+          "id": "var_1780086803568_96",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_rally/var_1780086803568_96.png",
+          "createdAt": "2026-05-29T20:33:57.053Z"
+        }
+      ],
+      "activeVariantId": "var_1780086803568_96"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_heavy_slash",
+      "variants": [
+        {
+          "id": "var_1780086838317_97",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_heavy_slash/var_1780086838317_97.png",
+          "createdAt": "2026-05-29T20:34:38.694Z"
+        }
+      ],
+      "activeVariantId": "var_1780086838317_97"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_deflect",
+      "variants": [
+        {
+          "id": "var_1780086879910_98",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_deflect/var_1780086879910_98.png",
+          "createdAt": "2026-05-29T20:35:19.075Z"
+        }
+      ],
+      "activeVariantId": "var_1780086879910_98"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_armor_up",
+      "variants": [
+        {
+          "id": "var_1780086920293_99",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_armor_up/var_1780086920293_99.png",
+          "createdAt": "2026-05-29T20:36:01.867Z"
+        }
+      ],
+      "activeVariantId": "var_1780086920293_99"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_judgment",
+      "variants": [
+        {
+          "id": "var_1780086963116_100",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_judgment/var_1780086963116_100.png",
+          "createdAt": "2026-05-29T20:36:42.185Z"
+        }
+      ],
+      "activeVariantId": "var_1780086963116_100"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_bastion",
+      "variants": [
+        {
+          "id": "var_1780087197108_1",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_bastion/var_1780087197108_1.png",
+          "createdAt": "2026-05-29T20:40:39.726Z"
+        }
+      ],
+      "activeVariantId": "var_1780087197108_1"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_oath_guard",
+      "variants": [
+        {
+          "id": "var_1780087240955_2",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_oath_guard/var_1780087240955_2.png",
+          "createdAt": "2026-05-29T20:41:24.013Z"
+        }
+      ],
+      "activeVariantId": "var_1780087240955_2"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_shield_wall",
+      "variants": [
+        {
+          "id": "var_1780087285241_3",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_shield_wall/var_1780087285241_3.png",
+          "createdAt": "2026-05-29T20:41:43.998Z"
+        }
+      ],
+      "activeVariantId": "var_1780087285241_3"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_retaliate",
+      "variants": [
+        {
+          "id": "var_1780087305267_4",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_retaliate/var_1780087305267_4.png",
+          "createdAt": "2026-05-29T20:42:23.336Z"
+        }
+      ],
+      "activeVariantId": "var_1780087305267_4"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_inspire",
+      "variants": [
+        {
+          "id": "var_1780087344603_5",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_inspire/var_1780087344603_5.png",
+          "createdAt": "2026-05-29T20:43:06.331Z"
+        }
+      ],
+      "activeVariantId": "var_1780087344603_5"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_crush",
+      "variants": [
+        {
+          "id": "var_1780087387561_6",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_crush/var_1780087387561_6.png",
+          "createdAt": "2026-05-29T20:43:53.007Z"
+        }
+      ],
+      "activeVariantId": "var_1780087387561_6"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_firm_stand",
+      "variants": [
+        {
+          "id": "var_1780087434227_7",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_firm_stand/var_1780087434227_7.png",
+          "createdAt": "2026-05-29T20:44:36.938Z"
+        }
+      ],
+      "activeVariantId": "var_1780087434227_7"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_parry",
+      "variants": [
+        {
+          "id": "var_1780087478264_8",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_parry/var_1780087478264_8.png",
+          "createdAt": "2026-05-29T20:45:23.933Z"
+        }
+      ],
+      "activeVariantId": "var_1780087478264_8"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_oath_heal",
+      "variants": [
+        {
+          "id": "var_1780087525151_9",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_oath_heal/var_1780087525151_9.png",
+          "createdAt": "2026-05-29T20:46:08.011Z"
+        }
+      ],
+      "activeVariantId": "var_1780087525151_9"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_unbreakable",
+      "variants": [
+        {
+          "id": "var_1780087569237_10",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_unbreakable/var_1780087569237_10.png",
+          "createdAt": "2026-05-29T20:46:46.943Z"
+        }
+      ],
+      "activeVariantId": "var_1780087569237_10"
+    },
+    {
+      "entityType": "card",
+      "entityId": "ok_final_stand",
+      "variants": [
+        {
+          "id": "var_1780087608178_11",
+          "preset": "dark_fairy_tale",
+          "customPrompt": "",
+          "imagePath": "generated/card/ok_final_stand/var_1780087608178_11.png",
+          "createdAt": "2026-05-29T20:47:30.991Z"
+        }
+      ],
+      "activeVariantId": "var_1780087608178_11"
+    }
+  ]
+}

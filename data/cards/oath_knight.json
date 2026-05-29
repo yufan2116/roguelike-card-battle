@@ -1,0 +1,545 @@
+{
+  "cards": [
+    {
+      "id": "ok_shield_bash",
+      "name": "盾击",
+      "classId": "oath_knight",
+      "type": "attack",
+      "cost": 1,
+      "rarity": "starter",
+      "description": "造成 4 点伤害，获得 4 点格挡。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 4,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "block",
+          "value": 4,
+          "target": "self"
+        }
+      ],
+      "upgradedEffects": [
+        {
+          "mechanism": "damage",
+          "value": 6,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "block",
+          "value": 6,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 7.2,
+      "imagePrompt": "盾击 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_fortify",
+      "name": "筑垒",
+      "classId": "oath_knight",
+      "type": "defense",
+      "cost": 1,
+      "rarity": "starter",
+      "description": "获得 7 点格挡。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 7,
+          "target": "self"
+        }
+      ],
+      "upgradedEffects": [
+        {
+          "mechanism": "block",
+          "value": 10,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 5.6,
+      "imagePrompt": "筑垒 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_counter_stance",
+      "name": "反击姿态",
+      "classId": "oath_knight",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "starter",
+      "description": "获得 3 点格挡，获得 1 点力量。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 3,
+          "target": "self"
+        },
+        {
+          "mechanism": "gainStrength",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 6.4,
+      "imagePrompt": "反击姿态 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_oath_strike",
+      "name": "誓约重击",
+      "classId": "oath_knight",
+      "type": "attack",
+      "cost": 2,
+      "rarity": "starter",
+      "description": "造成 12 点伤害。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 12,
+          "target": "enemy"
+        }
+      ],
+      "upgradedEffects": [
+        {
+          "mechanism": "damage",
+          "value": 16,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 12,
+      "imagePrompt": "誓约重击 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_iron_wall",
+      "name": "铁壁",
+      "classId": "oath_knight",
+      "type": "defense",
+      "cost": 2,
+      "rarity": "common",
+      "description": "获得 14 点格挡。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 14,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 11.2,
+      "imagePrompt": "铁壁 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_holy_strike",
+      "name": "圣誓打击",
+      "classId": "oath_knight",
+      "type": "attack",
+      "cost": 2,
+      "rarity": "uncommon",
+      "description": "造成 14 点伤害，获得 4 点格挡。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 14,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "block",
+          "value": 4,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 17.2,
+      "imagePrompt": "圣誓打击 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_bulwark",
+      "name": "壁垒",
+      "classId": "oath_knight",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "common",
+      "description": "获得 2 点力量。",
+      "effects": [
+        {
+          "mechanism": "gainStrength",
+          "value": 2,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 8,
+      "imagePrompt": "壁垒 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_pommel_strike",
+      "name": "柄击",
+      "classId": "oath_knight",
+      "type": "attack",
+      "cost": 1,
+      "rarity": "common",
+      "description": "造成 6 点伤害，获得 3 点格挡。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 6,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "block",
+          "value": 3,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 8.4,
+      "imagePrompt": "柄击 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_hold_the_line",
+      "name": "坚守阵线",
+      "classId": "oath_knight",
+      "type": "defense",
+      "cost": 1,
+      "rarity": "common",
+      "description": "获得 8 点格挡。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 8,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 6.4,
+      "imagePrompt": "坚守阵线 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_rally",
+      "name": "集结",
+      "classId": "oath_knight",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "common",
+      "description": "获得 1 点力量，获得 4 点格挡。",
+      "effects": [
+        {
+          "mechanism": "gainStrength",
+          "value": 1,
+          "target": "self"
+        },
+        {
+          "mechanism": "block",
+          "value": 4,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 7.2,
+      "imagePrompt": "集结 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_heavy_slash",
+      "name": "重斩",
+      "classId": "oath_knight",
+      "type": "attack",
+      "cost": 2,
+      "rarity": "common",
+      "description": "造成 13 点伤害。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 13,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 13,
+      "imagePrompt": "重斩 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_deflect",
+      "name": "偏转",
+      "classId": "oath_knight",
+      "type": "defense",
+      "cost": 0,
+      "rarity": "common",
+      "description": "获得 4 点格挡。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 4,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 3.2,
+      "imagePrompt": "偏转 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_armor_up",
+      "name": "披甲",
+      "classId": "oath_knight",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "uncommon",
+      "description": "获得 2 点敏捷。",
+      "effects": [
+        {
+          "mechanism": "gainDexterity",
+          "value": 2,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 8,
+      "imagePrompt": "披甲 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_judgment",
+      "name": "裁决",
+      "classId": "oath_knight",
+      "type": "attack",
+      "cost": 2,
+      "rarity": "uncommon",
+      "description": "造成 10 点伤害，施加 2 层易伤。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 10,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "applyVulnerable",
+          "value": 2,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 18,
+      "imagePrompt": "裁决 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_bastion",
+      "name": "堡垒",
+      "classId": "oath_knight",
+      "type": "defense",
+      "cost": 2,
+      "rarity": "uncommon",
+      "description": "获得 16 点格挡。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 16,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 12.8,
+      "imagePrompt": "堡垒 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_oath_guard",
+      "name": "誓约守护",
+      "classId": "oath_knight",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "uncommon",
+      "description": "获得 6 点格挡，抽 1 张牌。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 6,
+          "target": "self"
+        },
+        {
+          "mechanism": "draw",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 10.8,
+      "imagePrompt": "誓约守护 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_shield_wall",
+      "name": "盾墙",
+      "classId": "oath_knight",
+      "type": "defense",
+      "cost": 3,
+      "rarity": "rare",
+      "description": "获得 24 点格挡。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 24,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 19.2,
+      "imagePrompt": "盾墙 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_retaliate",
+      "name": "报复",
+      "classId": "oath_knight",
+      "type": "attack",
+      "cost": 1,
+      "rarity": "common",
+      "description": "造成 5 点伤害，获得 5 点格挡。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 5,
+          "target": "enemy"
+        },
+        {
+          "mechanism": "block",
+          "value": 5,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 9,
+      "imagePrompt": "报复 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_inspire",
+      "name": "鼓舞",
+      "classId": "oath_knight",
+      "type": "skill",
+      "cost": 1,
+      "rarity": "common",
+      "description": "获得 1 点力量，抽 1 张牌。",
+      "effects": [
+        {
+          "mechanism": "gainStrength",
+          "value": 1,
+          "target": "self"
+        },
+        {
+          "mechanism": "draw",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 10,
+      "imagePrompt": "鼓舞 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_crush",
+      "name": "粉碎",
+      "classId": "oath_knight",
+      "type": "attack",
+      "cost": 3,
+      "rarity": "rare",
+      "description": "造成 18 点伤害。",
+      "effects": [
+        {
+          "mechanism": "damage",
+          "value": 18,
+          "target": "enemy"
+        }
+      ],
+      "powerBudget": 18,
+      "imagePrompt": "粉碎 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_firm_stand",
+      "name": "稳固站姿",
+      "classId": "oath_knight",
+      "type": "skill",
+      "cost": 0,
+      "rarity": "common",
+      "description": "获得 3 点格挡，获得 1 点力量。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 3,
+          "target": "self"
+        },
+        {
+          "mechanism": "gainStrength",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 6.4,
+      "imagePrompt": "稳固站姿 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_parry",
+      "name": "招架",
+      "classId": "oath_knight",
+      "type": "defense",
+      "cost": 1,
+      "rarity": "uncommon",
+      "description": "获得 5 点格挡，获得 1 点敏捷。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 5,
+          "target": "self"
+        },
+        {
+          "mechanism": "gainDexterity",
+          "value": 1,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 8,
+      "imagePrompt": "招架 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_oath_heal",
+      "name": "誓约疗愈",
+      "classId": "oath_knight",
+      "type": "skill",
+      "cost": 2,
+      "rarity": "uncommon",
+      "description": "回复 8 点生命，获得 6 点格挡。",
+      "effects": [
+        {
+          "mechanism": "heal",
+          "value": 8,
+          "target": "self"
+        },
+        {
+          "mechanism": "block",
+          "value": 6,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 28.8,
+      "imagePrompt": "誓约疗愈 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_unbreakable",
+      "name": "不屈",
+      "classId": "oath_knight",
+      "type": "skill",
+      "cost": 2,
+      "rarity": "rare",
+      "description": "获得 3 点力量，获得 8 点格挡。",
+      "effects": [
+        {
+          "mechanism": "gainStrength",
+          "value": 3,
+          "target": "self"
+        },
+        {
+          "mechanism": "block",
+          "value": 8,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 18.4,
+      "imagePrompt": "不屈 card art, oath_knight, dungeon roguelike"
+    },
+    {
+      "id": "ok_final_stand",
+      "name": "最终防线",
+      "classId": "oath_knight",
+      "type": "defense",
+      "cost": 1,
+      "rarity": "rare",
+      "description": "获得 10 点格挡，保留（简化为 10 格挡）。",
+      "effects": [
+        {
+          "mechanism": "block",
+          "value": 10,
+          "target": "self"
+        }
+      ],
+      "powerBudget": 8,
+      "imagePrompt": "最终防线 card art, oath_knight, dungeon roguelike"
+    }
+  ]
+}

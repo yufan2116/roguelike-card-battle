@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "totalRuns": 1,
+    "victories": 1,
+    "souls": 92,
+    "upgrades": {
+      "bonusMaxHp": 0,
+      "bonusStartingGold": 0,
+      "unlockedClasses": [
+        "blood_blade_hunter",
+        "rune_mage",
+        "oath_knight"
+      ],
+      "extraCardChoices": 0,
+      "unlockedRelicPool": []
+    }
+  }
+}

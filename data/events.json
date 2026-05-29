@@ -1,0 +1,111 @@
+{
+  "events": [
+    {
+      "id": "whispering_wall",
+      "title": "低语之墙",
+      "description": "一面刻满符文的石墙向你低语，声称可以分享一段被遗忘的记忆。",
+      "choices": [
+        {
+          "id": "listen",
+          "label": "倾听记忆",
+          "description": "回复 10 点生命，失去 25 金币。",
+          "effects": [{ "type": "heal", "value": 10 }, { "type": "loseGold", "value": 25 }]
+        },
+        {
+          "id": "ignore",
+          "label": "转身离开",
+          "description": "什么也不发生。",
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "caged_merchant",
+      "title": "笼中商人",
+      "description": "一个被困在铁笼中的商人向你兜售一张来历不明的卡牌。",
+      "choices": [
+        {
+          "id": "buy",
+          "label": "花费 50 金币购买",
+          "description": "获得一张随机卡牌，受到 5 点伤害。",
+          "effects": [{ "type": "loseGold", "value": 50 }, { "type": "addCard", "value": 1 }, { "type": "damage", "value": 5 }]
+        },
+        {
+          "id": "free",
+          "label": "撬开笼子",
+          "description": "获得 30 金币，最大生命 -3。",
+          "effects": [{ "type": "gold", "value": 30 }, { "type": "maxHpDown", "value": 3 }]
+        },
+        {
+          "id": "leave",
+          "label": "无视离开",
+          "description": "什么也不发生。",
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "blood_fountain",
+      "title": "血之泉",
+      "description": "一座涌出暗红液体的泉眼，散发着危险而诱人的气息。",
+      "choices": [
+        {
+          "id": "drink",
+          "label": "饮下泉水",
+          "description": "回复 20 点生命，获得 2 层虚弱（下一场战斗开始时清除）。",
+          "effects": [{ "type": "heal", "value": 20 }]
+        },
+        {
+          "id": "bottle",
+          "label": "装取一瓶",
+          "description": "获得 40 金币。",
+          "effects": [{ "type": "gold", "value": 40 }]
+        }
+      ]
+    },
+    {
+      "id": "ancient_altar",
+      "title": "远古祭坛",
+      "description": "一座布满灰尘的祭坛，上面放着一件看似有价值的遗物。",
+      "choices": [
+        {
+          "id": "take",
+          "label": "取走遗物",
+          "description": "获得一件随机遗物，失去 10 点生命。",
+          "effects": [{ "type": "addRelic", "value": 1 }, { "type": "damage", "value": 10 }]
+        },
+        {
+          "id": "pray",
+          "label": "虔诚祈祷",
+          "description": "最大生命 +5。",
+          "effects": [{ "type": "maxHpUp", "value": 5 }]
+        }
+      ]
+    },
+    {
+      "id": "lost_explorer",
+      "title": "迷途探险者",
+      "description": "一名受伤的探险者请求你分享补给。",
+      "choices": [
+        {
+          "id": "help",
+          "label": "分享补给",
+          "description": "失去 15 金币，获得一件随机遗物。",
+          "effects": [{ "type": "loseGold", "value": 15 }, { "type": "addRelic", "value": 1 }]
+        },
+        {
+          "id": "rob",
+          "label": "搜刮物资",
+          "description": "获得 35 金币，失去 8 点生命。",
+          "effects": [{ "type": "gold", "value": 35 }, { "type": "damage", "value": 8 }]
+        },
+        {
+          "id": "pass",
+          "label": "继续赶路",
+          "description": "什么也不发生。",
+          "effects": []
+        }
+      ]
+    }
+  ]
+}
